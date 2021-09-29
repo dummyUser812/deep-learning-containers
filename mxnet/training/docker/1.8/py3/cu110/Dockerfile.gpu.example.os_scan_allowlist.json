@@ -19,132 +19,6 @@
                     "value": "7.5"
                 }
             ],
-            "description": "aom_image.c in libaom in AOMedia before 2021-04-07 frees memory that is not located on the heap.",
-            "name": "CVE-2021-30473",
-            "scraped_data": [
-                {
-                    "notes": [],
-                    "status_table": {
-                        "packages": [
-                            "aom",
-                            "Launchpad",
-                            "Ubuntu",
-                            "Debian"
-                        ],
-                        "release_states": [
-                            [
-                                "Upstream",
-                                "Needs triage"
-                            ],
-                            [
-                                "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Needs triage"
-                            ],
-                            [
-                                "Ubuntu 20.04 LTS (Focal Fossa)",
-                                "Needs triage"
-                            ],
-                            [
-                                "Ubuntu 18.04 LTS (Bionic Beaver)",
-                                "Does not exist"
-                            ],
-                            [
-                                "Ubuntu 16.04 ESM (Xenial Xerus)",
-                                "Ignored (out of standard support)"
-                            ],
-                            [
-                                "Ubuntu 14.04 ESM (Trusty Tahr)",
-                                "Does not exist"
-                            ]
-                        ]
-                    }
-                }
-            ],
-            "severity": "HIGH",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-30473"
-        },
-        {
-            "attributes": [
-                {
-                    "key": "package_version",
-                    "value": "1.0.0.errata1-3"
-                },
-                {
-                    "key": "package_name",
-                    "value": "aom"
-                },
-                {
-                    "key": "CVSS2_VECTOR",
-                    "value": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-                },
-                {
-                    "key": "CVSS2_SCORE",
-                    "value": "7.5"
-                }
-            ],
-            "description": "Dummy Addition",
-            "name": "CVE-2021-30475-dummy",
-            "scraped_data": [
-                {
-                    "notes": [],
-                    "status_table": {
-                        "packages": [
-                            "aom",
-                            "Launchpad",
-                            "Ubuntu",
-                            "Debian"
-                        ],
-                        "release_states": [
-                            [
-                                "Upstream",
-                                "Needs triage"
-                            ],
-                            [
-                                "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Needs triage"
-                            ],
-                            [
-                                "Ubuntu 20.04 LTS (Focal Fossa)",
-                                "Needs triage"
-                            ],
-                            [
-                                "Ubuntu 18.04 LTS (Bionic Beaver)",
-                                "Does not exist"
-                            ],
-                            [
-                                "Ubuntu 16.04 ESM (Xenial Xerus)",
-                                "Ignored (out of standard support)"
-                            ],
-                            [
-                                "Ubuntu 14.04 ESM (Trusty Tahr)",
-                                "Does not exist"
-                            ]
-                        ]
-                    }
-                }
-            ],
-            "severity": "HIGH",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-30475"
-        },
-        {
-            "attributes": [
-                {
-                    "key": "package_version",
-                    "value": "1.0.0.errata1-3"
-                },
-                {
-                    "key": "package_name",
-                    "value": "aom"
-                },
-                {
-                    "key": "CVSS2_VECTOR",
-                    "value": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
-                },
-                {
-                    "key": "CVSS2_SCORE",
-                    "value": "7.5"
-                }
-            ],
             "description": "aom_dsp/noise_model.c in libaom in AOMedia before 2021-03-24 has a buffer overflow.",
             "name": "CVE-2021-30475",
             "scraped_data": [
@@ -188,6 +62,132 @@
             ],
             "severity": "HIGH",
             "uri": "https://security-tracker.debian.org/tracker/CVE-2021-30475"
+        },
+        {
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "1.0.0.errata1-3"
+                },
+                {
+                    "key": "package_name",
+                    "value": "aom"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "7.5"
+                }
+            ],
+            "description": "aom_dsp/grain_table.c in libaom in AOMedia before 2021-03-30 has a use-after-free.",
+            "name": "CVE-2021-30474",
+            "scraped_data": [
+                {
+                    "notes": [],
+                    "status_table": {
+                        "packages": [
+                            "aom",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Does not exist"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Ignored (out of standard support)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Does not exist"
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "severity": "HIGH",
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-30474"
+        },
+        {
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "1.0.0.errata1-3"
+                },
+                {
+                    "key": "package_name",
+                    "value": "aom"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "7.5"
+                }
+            ],
+            "description": "aom_image.c in libaom in AOMedia before 2021-04-07 frees memory that is not located on the heap.",
+            "name": "CVE-2021-30473",
+            "scraped_data": [
+                {
+                    "notes": [],
+                    "status_table": {
+                        "packages": [
+                            "aom",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Does not exist"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Ignored (out of standard support)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Does not exist"
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "severity": "HIGH",
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-30473"
         }
     ],
     "glibc": [
@@ -256,6 +256,73 @@
         }
     ],
     "imagemagick": [
+        {
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "8:6.9.11.60+dfsg-1.3"
+                },
+                {
+                    "key": "package_name",
+                    "value": "imagemagick"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:M/Au:N/C:N/I:N/A:C"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "7.1"
+                }
+            ],
+            "description": "A flaw was found in ImageMagick in MagickCore/resample.c. An attacker who submits a crafted file that is processed by ImageMagick could trigger undefined behavior in the form of math division by zero. The highest threat from this vulnerability is to system availability.",
+            "name": "CVE-2021-20246",
+            "scraped_data": [
+                {
+                    "notes": [],
+                    "status_table": {
+                        "packages": [
+                            "imagemagick",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Does not exist"
+                            ],
+                            [
+                                "Patches:",
+                                "Upstream:"
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "severity": "HIGH",
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-20246"
+        },
         {
             "attributes": [
                 {
@@ -342,11 +409,13 @@
                     "value": "7.1"
                 }
             ],
-            "description": "A flaw was found in ImageMagick in MagickCore/resample.c. An attacker who submits a crafted file that is processed by ImageMagick could trigger undefined behavior in the form of math division by zero. The highest threat from this vulnerability is to system availability.",
-            "name": "CVE-2021-20246",
+            "description": "A flaw was found in ImageMagick in MagickCore/visual-effects.c. An attacker who submits a crafted file that is processed by ImageMagick could trigger undefined behavior in the form of math division by zero. The highest threat from this vulnerability is to system availability.",
+            "name": "CVE-2021-20244",
             "scraped_data": [
                 {
-                    "notes": [],
+                    "notes": [
+                        "In IM6 the code seems to be in magick/fx.c"
+                    ],
                     "status_table": {
                         "packages": [
                             "imagemagick",
@@ -388,74 +457,7 @@
                 }
             ],
             "severity": "HIGH",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-20246"
-        },
-        {
-            "attributes": [
-                {
-                    "key": "package_version",
-                    "value": "8:6.9.11.60+dfsg-1.3"
-                },
-                {
-                    "key": "package_name",
-                    "value": "imagemagick"
-                },
-                {
-                    "key": "CVSS2_VECTOR",
-                    "value": "AV:N/AC:M/Au:N/C:N/I:N/A:C"
-                },
-                {
-                    "key": "CVSS2_SCORE",
-                    "value": "7.1"
-                }
-            ],
-            "description": "A flaw was found in ImageMagick in coders/webp.c. An attacker who submits a crafted file that is processed by ImageMagick could trigger undefined behavior in the form of math division by zero. The highest threat from this vulnerability is to system availability.",
-            "name": "CVE-2021-20245",
-            "scraped_data": [
-                {
-                    "notes": [],
-                    "status_table": {
-                        "packages": [
-                            "imagemagick",
-                            "Launchpad",
-                            "Ubuntu",
-                            "Debian"
-                        ],
-                        "release_states": [
-                            [
-                                "Upstream",
-                                "Needs triage"
-                            ],
-                            [
-                                "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Needed"
-                            ],
-                            [
-                                "Ubuntu 20.04 LTS (Focal Fossa)",
-                                "Needed"
-                            ],
-                            [
-                                "Ubuntu 18.04 LTS (Bionic Beaver)",
-                                "Needed"
-                            ],
-                            [
-                                "Ubuntu 16.04 ESM (Xenial Xerus)",
-                                "Needs triage"
-                            ],
-                            [
-                                "Ubuntu 14.04 ESM (Trusty Tahr)",
-                                "Does not exist"
-                            ],
-                            [
-                                "Patches:",
-                                "Upstream:"
-                            ]
-                        ]
-                    }
-                }
-            ],
-            "severity": "HIGH",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-20245"
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-20244"
         },
         {
             "attributes": [
@@ -543,13 +545,11 @@
                     "value": "7.1"
                 }
             ],
-            "description": "A flaw was found in ImageMagick in MagickCore/visual-effects.c. An attacker who submits a crafted file that is processed by ImageMagick could trigger undefined behavior in the form of math division by zero. The highest threat from this vulnerability is to system availability.",
-            "name": "CVE-2021-20244",
+            "description": "A flaw was found in ImageMagick in coders/webp.c. An attacker who submits a crafted file that is processed by ImageMagick could trigger undefined behavior in the form of math division by zero. The highest threat from this vulnerability is to system availability.",
+            "name": "CVE-2021-20245",
             "scraped_data": [
                 {
-                    "notes": [
-                        "In IM6 the code seems to be in magick/fx.c"
-                    ],
+                    "notes": [],
                     "status_table": {
                         "packages": [
                             "imagemagick",
@@ -591,7 +591,7 @@
                 }
             ],
             "severity": "HIGH",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-20244"
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-20245"
         }
     ],
     "linux": [
@@ -698,11 +698,11 @@
                             ],
                             [
                                 "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Pending (5.11.0-37.41)"
+                                "Released (5.11.0-37.41)"
                             ],
                             [
                                 "Ubuntu 20.04 LTS (Focal Fossa)",
-                                "Pending (5.4.0-88.99)"
+                                "Released (5.4.0-88.99)"
                             ],
                             [
                                 "Ubuntu 18.04 LTS (Bionic Beaver)",
@@ -726,6 +726,73 @@
             ],
             "severity": "HIGH",
             "uri": "https://security-tracker.debian.org/tracker/CVE-2021-38160"
+        },
+        {
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "5.10.46-4"
+                },
+                {
+                    "key": "package_name",
+                    "value": "linux"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "7.2"
+                }
+            ],
+            "description": "arch/powerpc/kvm/book3s_rtas.c in the Linux kernel through 5.13.5 on the powerpc platform allows KVM guest OS users to cause host OS memory corruption via rtas_args.nargs, aka CID-f62f3c20647e.",
+            "name": "CVE-2021-37576",
+            "scraped_data": [
+                {
+                    "notes": [],
+                    "status_table": {
+                        "packages": [
+                            "linux",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (5.14~rc3)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Released (5.11.0-37.41)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Released (5.4.0-88.99)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Pending (4.15.0-159.167)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Ignored (was needs-triage ESM criteria)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Ignored (was needed ESM criteria)"
+                            ],
+                            [
+                                "Patches:",
+                                "Introduced by Fixed by"
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "severity": "HIGH",
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-37576"
         },
         {
             "attributes": [
@@ -791,73 +858,6 @@
             ],
             "severity": "HIGH",
             "uri": "https://security-tracker.debian.org/tracker/CVE-2013-7445"
-        },
-        {
-            "attributes": [
-                {
-                    "key": "package_version",
-                    "value": "5.10.46-4"
-                },
-                {
-                    "key": "package_name",
-                    "value": "linux"
-                },
-                {
-                    "key": "CVSS2_VECTOR",
-                    "value": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
-                },
-                {
-                    "key": "CVSS2_SCORE",
-                    "value": "7.2"
-                }
-            ],
-            "description": "arch/powerpc/kvm/book3s_rtas.c in the Linux kernel through 5.13.5 on the powerpc platform allows KVM guest OS users to cause host OS memory corruption via rtas_args.nargs, aka CID-f62f3c20647e.",
-            "name": "CVE-2021-37576",
-            "scraped_data": [
-                {
-                    "notes": [],
-                    "status_table": {
-                        "packages": [
-                            "linux",
-                            "Launchpad",
-                            "Ubuntu",
-                            "Debian"
-                        ],
-                        "release_states": [
-                            [
-                                "Upstream",
-                                "Released (5.14~rc3)"
-                            ],
-                            [
-                                "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Pending (5.11.0-37.41)"
-                            ],
-                            [
-                                "Ubuntu 20.04 LTS (Focal Fossa)",
-                                "Pending (5.4.0-88.99)"
-                            ],
-                            [
-                                "Ubuntu 18.04 LTS (Bionic Beaver)",
-                                "Pending (4.15.0-159.167)"
-                            ],
-                            [
-                                "Ubuntu 16.04 ESM (Xenial Xerus)",
-                                "Ignored (was needs-triage ESM criteria)"
-                            ],
-                            [
-                                "Ubuntu 14.04 ESM (Trusty Tahr)",
-                                "Ignored (was needed ESM criteria)"
-                            ],
-                            [
-                                "Patches:",
-                                "Introduced by Fixed by"
-                            ]
-                        ]
-                    }
-                }
-            ],
-            "severity": "HIGH",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-37576"
         }
     ],
     "mariadb-10.5": [
@@ -952,7 +952,7 @@
             "scraped_data": [
                 {
                     "notes": [
-                        "introduced in v3.8.0a4"
+                        "introduced in v3.8.0a4\nThis issue was re-introduced in python3.8 in focal because of\nthe SRU in LP: #1928057"
                     ],
                     "status_table": {
                         "packages": [
