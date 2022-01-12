@@ -19,8 +19,8 @@
                     "value": "7.5"
                 }
             ],
-            "description": "aom_image.c in libaom in AOMedia before 2021-04-07 frees memory that is not located on the heap.",
-            "name": "CVE-2021-30473",
+            "description": "aom_dsp/grain_table.c in libaom in AOMedia before 2021-03-30 has a use-after-free.",
+            "name": "CVE-2021-30474",
             "scraped_data": [
                 {
                     "notes": [],
@@ -34,6 +34,10 @@
                         "release_states": [
                             [
                                 "Upstream",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
                                 "Needs triage"
                             ],
                             [
@@ -61,7 +65,7 @@
                 }
             ],
             "severity": "HIGH",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-30473"
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-30474"
         },
         {
             "attributes": [
@@ -97,6 +101,10 @@
                         "release_states": [
                             [
                                 "Upstream",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
                                 "Needs triage"
                             ],
                             [
@@ -145,8 +153,8 @@
                     "value": "7.5"
                 }
             ],
-            "description": "aom_dsp/grain_table.c in libaom in AOMedia before 2021-03-30 has a use-after-free.",
-            "name": "CVE-2021-30474",
+            "description": "aom_image.c in libaom in AOMedia before 2021-04-07 frees memory that is not located on the heap.",
+            "name": "CVE-2021-30473",
             "scraped_data": [
                 {
                     "notes": [],
@@ -160,6 +168,10 @@
                         "release_states": [
                             [
                                 "Upstream",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
                                 "Needs triage"
                             ],
                             [
@@ -187,7 +199,7 @@
                 }
             ],
             "severity": "HIGH",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-30474"
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-30473"
         }
     ],
     "glibc": [
@@ -214,7 +226,9 @@
             "name": "CVE-2021-33574",
             "scraped_data": [
                 {
-                    "notes": [],
+                    "notes": [
+                        "see https://sourceware.org/bugzilla/show_bug.cgi?id=27896#c4\nfor a discussion on what pre-requisites are needed for an attack\nbased on this vulnerability.\naffects more than just 2.32 and 2.33\nupstream fix introduced CVE-2021-38604"
+                    ],
                     "status_table": {
                         "packages": [
                             "glibc",
@@ -225,27 +239,35 @@
                         "release_states": [
                             [
                                 "Upstream",
-                                "Needs triage"
+                                "Released (2.34)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Not vulnerable (2.34-0ubuntu1)"
                             ],
                             [
                                 "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Needs triage"
+                                "Needed"
                             ],
                             [
                                 "Ubuntu 20.04 LTS (Focal Fossa)",
-                                "Needs triage"
+                                "Needed"
                             ],
                             [
                                 "Ubuntu 18.04 LTS (Bionic Beaver)",
-                                "Needs triage"
+                                "Needed"
                             ],
                             [
                                 "Ubuntu 16.04 ESM (Xenial Xerus)",
-                                "Needs triage"
+                                "Needed"
                             ],
                             [
                                 "Ubuntu 14.04 ESM (Trusty Tahr)",
                                 "Does not exist"
+                            ],
+                            [
+                                "Patches:",
+                                "Upstream: Upstream:"
                             ]
                         ]
                     }
@@ -275,11 +297,13 @@
                     "value": "7.8"
                 }
             ],
-            "description": "A flaw was found in ImageMagick in versions 7.0.11, where an integer overflow in WriteTHUMBNAILImage of coders/thumbnail.c may trigger undefined behavior via a crafted image file that is submitted by an attacker and processed by an application using ImageMagick. The highest threat from this vulnerability is to system availability.",
-            "name": "CVE-2021-20312",
+            "description": "A flaw was found in ImageMagick in versions before 7.0.11 and before 6.9.12, where a division by zero in WaveImage() of MagickCore/visual-effects.c may trigger undefined behavior via a crafted image file submitted to an application using ImageMagick. The highest threat from this vulnerability is to system availability.",
+            "name": "CVE-2021-20309",
             "scraped_data": [
                 {
-                    "notes": [],
+                    "notes": [
+                        "imagemagick is in universe from focal onwards"
+                    ],
                     "status_table": {
                         "packages": [
                             "imagemagick",
@@ -293,6 +317,10 @@
                                 "Needs triage"
                             ],
                             [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Needed"
+                            ],
+                            [
                                 "Ubuntu 21.04 (Hirsute Hippo)",
                                 "Needed"
                             ],
@@ -302,15 +330,15 @@
                             ],
                             [
                                 "Ubuntu 18.04 LTS (Bionic Beaver)",
-                                "Needed"
+                                "Released (8:6.9.7.4+dfsg-16ubuntu6.12)"
                             ],
                             [
                                 "Ubuntu 16.04 ESM (Xenial Xerus)",
-                                "Needed"
+                                "Released (8:6.8.9.9-7ubuntu5.16+esm1)"
                             ],
                             [
                                 "Ubuntu 14.04 ESM (Trusty Tahr)",
-                                "Does not exist"
+                                "Released (8:6.7.7.10-6ubuntu3.13+esm1)"
                             ],
                             [
                                 "Patches:",
@@ -321,7 +349,7 @@
                 }
             ],
             "severity": "HIGH",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-20312"
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-20309"
         },
         {
             "attributes": [
@@ -362,6 +390,10 @@
                                 "Needs triage"
                             ],
                             [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Needed"
+                            ],
+                            [
                                 "Ubuntu 21.04 (Hirsute Hippo)",
                                 "Needed"
                             ],
@@ -371,19 +403,19 @@
                             ],
                             [
                                 "Ubuntu 18.04 LTS (Bionic Beaver)",
-                                "Needed"
+                                "Released (8:6.9.7.4+dfsg-16ubuntu6.12)"
                             ],
                             [
                                 "Ubuntu 16.04 ESM (Xenial Xerus)",
-                                "Needs triage"
+                                "Released (8:6.8.9.9-7ubuntu5.16+esm1)"
                             ],
                             [
                                 "Ubuntu 14.04 ESM (Trusty Tahr)",
-                                "Does not exist"
+                                "Released (8:6.7.7.10-6ubuntu3.13+esm1)"
                             ],
                             [
                                 "Patches:",
-                                "Upstream:"
+                                "Upstream: Upstream:"
                             ]
                         ]
                     }
@@ -415,7 +447,9 @@
             "name": "CVE-2021-20246",
             "scraped_data": [
                 {
-                    "notes": [],
+                    "notes": [
+                        "imagemagick is in universe from focal onwards"
+                    ],
                     "status_table": {
                         "packages": [
                             "imagemagick",
@@ -429,6 +463,10 @@
                                 "Needs triage"
                             ],
                             [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Needed"
+                            ],
+                            [
                                 "Ubuntu 21.04 (Hirsute Hippo)",
                                 "Needed"
                             ],
@@ -438,15 +476,15 @@
                             ],
                             [
                                 "Ubuntu 18.04 LTS (Bionic Beaver)",
-                                "Needed"
+                                "Released (8:6.9.7.4+dfsg-16ubuntu6.12)"
                             ],
                             [
                                 "Ubuntu 16.04 ESM (Xenial Xerus)",
-                                "Needs triage"
+                                "Released (8:6.8.9.9-7ubuntu5.16+esm1)"
                             ],
                             [
                                 "Ubuntu 14.04 ESM (Trusty Tahr)",
-                                "Does not exist"
+                                "Released (8:6.7.7.10-6ubuntu3.13+esm1)"
                             ],
                             [
                                 "Patches:",
@@ -471,18 +509,20 @@
                 },
                 {
                     "key": "CVSS2_VECTOR",
-                    "value": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
+                    "value": "AV:N/AC:M/Au:N/C:N/I:N/A:C"
                 },
                 {
                     "key": "CVSS2_SCORE",
-                    "value": "7.8"
+                    "value": "7.1"
                 }
             ],
-            "description": "A flaw was found in ImageMagick in versions before 7.0.11 and before 6.9.12, where a division by zero in WaveImage() of MagickCore/visual-effects.c may trigger undefined behavior via a crafted image file submitted to an application using ImageMagick. The highest threat from this vulnerability is to system availability.",
-            "name": "CVE-2021-20309",
+            "description": "A flaw was found in ImageMagick in coders/webp.c. An attacker who submits a crafted file that is processed by ImageMagick could trigger undefined behavior in the form of math division by zero. The highest threat from this vulnerability is to system availability.",
+            "name": "CVE-2021-20245",
             "scraped_data": [
                 {
-                    "notes": [],
+                    "notes": [
+                        "imagemagick is in universe from focal onwards"
+                    ],
                     "status_table": {
                         "packages": [
                             "imagemagick",
@@ -496,6 +536,10 @@
                                 "Needs triage"
                             ],
                             [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Needed"
+                            ],
+                            [
                                 "Ubuntu 21.04 (Hirsute Hippo)",
                                 "Needed"
                             ],
@@ -505,15 +549,15 @@
                             ],
                             [
                                 "Ubuntu 18.04 LTS (Bionic Beaver)",
-                                "Needed"
+                                "Not vulnerable (code not present)"
                             ],
                             [
                                 "Ubuntu 16.04 ESM (Xenial Xerus)",
-                                "Needs triage"
+                                "Not vulnerable (code not present)"
                             ],
                             [
                                 "Ubuntu 14.04 ESM (Trusty Tahr)",
-                                "Does not exist"
+                                "Needs triage"
                             ],
                             [
                                 "Patches:",
@@ -524,7 +568,7 @@
                 }
             ],
             "severity": "HIGH",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-20309"
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-20245"
         },
         {
             "attributes": [
@@ -538,18 +582,20 @@
                 },
                 {
                     "key": "CVSS2_VECTOR",
-                    "value": "AV:N/AC:M/Au:N/C:N/I:N/A:C"
+                    "value": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
                 },
                 {
                     "key": "CVSS2_SCORE",
-                    "value": "7.1"
+                    "value": "7.8"
                 }
             ],
-            "description": "A flaw was found in ImageMagick in coders/webp.c. An attacker who submits a crafted file that is processed by ImageMagick could trigger undefined behavior in the form of math division by zero. The highest threat from this vulnerability is to system availability.",
-            "name": "CVE-2021-20245",
+            "description": "A flaw was found in ImageMagick in versions 7.0.11, where an integer overflow in WriteTHUMBNAILImage of coders/thumbnail.c may trigger undefined behavior via a crafted image file that is submitted by an attacker and processed by an application using ImageMagick. The highest threat from this vulnerability is to system availability.",
+            "name": "CVE-2021-20312",
             "scraped_data": [
                 {
-                    "notes": [],
+                    "notes": [
+                        "imagemagick is in universe from focal onwards"
+                    ],
                     "status_table": {
                         "packages": [
                             "imagemagick",
@@ -563,6 +609,10 @@
                                 "Needs triage"
                             ],
                             [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Needed"
+                            ],
+                            [
                                 "Ubuntu 21.04 (Hirsute Hippo)",
                                 "Needed"
                             ],
@@ -572,15 +622,15 @@
                             ],
                             [
                                 "Ubuntu 18.04 LTS (Bionic Beaver)",
-                                "Needed"
+                                "Released (8:6.9.7.4+dfsg-16ubuntu6.12)"
                             ],
                             [
                                 "Ubuntu 16.04 ESM (Xenial Xerus)",
-                                "Needs triage"
+                                "Released (8:6.8.9.9-7ubuntu5.16+esm1)"
                             ],
                             [
                                 "Ubuntu 14.04 ESM (Trusty Tahr)",
-                                "Does not exist"
+                                "Released (8:6.7.7.10-6ubuntu3.13+esm1)"
                             ],
                             [
                                 "Patches:",
@@ -591,7 +641,7 @@
                 }
             ],
             "severity": "HIGH",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-20245"
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-20312"
         }
     ],
     "linux": [
@@ -634,6 +684,10 @@
                                 "Needs triage"
                             ],
                             [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Deferred (2020-01-09)"
+                            ],
+                            [
                                 "Ubuntu 21.04 (Hirsute Hippo)",
                                 "Deferred (2020-01-09)"
                             ],
@@ -672,6 +726,221 @@
                 },
                 {
                     "key": "CVSS2_VECTOR",
+                    "value": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "7.2"
+                }
+            ],
+            "description": "arch/mips/net/bpf_jit.c in the Linux kernel before 5.4.10 can generate undesirable machine code when transforming unprivileged cBPF programs, allowing execution of arbitrary code within the kernel context. This occurs because conditional branches can exceed the 128 KB limit of the MIPS architecture.",
+            "name": "CVE-2021-38300",
+            "scraped_data": [
+                {
+                    "notes": [
+                        "MIPS only\nbreak entry may be newer than c6610de353da5ca6, introduction\nof ebpf jit for MIPS."
+                    ],
+                    "status_table": {
+                        "packages": [
+                            "linux",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (5.15~rc4)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Not vulnerable (MIPS arch only)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Not vulnerable (MIPS arch only)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Not vulnerable (MIPS arch only)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Not vulnerable (MIPS arch only)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Not vulnerable (MIPS arch only)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Not vulnerable (3.11.0-12.19)"
+                            ],
+                            [
+                                "Patches:",
+                                "Introduced by Fixed by"
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "severity": "HIGH",
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-38300"
+        },
+        {
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "5.10.46-4"
+                },
+                {
+                    "key": "package_name",
+                    "value": "linux"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "6.9"
+                }
+            ],
+            "description": "In unix_scm_to_skb of af_unix.c, there is a possible use after free bug due to a race condition. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-196926917References: Upstream kernel",
+            "name": "CVE-2021-0920",
+            "scraped_data": [
+                {
+                    "notes": [],
+                    "status_table": {
+                        "packages": [
+                            "linux",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (5.14~rc4)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Not vulnerable (5.13.0-16.16)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Released (5.11.0-37.41)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Released (5.4.0-88.99)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Released (4.15.0-159.167)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Ignored (was needed ESM criteria)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Ignored (was needed ESM criteria)"
+                            ],
+                            [
+                                "Patches:",
+                                "Introduced by Fixed by"
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "severity": "HIGH",
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-0920"
+        },
+        {
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "5.10.46-4"
+                },
+                {
+                    "key": "package_name",
+                    "value": "linux"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "6.9"
+                }
+            ],
+            "description": "The decode_data function in drivers/net/hamradio/6pack.c in the Linux kernel before 5.13.13 has a slab out-of-bounds write. Input from a process that has the CAP_NET_ADMIN capability can lead to root access.",
+            "name": "CVE-2021-42008",
+            "scraped_data": [
+                {
+                    "notes": [],
+                    "status_table": {
+                        "packages": [
+                            "linux",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (5.14~rc7)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Not vulnerable (5.13.0-16.16)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Released (5.11.0-38.42)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Released (5.4.0-89.100)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Released (4.15.0-161.169)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Ignored (was needed ESM criteria)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Ignored (was needed ESM criteria)"
+                            ],
+                            [
+                                "Patches:",
+                                "Introduced by Fixed by"
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "severity": "HIGH",
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-42008"
+        },
+        {
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "5.10.46-4"
+                },
+                {
+                    "key": "package_name",
+                    "value": "linux"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
                     "value": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
                 },
                 {
@@ -697,6 +966,10 @@
                             [
                                 "Upstream",
                                 "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Deferred (2018-10-01)"
                             ],
                             [
                                 "Ubuntu 21.04 (Hirsute Hippo)",
@@ -744,8 +1017,8 @@
                     "value": "7.2"
                 }
             ],
-            "description": "** DISPUTED ** In drivers/char/virtio_console.c in the Linux kernel before 5.13.4, data corruption or loss can be triggered by an untrusted device that supplies a buf->len value exceeding the buffer size. NOTE: the vendor indicates that the cited data corruption is not a vulnerability in any existing use case; the length validation was added solely for robustness in the face of anomalous host OS behavior.",
-            "name": "CVE-2021-38160",
+            "description": "arch/powerpc/kvm/book3s_rtas.c in the Linux kernel through 5.13.5 on the powerpc platform allows KVM guest OS users to cause host OS memory corruption via rtas_args.nargs, aka CID-f62f3c20647e.",
+            "name": "CVE-2021-37576",
             "scraped_data": [
                 {
                     "notes": [],
@@ -759,7 +1032,11 @@
                         "release_states": [
                             [
                                 "Upstream",
-                                "Released (5.14~rc1)"
+                                "Released (5.14~rc3)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Not vulnerable (5.13.0-16.16)"
                             ],
                             [
                                 "Ubuntu 21.04 (Hirsute Hippo)",
@@ -771,15 +1048,15 @@
                             ],
                             [
                                 "Ubuntu 18.04 LTS (Bionic Beaver)",
-                                "Released (4.15.0-156.163)"
+                                "Released (4.15.0-159.167)"
                             ],
                             [
                                 "Ubuntu 16.04 ESM (Xenial Xerus)",
-                                "Ignored (was needs-triage ESM criteria)"
+                                "Ignored (was needed ESM criteria)"
                             ],
                             [
                                 "Ubuntu 14.04 ESM (Trusty Tahr)",
-                                "Ignored (was needs-triage ESM criteria)"
+                                "Ignored (was needed ESM criteria)"
                             ],
                             [
                                 "Patches:",
@@ -790,7 +1067,7 @@
                 }
             ],
             "severity": "HIGH",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-38160"
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-37576"
         },
         {
             "attributes": [
@@ -811,8 +1088,8 @@
                     "value": "7.2"
                 }
             ],
-            "description": "arch/powerpc/kvm/book3s_rtas.c in the Linux kernel through 5.13.5 on the powerpc platform allows KVM guest OS users to cause host OS memory corruption via rtas_args.nargs, aka CID-f62f3c20647e.",
-            "name": "CVE-2021-37576",
+            "description": "** DISPUTED ** In drivers/char/virtio_console.c in the Linux kernel before 5.13.4, data corruption or loss can be triggered by an untrusted device that supplies a buf->len value exceeding the buffer size. NOTE: the vendor indicates that the cited data corruption is not a vulnerability in any existing use case; the length validation was added solely for robustness in the face of anomalous host OS behavior.",
+            "name": "CVE-2021-38160",
             "scraped_data": [
                 {
                     "notes": [],
@@ -826,7 +1103,11 @@
                         "release_states": [
                             [
                                 "Upstream",
-                                "Released (5.14~rc3)"
+                                "Released (5.14~rc1)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Not vulnerable (5.13.0-16.16)"
                             ],
                             [
                                 "Ubuntu 21.04 (Hirsute Hippo)",
@@ -838,11 +1119,11 @@
                             ],
                             [
                                 "Ubuntu 18.04 LTS (Bionic Beaver)",
-                                "Released (4.15.0-159.167)"
+                                "Released (4.15.0-156.163)"
                             ],
                             [
                                 "Ubuntu 16.04 ESM (Xenial Xerus)",
-                                "Ignored (was needs-triage ESM criteria)"
+                                "Ignored (was needed ESM criteria)"
                             ],
                             [
                                 "Ubuntu 14.04 ESM (Trusty Tahr)",
@@ -857,7 +1138,7 @@
                 }
             ],
             "severity": "HIGH",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-37576"
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-38160"
         }
     ],
     "mariadb-10.5": [
@@ -897,6 +1178,10 @@
                         "release_states": [
                             [
                                 "Upstream",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
                                 "Needs triage"
                             ],
                             [
@@ -965,6 +1250,10 @@
                             [
                                 "Upstream",
                                 "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Released (3.9.5-2ubuntu1)"
                             ],
                             [
                                 "Ubuntu 21.04 (Hirsute Hippo)",
