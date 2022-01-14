@@ -19,6 +19,73 @@
                     "value": "7.5"
                 }
             ],
+            "description": "aom_dsp/grain_table.c in libaom in AOMedia before 2021-03-30 has a use-after-free.",
+            "name": "CVE-2021-30474",
+            "scraped_data": [
+                {
+                    "notes": [],
+                    "status_table": {
+                        "packages": [
+                            "aom",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Does not exist"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Ignored (out of standard support)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Does not exist"
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "severity": "HIGH",
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-30474"
+        },
+        {
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "1.0.0.errata1-3"
+                },
+                {
+                    "key": "package_name",
+                    "value": "aom"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "7.5"
+                }
+            ],
             "description": "aom_dsp/noise_model.c in libaom in AOMedia before 2021-03-24 has a buffer overflow.",
             "name": "CVE-2021-30475",
             "scraped_data": [
@@ -146,15 +213,15 @@
                 },
                 {
                     "key": "CVSS2_VECTOR",
-                    "value": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+                    "value": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
                 },
                 {
                     "key": "CVSS2_SCORE",
-                    "value": "7.5"
+                    "value": "6.8"
                 }
             ],
-            "description": "aom_dsp/grain_table.c in libaom in AOMedia before 2021-03-30 has a use-after-free.",
-            "name": "CVE-2021-30474",
+            "description": "AOM v2.0.1 was discovered to contain a global buffer overflow via the component av1/encoder/partition_search.h.",
+            "name": "CVE-2020-36133",
             "scraped_data": [
                 {
                     "notes": [],
@@ -168,23 +235,19 @@
                         "release_states": [
                             [
                                 "Upstream",
-                                "Needs triage"
+                                "Released (3.2.0-1)"
                             ],
                             [
                                 "Ubuntu 21.10 (Impish Indri)",
-                                "Needs triage"
+                                "Needed"
                             ],
                             [
                                 "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Needs triage"
+                                "Needed"
                             ],
                             [
                                 "Ubuntu 20.04 LTS (Focal Fossa)",
-                                "Needs triage"
-                            ],
-                            [
-                                "Ubuntu 18.04 LTS (Bionic Beaver)",
-                                "Does not exist"
+                                "Needed"
                             ],
                             [
                                 "Ubuntu 16.04 ESM (Xenial Xerus)",
@@ -192,14 +255,14 @@
                             ],
                             [
                                 "Ubuntu 14.04 ESM (Trusty Tahr)",
-                                "Does not exist"
+                                "Ignored (out of standard support)"
                             ]
                         ]
                     }
                 }
             ],
-            "severity": "HIGH",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-30474"
+            "severity": "MEDIUM",
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2020-36133"
         },
         {
             "attributes": [
@@ -389,69 +452,6 @@
             ],
             "severity": "MEDIUM",
             "uri": "https://security-tracker.debian.org/tracker/CVE-2020-36135"
-        },
-        {
-            "attributes": [
-                {
-                    "key": "package_version",
-                    "value": "1.0.0.errata1-3"
-                },
-                {
-                    "key": "package_name",
-                    "value": "aom"
-                },
-                {
-                    "key": "CVSS2_VECTOR",
-                    "value": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
-                },
-                {
-                    "key": "CVSS2_SCORE",
-                    "value": "6.8"
-                }
-            ],
-            "description": "AOM v2.0.1 was discovered to contain a global buffer overflow via the component av1/encoder/partition_search.h.",
-            "name": "CVE-2020-36133",
-            "scraped_data": [
-                {
-                    "notes": [],
-                    "status_table": {
-                        "packages": [
-                            "aom",
-                            "Launchpad",
-                            "Ubuntu",
-                            "Debian"
-                        ],
-                        "release_states": [
-                            [
-                                "Upstream",
-                                "Released (3.2.0-1)"
-                            ],
-                            [
-                                "Ubuntu 21.10 (Impish Indri)",
-                                "Needed"
-                            ],
-                            [
-                                "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Needed"
-                            ],
-                            [
-                                "Ubuntu 20.04 LTS (Focal Fossa)",
-                                "Needed"
-                            ],
-                            [
-                                "Ubuntu 16.04 ESM (Xenial Xerus)",
-                                "Ignored (out of standard support)"
-                            ],
-                            [
-                                "Ubuntu 14.04 ESM (Trusty Tahr)",
-                                "Ignored (out of standard support)"
-                            ]
-                        ]
-                    }
-                }
-            ],
-            "severity": "MEDIUM",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2020-36133"
         }
     ],
     "bluez": [
@@ -540,19 +540,19 @@
                 },
                 {
                     "key": "CVSS2_VECTOR",
-                    "value": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
+                    "value": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
                 },
                 {
                     "key": "CVSS2_SCORE",
-                    "value": "4.3"
+                    "value": "5"
                 }
             ],
-            "description": "libcurl keeps previously used connections in a connection pool for subsequenttransfers to reuse, if one of them matches the setup.Due to errors in the logic, the config matching function did not take 'issuercert' into account and it compared the involved paths *case insensitively*,which could lead to libcurl reusing wrong connections.File paths are, or can be, case sensitive on many systems but not all, and caneven vary depending on used file systems.The comparison also didn't include the 'issuer cert' which a transfer can setto qualify how to verify the server certificate.",
-            "name": "CVE-2021-22924",
+            "description": "A user can tell curl >= 7.20.0 and <= 7.78.0 to require a successful upgrade to TLS when speaking to an IMAP, POP3 or FTP server (`--ssl-reqd` on the command line or`CURLOPT_USE_SSL` set to `CURLUSESSL_CONTROL` or `CURLUSESSL_ALL` withlibcurl). This requirement could be bypassed if the server would return a properly crafted but perfectly legitimate response.This flaw would then make curl silently continue its operations **withoutTLS** contrary to the instructions and expectations, exposing possibly sensitive data in clear text over the network.",
+            "name": "CVE-2021-22946",
             "scraped_data": [
                 {
                     "notes": [
-                        "introduced in 7.10.4"
+                        "introduced by:\nhttps://github.com/curl/curl/commit/ec3bb8f727405 and\nhttps://github.com/curl/curl/commit/c5ba0c2f544653"
                     ],
                     "status_table": {
                         "packages": [
@@ -564,38 +564,38 @@
                         "release_states": [
                             [
                                 "Upstream",
-                                "Released (7.78.0)"
+                                "Needs triage"
                             ],
                             [
                                 "Ubuntu 21.10 (Impish Indri)",
-                                "Released (7.74.0-1.2ubuntu4)"
+                                "Released (7.74.0-1.3ubuntu2)"
                             ],
                             [
                                 "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Released (7.74.0-1ubuntu2.1)"
+                                "Released (7.74.0-1ubuntu2.3)"
                             ],
                             [
                                 "Ubuntu 20.04 LTS (Focal Fossa)",
-                                "Released (7.68.0-1ubuntu2.6)"
+                                "Released (7.68.0-1ubuntu2.7)"
                             ],
                             [
                                 "Ubuntu 18.04 LTS (Bionic Beaver)",
-                                "Released (7.58.0-2ubuntu3.14)"
+                                "Released (7.58.0-2ubuntu3.15)"
                             ],
                             [
                                 "Ubuntu 16.04 ESM (Xenial Xerus)",
-                                "Needs triage"
+                                "Released (7.47.0-1ubuntu2.19+esm1)"
                             ],
                             [
                                 "Ubuntu 14.04 ESM (Trusty Tahr)",
-                                "Needs triage"
+                                "Released (7.35.0-1ubuntu2.20+esm8)"
                             ]
                         ]
                     }
                 }
             ],
             "severity": "MEDIUM",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-22924"
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-22946"
         },
         {
             "attributes": [
@@ -678,19 +678,19 @@
                 },
                 {
                     "key": "CVSS2_VECTOR",
-                    "value": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+                    "value": "AV:N/AC:M/Au:N/C:P/I:N/A:N"
                 },
                 {
                     "key": "CVSS2_SCORE",
-                    "value": "5"
+                    "value": "4.3"
                 }
             ],
-            "description": "A user can tell curl >= 7.20.0 and <= 7.78.0 to require a successful upgrade to TLS when speaking to an IMAP, POP3 or FTP server (`--ssl-reqd` on the command line or`CURLOPT_USE_SSL` set to `CURLUSESSL_CONTROL` or `CURLUSESSL_ALL` withlibcurl). This requirement could be bypassed if the server would return a properly crafted but perfectly legitimate response.This flaw would then make curl silently continue its operations **withoutTLS** contrary to the instructions and expectations, exposing possibly sensitive data in clear text over the network.",
-            "name": "CVE-2021-22946",
+            "description": "libcurl keeps previously used connections in a connection pool for subsequenttransfers to reuse, if one of them matches the setup.Due to errors in the logic, the config matching function did not take 'issuercert' into account and it compared the involved paths *case insensitively*,which could lead to libcurl reusing wrong connections.File paths are, or can be, case sensitive on many systems but not all, and caneven vary depending on used file systems.The comparison also didn't include the 'issuer cert' which a transfer can setto qualify how to verify the server certificate.",
+            "name": "CVE-2021-22924",
             "scraped_data": [
                 {
                     "notes": [
-                        "introduced by:\nhttps://github.com/curl/curl/commit/ec3bb8f727405 and\nhttps://github.com/curl/curl/commit/c5ba0c2f544653"
+                        "introduced in 7.10.4"
                     ],
                     "status_table": {
                         "packages": [
@@ -702,38 +702,38 @@
                         "release_states": [
                             [
                                 "Upstream",
-                                "Needs triage"
+                                "Released (7.78.0)"
                             ],
                             [
                                 "Ubuntu 21.10 (Impish Indri)",
-                                "Released (7.74.0-1.3ubuntu2)"
+                                "Released (7.74.0-1.2ubuntu4)"
                             ],
                             [
                                 "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Released (7.74.0-1ubuntu2.3)"
+                                "Released (7.74.0-1ubuntu2.1)"
                             ],
                             [
                                 "Ubuntu 20.04 LTS (Focal Fossa)",
-                                "Released (7.68.0-1ubuntu2.7)"
+                                "Released (7.68.0-1ubuntu2.6)"
                             ],
                             [
                                 "Ubuntu 18.04 LTS (Bionic Beaver)",
-                                "Released (7.58.0-2ubuntu3.15)"
+                                "Released (7.58.0-2ubuntu3.14)"
                             ],
                             [
                                 "Ubuntu 16.04 ESM (Xenial Xerus)",
-                                "Released (7.47.0-1ubuntu2.19+esm1)"
+                                "Needs triage"
                             ],
                             [
                                 "Ubuntu 14.04 ESM (Trusty Tahr)",
-                                "Released (7.35.0-1ubuntu2.20+esm8)"
+                                "Needs triage"
                             ]
                         ]
                     }
                 }
             ],
             "severity": "MEDIUM",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-22946"
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-22924"
         }
     ],
     "glibc": [
@@ -899,15 +899,15 @@
                 },
                 {
                     "key": "CVSS2_VECTOR",
-                    "value": "AV:N/AC:M/Au:N/C:N/I:N/A:C"
+                    "value": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
                 },
                 {
                     "key": "CVSS2_SCORE",
-                    "value": "7.1"
+                    "value": "7.8"
                 }
             ],
-            "description": "A flaw was found in ImageMagick in coders/webp.c. An attacker who submits a crafted file that is processed by ImageMagick could trigger undefined behavior in the form of math division by zero. The highest threat from this vulnerability is to system availability.",
-            "name": "CVE-2021-20245",
+            "description": "A flaw was found in ImageMagick in versions before 7.0.11 and before 6.9.12, where a division by zero in WaveImage() of MagickCore/visual-effects.c may trigger undefined behavior via a crafted image file submitted to an application using ImageMagick. The highest threat from this vulnerability is to system availability.",
+            "name": "CVE-2021-20309",
             "scraped_data": [
                 {
                     "notes": [
@@ -939,15 +939,15 @@
                             ],
                             [
                                 "Ubuntu 18.04 LTS (Bionic Beaver)",
-                                "Not vulnerable (code not present)"
+                                "Released (8:6.9.7.4+dfsg-16ubuntu6.12)"
                             ],
                             [
                                 "Ubuntu 16.04 ESM (Xenial Xerus)",
-                                "Not vulnerable (code not present)"
+                                "Released (8:6.8.9.9-7ubuntu5.16+esm1)"
                             ],
                             [
                                 "Ubuntu 14.04 ESM (Trusty Tahr)",
-                                "Needs triage"
+                                "Released (8:6.7.7.10-6ubuntu3.13+esm1)"
                             ],
                             [
                                 "Patches:",
@@ -958,7 +958,7 @@
                 }
             ],
             "severity": "HIGH",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-20245"
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-20309"
         },
         {
             "attributes": [
@@ -1052,8 +1052,8 @@
                     "value": "7.1"
                 }
             ],
-            "description": "A flaw was found in ImageMagick in MagickCore/resample.c. An attacker who submits a crafted file that is processed by ImageMagick could trigger undefined behavior in the form of math division by zero. The highest threat from this vulnerability is to system availability.",
-            "name": "CVE-2021-20246",
+            "description": "A flaw was found in ImageMagick in coders/webp.c. An attacker who submits a crafted file that is processed by ImageMagick could trigger undefined behavior in the form of math division by zero. The highest threat from this vulnerability is to system availability.",
+            "name": "CVE-2021-20245",
             "scraped_data": [
                 {
                     "notes": [
@@ -1085,90 +1085,17 @@
                             ],
                             [
                                 "Ubuntu 18.04 LTS (Bionic Beaver)",
-                                "Released (8:6.9.7.4+dfsg-16ubuntu6.12)"
+                                "Not vulnerable (code not present)"
                             ],
                             [
                                 "Ubuntu 16.04 ESM (Xenial Xerus)",
-                                "Released (8:6.8.9.9-7ubuntu5.16+esm1)"
+                                "Not vulnerable (code not present)"
                             ],
                             [
                                 "Ubuntu 14.04 ESM (Trusty Tahr)",
-                                "Released (8:6.7.7.10-6ubuntu3.13+esm1)"
-                            ],
-                            [
-                                "Patches:",
-                                "Upstream:"
-                            ]
-                        ]
-                    }
-                }
-            ],
-            "severity": "HIGH",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-20246"
-        },
-        {
-            "attributes": [
-                {
-                    "key": "package_version",
-                    "value": "8:6.9.11.60+dfsg-1.3"
-                },
-                {
-                    "key": "package_name",
-                    "value": "imagemagick"
-                },
-                {
-                    "key": "CVSS2_VECTOR",
-                    "value": "AV:N/AC:L/Au:N/C:N/I:N/A:C"
-                },
-                {
-                    "key": "CVSS2_SCORE",
-                    "value": "7.8"
-                }
-            ],
-            "description": "A flaw was found in ImageMagick in versions before 7.0.11 and before 6.9.12, where a division by zero in WaveImage() of MagickCore/visual-effects.c may trigger undefined behavior via a crafted image file submitted to an application using ImageMagick. The highest threat from this vulnerability is to system availability.",
-            "name": "CVE-2021-20309",
-            "scraped_data": [
-                {
-                    "notes": [
-                        "imagemagick is in universe from focal onwards"
-                    ],
-                    "status_table": {
-                        "packages": [
-                            "imagemagick",
-                            "Launchpad",
-                            "Ubuntu",
-                            "Debian"
-                        ],
-                        "release_states": [
-                            [
-                                "Upstream",
                                 "Needs triage"
                             ],
                             [
-                                "Ubuntu 21.10 (Impish Indri)",
-                                "Needed"
-                            ],
-                            [
-                                "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Needed"
-                            ],
-                            [
-                                "Ubuntu 20.04 LTS (Focal Fossa)",
-                                "Needed"
-                            ],
-                            [
-                                "Ubuntu 18.04 LTS (Bionic Beaver)",
-                                "Released (8:6.9.7.4+dfsg-16ubuntu6.12)"
-                            ],
-                            [
-                                "Ubuntu 16.04 ESM (Xenial Xerus)",
-                                "Released (8:6.8.9.9-7ubuntu5.16+esm1)"
-                            ],
-                            [
-                                "Ubuntu 14.04 ESM (Trusty Tahr)",
-                                "Released (8:6.7.7.10-6ubuntu3.13+esm1)"
-                            ],
-                            [
                                 "Patches:",
                                 "Upstream:"
                             ]
@@ -1177,7 +1104,7 @@
                 }
             ],
             "severity": "HIGH",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-20309"
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-20245"
         },
         {
             "attributes": [
@@ -1251,6 +1178,79 @@
             ],
             "severity": "HIGH",
             "uri": "https://security-tracker.debian.org/tracker/CVE-2021-20312"
+        },
+        {
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "8:6.9.11.60+dfsg-1.3"
+                },
+                {
+                    "key": "package_name",
+                    "value": "imagemagick"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:M/Au:N/C:N/I:N/A:C"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "7.1"
+                }
+            ],
+            "description": "A flaw was found in ImageMagick in MagickCore/resample.c. An attacker who submits a crafted file that is processed by ImageMagick could trigger undefined behavior in the form of math division by zero. The highest threat from this vulnerability is to system availability.",
+            "name": "CVE-2021-20246",
+            "scraped_data": [
+                {
+                    "notes": [
+                        "imagemagick is in universe from focal onwards"
+                    ],
+                    "status_table": {
+                        "packages": [
+                            "imagemagick",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Released (8:6.9.7.4+dfsg-16ubuntu6.12)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Released (8:6.8.9.9-7ubuntu5.16+esm1)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Released (8:6.7.7.10-6ubuntu3.13+esm1)"
+                            ],
+                            [
+                                "Patches:",
+                                "Upstream:"
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "severity": "HIGH",
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-20246"
         },
         {
             "attributes": [
@@ -1567,8 +1567,8 @@
                     "value": "4.3"
                 }
             ],
-            "description": "libde265 v1.0.4 contains a heap buffer overflow in the mc_luma function, which can be exploited via a crafted a file.",
-            "name": "CVE-2020-21595",
+            "description": "libde265 v1.0.4 contains a heap buffer overflow in the put_weighted_pred_avg_16_fallback function, which can be exploited via a crafted a file.",
+            "name": "CVE-2020-21600",
             "scraped_data": [
                 {
                     "notes": [],
@@ -1613,7 +1613,7 @@
                 }
             ],
             "severity": "MEDIUM",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2020-21595"
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2020-21600"
         },
         {
             "attributes": [
@@ -1768,207 +1768,6 @@
                     "value": "4.3"
                 }
             ],
-            "description": "libde265 v1.0.4 contains a heap buffer overflow in the put_weighted_pred_avg_16_fallback function, which can be exploited via a crafted a file.",
-            "name": "CVE-2020-21600",
-            "scraped_data": [
-                {
-                    "notes": [],
-                    "status_table": {
-                        "packages": [
-                            "libde265",
-                            "Launchpad",
-                            "Ubuntu",
-                            "Debian"
-                        ],
-                        "release_states": [
-                            [
-                                "Upstream",
-                                "Needs triage"
-                            ],
-                            [
-                                "Ubuntu 21.10 (Impish Indri)",
-                                "Needs triage"
-                            ],
-                            [
-                                "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Needs triage"
-                            ],
-                            [
-                                "Ubuntu 20.04 LTS (Focal Fossa)",
-                                "Needs triage"
-                            ],
-                            [
-                                "Ubuntu 18.04 LTS (Bionic Beaver)",
-                                "Needs triage"
-                            ],
-                            [
-                                "Ubuntu 16.04 ESM (Xenial Xerus)",
-                                "Ignored (out of standard support)"
-                            ],
-                            [
-                                "Ubuntu 14.04 ESM (Trusty Tahr)",
-                                "Does not exist"
-                            ]
-                        ]
-                    }
-                }
-            ],
-            "severity": "MEDIUM",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2020-21600"
-        },
-        {
-            "attributes": [
-                {
-                    "key": "package_version",
-                    "value": "1.0.8-1"
-                },
-                {
-                    "key": "package_name",
-                    "value": "libde265"
-                },
-                {
-                    "key": "CVSS2_VECTOR",
-                    "value": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
-                },
-                {
-                    "key": "CVSS2_SCORE",
-                    "value": "4.3"
-                }
-            ],
-            "description": "libde265 v1.0.4 contains a heap buffer overflow in the put_qpel_0_0_fallback_16 function, which can be exploited via a crafted a file.",
-            "name": "CVE-2020-21603",
-            "scraped_data": [
-                {
-                    "notes": [],
-                    "status_table": {
-                        "packages": [
-                            "libde265",
-                            "Launchpad",
-                            "Ubuntu",
-                            "Debian"
-                        ],
-                        "release_states": [
-                            [
-                                "Upstream",
-                                "Needs triage"
-                            ],
-                            [
-                                "Ubuntu 21.10 (Impish Indri)",
-                                "Needs triage"
-                            ],
-                            [
-                                "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Needs triage"
-                            ],
-                            [
-                                "Ubuntu 20.04 LTS (Focal Fossa)",
-                                "Needs triage"
-                            ],
-                            [
-                                "Ubuntu 18.04 LTS (Bionic Beaver)",
-                                "Needs triage"
-                            ],
-                            [
-                                "Ubuntu 16.04 ESM (Xenial Xerus)",
-                                "Ignored (out of standard support)"
-                            ],
-                            [
-                                "Ubuntu 14.04 ESM (Trusty Tahr)",
-                                "Does not exist"
-                            ]
-                        ]
-                    }
-                }
-            ],
-            "severity": "MEDIUM",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2020-21603"
-        },
-        {
-            "attributes": [
-                {
-                    "key": "package_version",
-                    "value": "1.0.8-1"
-                },
-                {
-                    "key": "package_name",
-                    "value": "libde265"
-                },
-                {
-                    "key": "CVSS2_VECTOR",
-                    "value": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
-                },
-                {
-                    "key": "CVSS2_SCORE",
-                    "value": "4.3"
-                }
-            ],
-            "description": "libde265 v1.0.4 contains a heap buffer overflow fault in the put_epel_16_fallback function, which can be exploited via a crafted a file.",
-            "name": "CVE-2020-21606",
-            "scraped_data": [
-                {
-                    "notes": [],
-                    "status_table": {
-                        "packages": [
-                            "libde265",
-                            "Launchpad",
-                            "Ubuntu",
-                            "Debian"
-                        ],
-                        "release_states": [
-                            [
-                                "Upstream",
-                                "Needs triage"
-                            ],
-                            [
-                                "Ubuntu 21.10 (Impish Indri)",
-                                "Needs triage"
-                            ],
-                            [
-                                "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Needs triage"
-                            ],
-                            [
-                                "Ubuntu 20.04 LTS (Focal Fossa)",
-                                "Needs triage"
-                            ],
-                            [
-                                "Ubuntu 18.04 LTS (Bionic Beaver)",
-                                "Needs triage"
-                            ],
-                            [
-                                "Ubuntu 16.04 ESM (Xenial Xerus)",
-                                "Ignored (out of standard support)"
-                            ],
-                            [
-                                "Ubuntu 14.04 ESM (Trusty Tahr)",
-                                "Does not exist"
-                            ]
-                        ]
-                    }
-                }
-            ],
-            "severity": "MEDIUM",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2020-21606"
-        },
-        {
-            "attributes": [
-                {
-                    "key": "package_version",
-                    "value": "1.0.8-1"
-                },
-                {
-                    "key": "package_name",
-                    "value": "libde265"
-                },
-                {
-                    "key": "CVSS2_VECTOR",
-                    "value": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
-                },
-                {
-                    "key": "CVSS2_SCORE",
-                    "value": "4.3"
-                }
-            ],
             "description": "libde265 v1.0.4 contains a global buffer overflow in the decode_CABAC_bit function, which can be exploited via a crafted a file.",
             "name": "CVE-2020-21596",
             "scraped_data": [
@@ -2016,6 +1815,73 @@
             ],
             "severity": "MEDIUM",
             "uri": "https://security-tracker.debian.org/tracker/CVE-2020-21596"
+        },
+        {
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "1.0.8-1"
+                },
+                {
+                    "key": "package_name",
+                    "value": "libde265"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "6.8"
+                }
+            ],
+            "description": "libde265 v1.0.4 contains a heap buffer overflow in the ff_hevc_put_unweighted_pred_8_sse function, which can be exploited via a crafted a file.",
+            "name": "CVE-2020-21598",
+            "scraped_data": [
+                {
+                    "notes": [],
+                    "status_table": {
+                        "packages": [
+                            "libde265",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Ignored (out of standard support)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Does not exist"
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "severity": "MEDIUM",
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2020-21598"
         },
         {
             "attributes": [
@@ -2103,8 +1969,8 @@
                     "value": "4.3"
                 }
             ],
-            "description": "libde265 v1.0.4 contains a heap buffer overflow fault in the _mm_loadl_epi64 function, which can be exploited via a crafted a file.",
-            "name": "CVE-2020-21604",
+            "description": "libde265 v1.0.4 contains a heap buffer overflow in the mc_chroma function, which can be exploited via a crafted a file.",
+            "name": "CVE-2020-21597",
             "scraped_data": [
                 {
                     "notes": [],
@@ -2149,7 +2015,141 @@
                 }
             ],
             "severity": "MEDIUM",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2020-21604"
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2020-21597"
+        },
+        {
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "1.0.8-1"
+                },
+                {
+                    "key": "package_name",
+                    "value": "libde265"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "4.3"
+                }
+            ],
+            "description": "libde265 v1.0.4 contains a heap buffer overflow in the mc_luma function, which can be exploited via a crafted a file.",
+            "name": "CVE-2020-21595",
+            "scraped_data": [
+                {
+                    "notes": [],
+                    "status_table": {
+                        "packages": [
+                            "libde265",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Ignored (out of standard support)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Does not exist"
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "severity": "MEDIUM",
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2020-21595"
+        },
+        {
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "1.0.8-1"
+                },
+                {
+                    "key": "package_name",
+                    "value": "libde265"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "4.3"
+                }
+            ],
+            "description": "libde265 v1.0.4 contains a heap buffer overflow in the put_qpel_0_0_fallback_16 function, which can be exploited via a crafted a file.",
+            "name": "CVE-2020-21603",
+            "scraped_data": [
+                {
+                    "notes": [],
+                    "status_table": {
+                        "packages": [
+                            "libde265",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Ignored (out of standard support)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Does not exist"
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "severity": "MEDIUM",
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2020-21603"
         },
         {
             "attributes": [
@@ -2237,8 +2237,8 @@
                     "value": "4.3"
                 }
             ],
-            "description": "libde265 v1.0.4 contains a heap buffer overflow in the mc_chroma function, which can be exploited via a crafted a file.",
-            "name": "CVE-2020-21597",
+            "description": "libde265 v1.0.4 contains a heap buffer overflow fault in the put_epel_16_fallback function, which can be exploited via a crafted a file.",
+            "name": "CVE-2020-21606",
             "scraped_data": [
                 {
                     "notes": [],
@@ -2283,7 +2283,7 @@
                 }
             ],
             "severity": "MEDIUM",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2020-21597"
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2020-21606"
         },
         {
             "attributes": [
@@ -2364,15 +2364,15 @@
                 },
                 {
                     "key": "CVSS2_VECTOR",
-                    "value": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+                    "value": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
                 },
                 {
                     "key": "CVSS2_SCORE",
-                    "value": "6.8"
+                    "value": "4.3"
                 }
             ],
-            "description": "libde265 v1.0.4 contains a heap buffer overflow in the ff_hevc_put_unweighted_pred_8_sse function, which can be exploited via a crafted a file.",
-            "name": "CVE-2020-21598",
+            "description": "libde265 v1.0.4 contains a heap buffer overflow fault in the _mm_loadl_epi64 function, which can be exploited via a crafted a file.",
+            "name": "CVE-2020-21604",
             "scraped_data": [
                 {
                     "notes": [],
@@ -2417,83 +2417,10 @@
                 }
             ],
             "severity": "MEDIUM",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2020-21598"
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2020-21604"
         }
     ],
     "libgcrypt20": [
-        {
-            "attributes": [
-                {
-                    "key": "package_version",
-                    "value": "1.8.7-6"
-                },
-                {
-                    "key": "package_name",
-                    "value": "libgcrypt20"
-                },
-                {
-                    "key": "CVSS2_VECTOR",
-                    "value": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
-                },
-                {
-                    "key": "CVSS2_SCORE",
-                    "value": "5"
-                }
-            ],
-            "description": "Libgcrypt before 1.8.8 and 1.9.x before 1.9.3 mishandles ElGamal encryption because it lacks exponent blinding to address a side-channel attack against mpi_powm, and the window size is not chosen appropriately. This, for example, affects use of ElGamal in OpenPGP.",
-            "name": "CVE-2021-33560",
-            "scraped_data": [
-                {
-                    "notes": [
-                        "This CVE was originally for the issue that is now CVE=2021-40528\nbut somehow got switched to the exponent blinding issue instead.\nThe fix to add exponent blinding appears to only have been added\nto 1.9.x but never backported to 1.8.x, contrary to the CVE\ndescription\nThe commit below was never backported to 1.8.x because the\nupstream developers consider this hardening and not a security\nissue."
-                    ],
-                    "status_table": {
-                        "packages": [
-                            "libgcrypt20",
-                            "Launchpad",
-                            "Ubuntu",
-                            "Debian"
-                        ],
-                        "release_states": [
-                            [
-                                "Upstream",
-                                "Released (1.8.7-6)"
-                            ],
-                            [
-                                "Ubuntu 21.10 (Impish Indri)",
-                                "Released (1.8.7-5ubuntu2)"
-                            ],
-                            [
-                                "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Released (1.8.7-2ubuntu2.1)"
-                            ],
-                            [
-                                "Ubuntu 20.04 LTS (Focal Fossa)",
-                                "Released (1.8.5-5ubuntu1.1)"
-                            ],
-                            [
-                                "Ubuntu 18.04 LTS (Bionic Beaver)",
-                                "Released (1.8.1-4ubuntu1.3)"
-                            ],
-                            [
-                                "Ubuntu 16.04 ESM (Xenial Xerus)",
-                                "Released (1.6.5-2ubuntu0.6+esm1)"
-                            ],
-                            [
-                                "Ubuntu 14.04 ESM (Trusty Tahr)",
-                                "Does not exist"
-                            ],
-                            [
-                                "Patches:",
-                                "Upstream:"
-                            ]
-                        ]
-                    }
-                }
-            ],
-            "severity": "MEDIUM",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-33560"
-        },
         {
             "attributes": [
                 {
@@ -2566,6 +2493,79 @@
             ],
             "severity": "MEDIUM",
             "uri": "https://security-tracker.debian.org/tracker/CVE-2019-12904"
+        },
+        {
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "1.8.7-6"
+                },
+                {
+                    "key": "package_name",
+                    "value": "libgcrypt20"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "5"
+                }
+            ],
+            "description": "Libgcrypt before 1.8.8 and 1.9.x before 1.9.3 mishandles ElGamal encryption because it lacks exponent blinding to address a side-channel attack against mpi_powm, and the window size is not chosen appropriately. This, for example, affects use of ElGamal in OpenPGP.",
+            "name": "CVE-2021-33560",
+            "scraped_data": [
+                {
+                    "notes": [
+                        "This CVE was originally for the issue that is now CVE=2021-40528\nbut somehow got switched to the exponent blinding issue instead.\nThe fix to add exponent blinding appears to only have been added\nto 1.9.x but never backported to 1.8.x, contrary to the CVE\ndescription\nThe commit below was never backported to 1.8.x because the\nupstream developers consider this hardening and not a security\nissue."
+                    ],
+                    "status_table": {
+                        "packages": [
+                            "libgcrypt20",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (1.8.7-6)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Released (1.8.7-5ubuntu2)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Released (1.8.7-2ubuntu2.1)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Released (1.8.5-5ubuntu1.1)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Released (1.8.1-4ubuntu1.3)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Released (1.6.5-2ubuntu0.6+esm1)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Does not exist"
+                            ],
+                            [
+                                "Patches:",
+                                "Upstream:"
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "severity": "MEDIUM",
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-33560"
         }
     ],
     "libheif": [
@@ -2650,35 +2650,6 @@
                 },
                 {
                     "key": "CVSS2_VECTOR",
-                    "value": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
-                },
-                {
-                    "key": "CVSS2_SCORE",
-                    "value": "6.8"
-                }
-            ],
-            "description": "Multiple integer overflows in libgd in PHP before 5.2.4 allow remote attackers to cause a denial of service (application crash) and possibly execute arbitrary code via a large (1) srcW or (2) srcH value to the (a) gdImageCopyResized function, or a large (3) sy (height) or (4) sx (width) value to the (b) gdImageCreate or the (c) gdImageCreateTrueColor function.",
-            "name": "CVE-2007-3996",
-            "scraped_data": [
-                {
-                    "_comment": "Could Not be Processed. Webpage for this might not be in the required format."
-                }
-            ],
-            "severity": "MEDIUM",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2007-3996"
-        },
-        {
-            "attributes": [
-                {
-                    "key": "package_version",
-                    "value": "0.2.8.4-17"
-                },
-                {
-                    "key": "package_name",
-                    "value": "libwmf"
-                },
-                {
-                    "key": "CVSS2_VECTOR",
                     "value": "AV:N/AC:M/Au:N/C:C/I:C/A:C"
                 },
                 {
@@ -2695,6 +2666,35 @@
             ],
             "severity": "MEDIUM",
             "uri": "https://security-tracker.debian.org/tracker/CVE-2009-3546"
+        },
+        {
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "0.2.8.4-17"
+                },
+                {
+                    "key": "package_name",
+                    "value": "libwmf"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "6.8"
+                }
+            ],
+            "description": "Multiple integer overflows in libgd in PHP before 5.2.4 allow remote attackers to cause a denial of service (application crash) and possibly execute arbitrary code via a large (1) srcW or (2) srcH value to the (a) gdImageCopyResized function, or a large (3) sy (height) or (4) sx (width) value to the (b) gdImageCreate or the (c) gdImageCreateTrueColor function.",
+            "name": "CVE-2007-3996",
+            "scraped_data": [
+                {
+                    "_comment": "Could Not be Processed. Webpage for this might not be in the required format."
+                }
+            ],
+            "severity": "MEDIUM",
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2007-3996"
         }
     ],
     "linux": [
@@ -2766,150 +2766,6 @@
             ],
             "severity": "CRITICAL",
             "uri": "https://security-tracker.debian.org/tracker/CVE-2019-19814"
-        },
-        {
-            "attributes": [
-                {
-                    "key": "package_version",
-                    "value": "5.10.46-4"
-                },
-                {
-                    "key": "package_name",
-                    "value": "linux"
-                },
-                {
-                    "key": "CVSS2_VECTOR",
-                    "value": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
-                },
-                {
-                    "key": "CVSS2_SCORE",
-                    "value": "7.2"
-                }
-            ],
-            "description": "arch/mips/net/bpf_jit.c in the Linux kernel before 5.4.10 can generate undesirable machine code when transforming unprivileged cBPF programs, allowing execution of arbitrary code within the kernel context. This occurs because conditional branches can exceed the 128 KB limit of the MIPS architecture.",
-            "name": "CVE-2021-38300",
-            "scraped_data": [
-                {
-                    "notes": [
-                        "MIPS only\nbreak entry may be newer than c6610de353da5ca6, introduction\nof ebpf jit for MIPS."
-                    ],
-                    "status_table": {
-                        "packages": [
-                            "linux",
-                            "Launchpad",
-                            "Ubuntu",
-                            "Debian"
-                        ],
-                        "release_states": [
-                            [
-                                "Upstream",
-                                "Released (5.15~rc4)"
-                            ],
-                            [
-                                "Ubuntu 21.10 (Impish Indri)",
-                                "Not vulnerable (MIPS arch only)"
-                            ],
-                            [
-                                "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Not vulnerable (MIPS arch only)"
-                            ],
-                            [
-                                "Ubuntu 20.04 LTS (Focal Fossa)",
-                                "Not vulnerable (MIPS arch only)"
-                            ],
-                            [
-                                "Ubuntu 18.04 LTS (Bionic Beaver)",
-                                "Not vulnerable (MIPS arch only)"
-                            ],
-                            [
-                                "Ubuntu 16.04 ESM (Xenial Xerus)",
-                                "Not vulnerable (MIPS arch only)"
-                            ],
-                            [
-                                "Ubuntu 14.04 ESM (Trusty Tahr)",
-                                "Not vulnerable (3.11.0-12.19)"
-                            ],
-                            [
-                                "Patches:",
-                                "Introduced by Fixed by"
-                            ]
-                        ]
-                    }
-                }
-            ],
-            "severity": "HIGH",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-38300"
-        },
-        {
-            "attributes": [
-                {
-                    "key": "package_version",
-                    "value": "5.10.46-4"
-                },
-                {
-                    "key": "package_name",
-                    "value": "linux"
-                },
-                {
-                    "key": "CVSS2_VECTOR",
-                    "value": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
-                },
-                {
-                    "key": "CVSS2_SCORE",
-                    "value": "7.2"
-                }
-            ],
-            "description": "** DISPUTED ** In drivers/char/virtio_console.c in the Linux kernel before 5.13.4, data corruption or loss can be triggered by an untrusted device that supplies a buf->len value exceeding the buffer size. NOTE: the vendor indicates that the cited data corruption is not a vulnerability in any existing use case; the length validation was added solely for robustness in the face of anomalous host OS behavior.",
-            "name": "CVE-2021-38160",
-            "scraped_data": [
-                {
-                    "notes": [],
-                    "status_table": {
-                        "packages": [
-                            "linux",
-                            "Launchpad",
-                            "Ubuntu",
-                            "Debian"
-                        ],
-                        "release_states": [
-                            [
-                                "Upstream",
-                                "Released (5.14~rc1)"
-                            ],
-                            [
-                                "Ubuntu 21.10 (Impish Indri)",
-                                "Not vulnerable (5.13.0-16.16)"
-                            ],
-                            [
-                                "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Released (5.11.0-37.41)"
-                            ],
-                            [
-                                "Ubuntu 20.04 LTS (Focal Fossa)",
-                                "Released (5.4.0-88.99)"
-                            ],
-                            [
-                                "Ubuntu 18.04 LTS (Bionic Beaver)",
-                                "Released (4.15.0-156.163)"
-                            ],
-                            [
-                                "Ubuntu 16.04 ESM (Xenial Xerus)",
-                                "Ignored (was needed ESM criteria)"
-                            ],
-                            [
-                                "Ubuntu 14.04 ESM (Trusty Tahr)",
-                                "Ignored (was needed ESM criteria)"
-                            ],
-                            [
-                                "Patches:",
-                                "Introduced by Fixed by"
-                            ]
-                        ]
-                    }
-                }
-            ],
-            "severity": "HIGH",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-38160"
         },
         {
             "attributes": [
@@ -3063,6 +2919,148 @@
                 },
                 {
                     "key": "CVSS2_VECTOR",
+                    "value": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "6.9"
+                }
+            ],
+            "description": "In unix_scm_to_skb of af_unix.c, there is a possible use after free bug due to a race condition. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-196926917References: Upstream kernel",
+            "name": "CVE-2021-0920",
+            "scraped_data": [
+                {
+                    "notes": [],
+                    "status_table": {
+                        "packages": [
+                            "linux",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (5.14~rc4)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Not vulnerable (5.13.0-16.16)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Released (5.11.0-37.41)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Released (5.4.0-88.99)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Released (4.15.0-159.167)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Ignored (was needed ESM criteria)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Ignored (was needed ESM criteria)"
+                            ],
+                            [
+                                "Patches:",
+                                "Introduced by Fixed by"
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "severity": "HIGH",
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-0920"
+        },
+        {
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "5.10.46-4"
+                },
+                {
+                    "key": "package_name",
+                    "value": "linux"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "7.2"
+                }
+            ],
+            "description": "** DISPUTED ** In drivers/char/virtio_console.c in the Linux kernel before 5.13.4, data corruption or loss can be triggered by an untrusted device that supplies a buf->len value exceeding the buffer size. NOTE: the vendor indicates that the cited data corruption is not a vulnerability in any existing use case; the length validation was added solely for robustness in the face of anomalous host OS behavior.",
+            "name": "CVE-2021-38160",
+            "scraped_data": [
+                {
+                    "notes": [],
+                    "status_table": {
+                        "packages": [
+                            "linux",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (5.14~rc1)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Not vulnerable (5.13.0-16.16)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Released (5.11.0-37.41)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Released (5.4.0-88.99)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Released (4.15.0-156.163)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Ignored (was needed ESM criteria)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Ignored (was needed ESM criteria)"
+                            ],
+                            [
+                                "Patches:",
+                                "Introduced by Fixed by"
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "severity": "HIGH",
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-38160"
+        },
+        {
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "5.10.46-4"
+                },
+                {
+                    "key": "package_name",
+                    "value": "linux"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
                     "value": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
                 },
                 {
@@ -3134,18 +3132,20 @@
                 },
                 {
                     "key": "CVSS2_VECTOR",
-                    "value": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
+                    "value": "AV:L/AC:L/Au:N/C:C/I:C/A:C"
                 },
                 {
                     "key": "CVSS2_SCORE",
-                    "value": "6.9"
+                    "value": "7.2"
                 }
             ],
-            "description": "In unix_scm_to_skb of af_unix.c, there is a possible use after free bug due to a race condition. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-196926917References: Upstream kernel",
-            "name": "CVE-2021-0920",
+            "description": "arch/mips/net/bpf_jit.c in the Linux kernel before 5.4.10 can generate undesirable machine code when transforming unprivileged cBPF programs, allowing execution of arbitrary code within the kernel context. This occurs because conditional branches can exceed the 128 KB limit of the MIPS architecture.",
+            "name": "CVE-2021-38300",
             "scraped_data": [
                 {
-                    "notes": [],
+                    "notes": [
+                        "MIPS only\nbreak entry may be newer than c6610de353da5ca6, introduction\nof ebpf jit for MIPS."
+                    ],
                     "status_table": {
                         "packages": [
                             "linux",
@@ -3156,31 +3156,31 @@
                         "release_states": [
                             [
                                 "Upstream",
-                                "Released (5.14~rc4)"
+                                "Released (5.15~rc4)"
                             ],
                             [
                                 "Ubuntu 21.10 (Impish Indri)",
-                                "Not vulnerable (5.13.0-16.16)"
+                                "Not vulnerable (MIPS arch only)"
                             ],
                             [
                                 "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Released (5.11.0-37.41)"
+                                "Not vulnerable (MIPS arch only)"
                             ],
                             [
                                 "Ubuntu 20.04 LTS (Focal Fossa)",
-                                "Released (5.4.0-88.99)"
+                                "Not vulnerable (MIPS arch only)"
                             ],
                             [
                                 "Ubuntu 18.04 LTS (Bionic Beaver)",
-                                "Released (4.15.0-159.167)"
+                                "Not vulnerable (MIPS arch only)"
                             ],
                             [
                                 "Ubuntu 16.04 ESM (Xenial Xerus)",
-                                "Ignored (was needed ESM criteria)"
+                                "Not vulnerable (MIPS arch only)"
                             ],
                             [
                                 "Ubuntu 14.04 ESM (Trusty Tahr)",
-                                "Ignored (was needed ESM criteria)"
+                                "Not vulnerable (3.11.0-12.19)"
                             ],
                             [
                                 "Patches:",
@@ -3191,7 +3191,7 @@
                 }
             ],
             "severity": "HIGH",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-0920"
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-38300"
         },
         {
             "attributes": [
@@ -3272,20 +3272,18 @@
                 },
                 {
                     "key": "CVSS2_VECTOR",
-                    "value": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+                    "value": "AV:L/AC:M/Au:N/C:P/I:P/A:P"
                 },
                 {
                     "key": "CVSS2_SCORE",
-                    "value": "4.6"
+                    "value": "4.4"
                 }
             ],
-            "description": "The firewire subsystem in the Linux kernel through 5.14.13 has a buffer overflow related to drivers/media/firewire/firedtv-avc.c and drivers/media/firewire/firedtv-ci.c, because avc_ca_pmt mishandles bounds checking.",
-            "name": "CVE-2021-42739",
+            "description": "A race condition was discovered in ext4_write_inline_data_end in fs/ext4/inline.c in the ext4 subsystem in the Linux kernel through 5.13.13.",
+            "name": "CVE-2021-40490",
             "scraped_data": [
                 {
-                    "notes": [
-                        "CVE-2021-3542 was marked as a duplicate of this CVE, see\nhttps://bugzilla.suse.com/show_bug.cgi?id=1184673#c17"
-                    ],
+                    "notes": [],
                     "status_table": {
                         "packages": [
                             "linux",
@@ -3296,23 +3294,23 @@
                         "release_states": [
                             [
                                 "Upstream",
-                                "Released (5.16~rc1)"
+                                "Released (5.15~rc1)"
                             ],
                             [
                                 "Ubuntu 21.10 (Impish Indri)",
-                                "Pending"
+                                "Not vulnerable (5.13.0-19.19)"
                             ],
                             [
                                 "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Pending"
+                                "Released (5.11.0-38.42)"
                             ],
                             [
                                 "Ubuntu 20.04 LTS (Focal Fossa)",
-                                "Pending"
+                                "Released (5.4.0-89.100)"
                             ],
                             [
                                 "Ubuntu 18.04 LTS (Bionic Beaver)",
-                                "Pending"
+                                "Released (4.15.0-161.169)"
                             ],
                             [
                                 "Ubuntu 16.04 ESM (Xenial Xerus)",
@@ -3324,14 +3322,85 @@
                             ],
                             [
                                 "Patches:",
-                                "Introduced by Fixed by Introduced by Fixed by Introduced by Fixed by"
+                                "Introduced by Fixed by"
                             ]
                         ]
                     }
                 }
             ],
             "severity": "MEDIUM",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-42739"
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-40490"
+        },
+        {
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "5.10.46-4"
+                },
+                {
+                    "key": "package_name",
+                    "value": "linux"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "4.6"
+                }
+            ],
+            "description": "In the Linux kernel through 5.15.2, hw_atl_utils_fw_rpc_wait in drivers/net/ethernet/aquantia/atlantic/hw_atl/hw_atl_utils.c allows an attacker (who can introduce a crafted device) to trigger an out-of-bounds write via a crafted length value.",
+            "name": "CVE-2021-43975",
+            "scraped_data": [
+                {
+                    "notes": [],
+                    "status_table": {
+                        "packages": [
+                            "linux",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (5.16~rc2)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Ignored (was needed ESM criteria)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Ignored (was needed ESM criteria)"
+                            ],
+                            [
+                                "Patches:",
+                                "Introduced by Fixed by"
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "severity": "MEDIUM",
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-43975"
         },
         {
             "attributes": [
@@ -3352,8 +3421,8 @@
                     "value": "4.8"
                 }
             ],
-            "description": "Bluetooth legacy BR/EDR PIN code pairing in Bluetooth Core Specification 1.0B through 5.2 may permit an unauthenticated nearby device to spoof the BD_ADDR of the peer device to complete pairing without knowledge of the PIN.",
-            "name": "CVE-2020-26555",
+            "description": "Bluetooth Mesh Provisioning in the Bluetooth Mesh profile 1.0 and 1.0.1 may permit a nearby device, reflecting the authentication evidence from a Provisioner, to complete authentication without possessing the AuthValue, and potentially acquire a NetKey and AppKey.",
+            "name": "CVE-2020-26560",
             "scraped_data": [
                 {
                     "notes": [],
@@ -3398,7 +3467,7 @@
                 }
             ],
             "severity": "MEDIUM",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2020-26555"
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2020-26560"
         },
         {
             "attributes": [
@@ -3412,19 +3481,19 @@
                 },
                 {
                     "key": "CVSS2_VECTOR",
-                    "value": "AV:L/AC:M/Au:N/C:N/I:N/A:C"
+                    "value": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
                 },
                 {
                     "key": "CVSS2_SCORE",
-                    "value": "4.7"
+                    "value": "6.8"
                 }
             ],
-            "description": "An issue was discovered in the Linux kernel 4.18 through 5.6.11 when unprivileged user namespaces are allowed. A user can create their own PID namespace, and mount a FUSE filesystem. Upon interaction with this FUSE filesystem, if the userspace component is terminated via a kill of the PID namespace's pid 1, it will result in a hung task, and resources being permanently locked up until system reboot. This can result in resource exhaustion.",
-            "name": "CVE-2019-20794",
+            "description": "In the Linux kernel 5.0.21, mounting a crafted f2fs filesystem image can lead to slab-out-of-bounds read access in f2fs_build_segment_manager in fs/f2fs/segment.c, related to init_min_max_mtime in fs/f2fs/segment.c (because the second argument to get_seg_entry is not validated).",
+            "name": "CVE-2019-19449",
             "scraped_data": [
                 {
                     "notes": [
-                        "Patch not available, unclear if >=5.6.12 has the fix or if the range\nis wrong. All distros consider this minor."
+                        "Exploiting this vulnerability requires a crafted filesystem image to\nbe mounted"
                     ],
                     "status_table": {
                         "packages": [
@@ -3436,23 +3505,23 @@
                         "release_states": [
                             [
                                 "Upstream",
-                                "Needs triage"
+                                "Released (5.10~rc1)"
                             ],
                             [
                                 "Ubuntu 21.10 (Impish Indri)",
-                                "Needs triage"
+                                "Not vulnerable (5.11.0-16.17)"
                             ],
                             [
                                 "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Needs triage"
+                                "Not vulnerable (5.10.0-14.15)"
                             ],
                             [
                                 "Ubuntu 20.04 LTS (Focal Fossa)",
-                                "Needs triage"
+                                "Released (5.4.0-90.101)"
                             ],
                             [
                                 "Ubuntu 18.04 LTS (Bionic Beaver)",
-                                "Needs triage"
+                                "Released (4.15.0-162.170)"
                             ],
                             [
                                 "Ubuntu 16.04 ESM (Xenial Xerus)",
@@ -3460,76 +3529,7 @@
                             ],
                             [
                                 "Ubuntu 14.04 ESM (Trusty Tahr)",
-                                "Ignored (was needs-triage ESM criteria)"
-                            ]
-                        ]
-                    }
-                }
-            ],
-            "severity": "MEDIUM",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2019-20794"
-        },
-        {
-            "attributes": [
-                {
-                    "key": "package_version",
-                    "value": "5.10.46-4"
-                },
-                {
-                    "key": "package_name",
-                    "value": "linux"
-                },
-                {
-                    "key": "CVSS2_VECTOR",
-                    "value": "AV:L/AC:L/Au:N/C:P/I:P/A:C"
-                },
-                {
-                    "key": "CVSS2_SCORE",
-                    "value": "6.1"
-                }
-            ],
-            "description": "A flaw was found in the KVM's AMD code for supporting SVM nested virtualization. The flaw occurs when processing the VMCB (virtual machine control block) provided by the L1 guest to spawn/handle a nested guest (L2). Due to improper validation of the \"int_ctl\" field, this issue could allow a malicious L1 to enable AVIC support (Advanced Virtual Interrupt Controller) for the L2 guest. As a result, the L2 guest would be allowed to read/write physical pages of the host, resulting in a crash of the entire system, leak of sensitive data or potential guest-to-host escape. This flaw affects Linux kernel versions prior to 5.14-rc7.",
-            "name": "CVE-2021-3653",
-            "scraped_data": [
-                {
-                    "notes": [
-                        "trusty libvirt/qemu does not create nested capable VMs by default"
-                    ],
-                    "status_table": {
-                        "packages": [
-                            "linux",
-                            "Launchpad",
-                            "Ubuntu",
-                            "Debian"
-                        ],
-                        "release_states": [
-                            [
-                                "Upstream",
-                                "Released (5.14~rc7)"
-                            ],
-                            [
-                                "Ubuntu 21.10 (Impish Indri)",
-                                "Not vulnerable (5.13.0-16.16)"
-                            ],
-                            [
-                                "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Released (5.11.0-34.36)"
-                            ],
-                            [
-                                "Ubuntu 20.04 LTS (Focal Fossa)",
-                                "Released (5.4.0-84.94)"
-                            ],
-                            [
-                                "Ubuntu 18.04 LTS (Bionic Beaver)",
-                                "Released (4.15.0-156.163)"
-                            ],
-                            [
-                                "Ubuntu 16.04 ESM (Xenial Xerus)",
-                                "Released (4.4.0-214.246)"
-                            ],
-                            [
-                                "Ubuntu 14.04 ESM (Trusty Tahr)",
-                                "Ignored (ESM criteria, not a high on 3.13)"
+                                "Ignored (was needed ESM criteria)"
                             ],
                             [
                                 "Patches:",
@@ -3540,7 +3540,7 @@
                 }
             ],
             "severity": "MEDIUM",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-3653"
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2019-19449"
         },
         {
             "attributes": [
@@ -3698,6 +3698,75 @@
                 },
                 {
                     "key": "CVSS2_VECTOR",
+                    "value": "AV:L/AC:M/Au:N/C:N/I:N/A:C"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "4.7"
+                }
+            ],
+            "description": "An issue was discovered in the Linux kernel 4.18 through 5.6.11 when unprivileged user namespaces are allowed. A user can create their own PID namespace, and mount a FUSE filesystem. Upon interaction with this FUSE filesystem, if the userspace component is terminated via a kill of the PID namespace's pid 1, it will result in a hung task, and resources being permanently locked up until system reboot. This can result in resource exhaustion.",
+            "name": "CVE-2019-20794",
+            "scraped_data": [
+                {
+                    "notes": [
+                        "Patch not available, unclear if >=5.6.12 has the fix or if the range\nis wrong. All distros consider this minor."
+                    ],
+                    "status_table": {
+                        "packages": [
+                            "linux",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Ignored (was needs-triage now end-of-life)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Ignored (was needs-triage ESM criteria)"
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "severity": "MEDIUM",
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2019-20794"
+        },
+        {
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "5.10.46-4"
+                },
+                {
+                    "key": "package_name",
+                    "value": "linux"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
                     "value": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
                 },
                 {
@@ -3772,213 +3841,6 @@
                     "value": "4.6"
                 }
             ],
-            "description": "In the Linux kernel through 5.15.2, hw_atl_utils_fw_rpc_wait in drivers/net/ethernet/aquantia/atlantic/hw_atl/hw_atl_utils.c allows an attacker (who can introduce a crafted device) to trigger an out-of-bounds write via a crafted length value.",
-            "name": "CVE-2021-43975",
-            "scraped_data": [
-                {
-                    "notes": [],
-                    "status_table": {
-                        "packages": [
-                            "linux",
-                            "Launchpad",
-                            "Ubuntu",
-                            "Debian"
-                        ],
-                        "release_states": [
-                            [
-                                "Upstream",
-                                "Released (5.16~rc2)"
-                            ],
-                            [
-                                "Ubuntu 21.10 (Impish Indri)",
-                                "Needed"
-                            ],
-                            [
-                                "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Needed"
-                            ],
-                            [
-                                "Ubuntu 20.04 LTS (Focal Fossa)",
-                                "Needed"
-                            ],
-                            [
-                                "Ubuntu 18.04 LTS (Bionic Beaver)",
-                                "Needed"
-                            ],
-                            [
-                                "Ubuntu 16.04 ESM (Xenial Xerus)",
-                                "Ignored (was needed ESM criteria)"
-                            ],
-                            [
-                                "Ubuntu 14.04 ESM (Trusty Tahr)",
-                                "Ignored (was needed ESM criteria)"
-                            ],
-                            [
-                                "Patches:",
-                                "Introduced by Fixed by"
-                            ]
-                        ]
-                    }
-                }
-            ],
-            "severity": "MEDIUM",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-43975"
-        },
-        {
-            "attributes": [
-                {
-                    "key": "package_version",
-                    "value": "5.10.46-4"
-                },
-                {
-                    "key": "package_name",
-                    "value": "linux"
-                },
-                {
-                    "key": "CVSS2_VECTOR",
-                    "value": "AV:L/AC:M/Au:N/C:P/I:P/A:P"
-                },
-                {
-                    "key": "CVSS2_SCORE",
-                    "value": "4.4"
-                }
-            ],
-            "description": "A race condition was discovered in ext4_write_inline_data_end in fs/ext4/inline.c in the ext4 subsystem in the Linux kernel through 5.13.13.",
-            "name": "CVE-2021-40490",
-            "scraped_data": [
-                {
-                    "notes": [],
-                    "status_table": {
-                        "packages": [
-                            "linux",
-                            "Launchpad",
-                            "Ubuntu",
-                            "Debian"
-                        ],
-                        "release_states": [
-                            [
-                                "Upstream",
-                                "Released (5.15~rc1)"
-                            ],
-                            [
-                                "Ubuntu 21.10 (Impish Indri)",
-                                "Not vulnerable (5.13.0-19.19)"
-                            ],
-                            [
-                                "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Released (5.11.0-38.42)"
-                            ],
-                            [
-                                "Ubuntu 20.04 LTS (Focal Fossa)",
-                                "Released (5.4.0-89.100)"
-                            ],
-                            [
-                                "Ubuntu 18.04 LTS (Bionic Beaver)",
-                                "Released (4.15.0-161.169)"
-                            ],
-                            [
-                                "Ubuntu 16.04 ESM (Xenial Xerus)",
-                                "Ignored (was needed ESM criteria)"
-                            ],
-                            [
-                                "Ubuntu 14.04 ESM (Trusty Tahr)",
-                                "Ignored (was needed ESM criteria)"
-                            ],
-                            [
-                                "Patches:",
-                                "Introduced by Fixed by"
-                            ]
-                        ]
-                    }
-                }
-            ],
-            "severity": "MEDIUM",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-40490"
-        },
-        {
-            "attributes": [
-                {
-                    "key": "package_version",
-                    "value": "5.10.46-4"
-                },
-                {
-                    "key": "package_name",
-                    "value": "linux"
-                },
-                {
-                    "key": "CVSS2_VECTOR",
-                    "value": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
-                },
-                {
-                    "key": "CVSS2_SCORE",
-                    "value": "4.6"
-                }
-            ],
-            "description": "Use-after-free vulnerability in the Linux kernel exploitable by a local attacker due to reuse of a DCCP socket with an attached dccps_hc_tx_ccid object as a listener after being released. Fixed in Ubuntu Linux kernel 5.4.0-51.56, 5.3.0-68.63, 4.15.0-121.123, 4.4.0-193.224, 3.13.0.182.191 and 3.2.0-149.196.",
-            "name": "CVE-2020-16119",
-            "scraped_data": [
-                {
-                    "notes": [
-                        "patch applied to the ubuntu-kernels was NACKed by upstream.\nThe subsequent revision submitted upstream still needs rework and has\nnot been accepted as of 2021-01-13."
-                    ],
-                    "status_table": {
-                        "packages": [
-                            "linux",
-                            "Launchpad",
-                            "Ubuntu",
-                            "Debian"
-                        ],
-                        "release_states": [
-                            [
-                                "Upstream",
-                                "Needs triage"
-                            ],
-                            [
-                                "Ubuntu 20.04 LTS (Focal Fossa)",
-                                "Released (5.4.0-51.56)"
-                            ],
-                            [
-                                "Ubuntu 18.04 LTS (Bionic Beaver)",
-                                "Released (4.15.0-121.123)"
-                            ],
-                            [
-                                "Ubuntu 16.04 ESM (Xenial Xerus)",
-                                "Released (4.4.0-193.224)"
-                            ],
-                            [
-                                "Ubuntu 14.04 ESM (Trusty Tahr)",
-                                "Released (3.13.0-182.233)"
-                            ],
-                            [
-                                "Patches:",
-                                "Introduced by Fixed by"
-                            ]
-                        ]
-                    }
-                }
-            ],
-            "severity": "MEDIUM",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2020-16119"
-        },
-        {
-            "attributes": [
-                {
-                    "key": "package_version",
-                    "value": "5.10.46-4"
-                },
-                {
-                    "key": "package_name",
-                    "value": "linux"
-                },
-                {
-                    "key": "CVSS2_VECTOR",
-                    "value": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
-                },
-                {
-                    "key": "CVSS2_SCORE",
-                    "value": "4.6"
-                }
-            ],
             "description": "Integer overflow in the firmware for some Intel(R) Graphics Drivers for Windows * before version 26.20.100.7212 and before Linux kernel version 5.5 may allow a privileged user to potentially enable an escalation of privilege via local access.",
             "name": "CVE-2020-12362",
             "scraped_data": [
@@ -4028,6 +3890,223 @@
             ],
             "severity": "MEDIUM",
             "uri": "https://security-tracker.debian.org/tracker/CVE-2020-12362"
+        },
+        {
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "5.10.46-4"
+                },
+                {
+                    "key": "package_name",
+                    "value": "linux"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:L/AC:L/Au:N/C:P/I:P/A:C"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "6.1"
+                }
+            ],
+            "description": "A flaw was found in the KVM's AMD code for supporting SVM nested virtualization. The flaw occurs when processing the VMCB (virtual machine control block) provided by the L1 guest to spawn/handle a nested guest (L2). Due to improper validation of the \"int_ctl\" field, this issue could allow a malicious L1 to enable AVIC support (Advanced Virtual Interrupt Controller) for the L2 guest. As a result, the L2 guest would be allowed to read/write physical pages of the host, resulting in a crash of the entire system, leak of sensitive data or potential guest-to-host escape. This flaw affects Linux kernel versions prior to 5.14-rc7.",
+            "name": "CVE-2021-3653",
+            "scraped_data": [
+                {
+                    "notes": [
+                        "trusty libvirt/qemu does not create nested capable VMs by default"
+                    ],
+                    "status_table": {
+                        "packages": [
+                            "linux",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (5.14~rc7)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Not vulnerable (5.13.0-16.16)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Released (5.11.0-34.36)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Released (5.4.0-84.94)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Released (4.15.0-156.163)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Released (4.4.0-214.246)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Ignored (ESM criteria, not a high on 3.13)"
+                            ],
+                            [
+                                "Patches:",
+                                "Introduced by Fixed by"
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "severity": "MEDIUM",
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-3653"
+        },
+        {
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "5.10.46-4"
+                },
+                {
+                    "key": "package_name",
+                    "value": "linux"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "4.6"
+                }
+            ],
+            "description": "The firewire subsystem in the Linux kernel through 5.14.13 has a buffer overflow related to drivers/media/firewire/firedtv-avc.c and drivers/media/firewire/firedtv-ci.c, because avc_ca_pmt mishandles bounds checking.",
+            "name": "CVE-2021-42739",
+            "scraped_data": [
+                {
+                    "notes": [
+                        "CVE-2021-3542 was marked as a duplicate of this CVE, see\nhttps://bugzilla.suse.com/show_bug.cgi?id=1184673#c17"
+                    ],
+                    "status_table": {
+                        "packages": [
+                            "linux",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (5.16~rc1)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Pending"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Pending"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Pending"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Pending"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Ignored (was needed ESM criteria)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Ignored (was needed ESM criteria)"
+                            ],
+                            [
+                                "Patches:",
+                                "Introduced by Fixed by Introduced by Fixed by Introduced by Fixed by"
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "severity": "MEDIUM",
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-42739"
+        },
+        {
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "5.10.46-4"
+                },
+                {
+                    "key": "package_name",
+                    "value": "linux"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "4.6"
+                }
+            ],
+            "description": "prealloc_elems_and_freelist in kernel/bpf/stackmap.c in the Linux kernel through 5.14.9 allows unprivileged users to trigger an eBPF multiplication integer overflow with a resultant out-of-bounds write.",
+            "name": "CVE-2021-41864",
+            "scraped_data": [
+                {
+                    "notes": [],
+                    "status_table": {
+                        "packages": [
+                            "linux",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (5.15~rc5)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Released (5.13.0-23.23)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Released (5.11.0-44.48)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Released (5.4.0-92.103)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Released (4.15.0-166.174)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Not vulnerable (4.4.0-2.16)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Not vulnerable (3.11.0-12.19)"
+                            ],
+                            [
+                                "Patches:",
+                                "Introduced by Fixed by"
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "severity": "MEDIUM",
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-41864"
         },
         {
             "attributes": [
@@ -4119,8 +4198,8 @@
                     "value": "4.8"
                 }
             ],
-            "description": "Bluetooth Mesh Provisioning in the Bluetooth Mesh profile 1.0 and 1.0.1 may permit a nearby device, reflecting the authentication evidence from a Provisioner, to complete authentication without possessing the AuthValue, and potentially acquire a NetKey and AppKey.",
-            "name": "CVE-2020-26560",
+            "description": "Bluetooth legacy BR/EDR PIN code pairing in Bluetooth Core Specification 1.0B through 5.2 may permit an unauthenticated nearby device to spoof the BD_ADDR of the peer device to complete pairing without knowledge of the PIN.",
+            "name": "CVE-2020-26555",
             "scraped_data": [
                 {
                     "notes": [],
@@ -4165,80 +4244,7 @@
                 }
             ],
             "severity": "MEDIUM",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2020-26560"
-        },
-        {
-            "attributes": [
-                {
-                    "key": "package_version",
-                    "value": "5.10.46-4"
-                },
-                {
-                    "key": "package_name",
-                    "value": "linux"
-                },
-                {
-                    "key": "CVSS2_VECTOR",
-                    "value": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
-                },
-                {
-                    "key": "CVSS2_SCORE",
-                    "value": "6.8"
-                }
-            ],
-            "description": "In the Linux kernel 5.0.21, mounting a crafted f2fs filesystem image can lead to slab-out-of-bounds read access in f2fs_build_segment_manager in fs/f2fs/segment.c, related to init_min_max_mtime in fs/f2fs/segment.c (because the second argument to get_seg_entry is not validated).",
-            "name": "CVE-2019-19449",
-            "scraped_data": [
-                {
-                    "notes": [
-                        "Exploiting this vulnerability requires a crafted filesystem image to\nbe mounted"
-                    ],
-                    "status_table": {
-                        "packages": [
-                            "linux",
-                            "Launchpad",
-                            "Ubuntu",
-                            "Debian"
-                        ],
-                        "release_states": [
-                            [
-                                "Upstream",
-                                "Released (5.10~rc1)"
-                            ],
-                            [
-                                "Ubuntu 21.10 (Impish Indri)",
-                                "Not vulnerable (5.11.0-16.17)"
-                            ],
-                            [
-                                "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Not vulnerable (5.10.0-14.15)"
-                            ],
-                            [
-                                "Ubuntu 20.04 LTS (Focal Fossa)",
-                                "Released (5.4.0-90.101)"
-                            ],
-                            [
-                                "Ubuntu 18.04 LTS (Bionic Beaver)",
-                                "Released (4.15.0-162.170)"
-                            ],
-                            [
-                                "Ubuntu 16.04 ESM (Xenial Xerus)",
-                                "Ignored (was needs-triage now end-of-life)"
-                            ],
-                            [
-                                "Ubuntu 14.04 ESM (Trusty Tahr)",
-                                "Ignored (was needed ESM criteria)"
-                            ],
-                            [
-                                "Patches:",
-                                "Introduced by Fixed by"
-                            ]
-                        ]
-                    }
-                }
-            ],
-            "severity": "MEDIUM",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2019-19449"
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2020-26555"
         },
         {
             "attributes": [
@@ -4259,11 +4265,13 @@
                     "value": "4.6"
                 }
             ],
-            "description": "prealloc_elems_and_freelist in kernel/bpf/stackmap.c in the Linux kernel through 5.14.9 allows unprivileged users to trigger an eBPF multiplication integer overflow with a resultant out-of-bounds write.",
-            "name": "CVE-2021-41864",
+            "description": "Use-after-free vulnerability in the Linux kernel exploitable by a local attacker due to reuse of a DCCP socket with an attached dccps_hc_tx_ccid object as a listener after being released. Fixed in Ubuntu Linux kernel 5.4.0-51.56, 5.3.0-68.63, 4.15.0-121.123, 4.4.0-193.224, 3.13.0.182.191 and 3.2.0-149.196.",
+            "name": "CVE-2020-16119",
             "scraped_data": [
                 {
-                    "notes": [],
+                    "notes": [
+                        "patch applied to the ubuntu-kernels was NACKed by upstream.\nThe subsequent revision submitted upstream still needs rework and has\nnot been accepted as of 2021-01-13."
+                    ],
                     "status_table": {
                         "packages": [
                             "linux",
@@ -4274,31 +4282,23 @@
                         "release_states": [
                             [
                                 "Upstream",
-                                "Released (5.15~rc5)"
-                            ],
-                            [
-                                "Ubuntu 21.10 (Impish Indri)",
-                                "Released (5.13.0-23.23)"
-                            ],
-                            [
-                                "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Released (5.11.0-44.48)"
+                                "Needs triage"
                             ],
                             [
                                 "Ubuntu 20.04 LTS (Focal Fossa)",
-                                "Released (5.4.0-92.103)"
+                                "Released (5.4.0-51.56)"
                             ],
                             [
                                 "Ubuntu 18.04 LTS (Bionic Beaver)",
-                                "Released (4.15.0-166.174)"
+                                "Released (4.15.0-121.123)"
                             ],
                             [
                                 "Ubuntu 16.04 ESM (Xenial Xerus)",
-                                "Not vulnerable (4.4.0-2.16)"
+                                "Released (4.4.0-193.224)"
                             ],
                             [
                                 "Ubuntu 14.04 ESM (Trusty Tahr)",
-                                "Not vulnerable (3.11.0-12.19)"
+                                "Released (3.13.0-182.233)"
                             ],
                             [
                                 "Patches:",
@@ -4309,7 +4309,7 @@
                 }
             ],
             "severity": "MEDIUM",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-41864"
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2020-16119"
         }
     ],
     "mariadb-10.5": [
