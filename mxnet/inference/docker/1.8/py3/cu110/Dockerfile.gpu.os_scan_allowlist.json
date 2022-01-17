@@ -1,0 +1,3118 @@
+{
+    "apparmor": [
+        {
+            "name": "CVE-2016-1585",
+            "description": "In all versions of AppArmor mount rules are accidentally widened when compiled.",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-1585",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "2.10.95-0ubuntu2.11"
+                },
+                {
+                    "key": "package_name",
+                    "value": "apparmor"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:L/Au:N/C:P/I:P/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "7.5"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "apparmor",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Deferred"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Deferred"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Deferred"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Deferred"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Deferred"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Deferred"
+                            ]
+                        ]
+                    },
+                    "notes": [
+                        "no fix as of 2020-10-19"
+                    ]
+                }
+            ]
+        }
+    ],
+    "apt": [
+        {
+            "name": "CVE-2020-27350",
+            "description": "APT had several integer overflows and underflows while parsing .deb packages, aka GHSL-2020-168 GHSL-2020-169, in files apt-pkg/contrib/extracttar.cc, apt-pkg/deb/debfile.cc, and apt-pkg/contrib/arfile.cc. This issue affects: apt 1.2.32ubuntu0 versions prior to 1.2.32ubuntu0.2; 1.6.12ubuntu0 versions prior to 1.6.12ubuntu0.2; 2.0.2ubuntu0 versions prior to 2.0.2ubuntu0.2; 2.1.10ubuntu0 versions prior to 2.1.10ubuntu0.1;",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-27350",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "1.2.32ubuntu0.1"
+                },
+                {
+                    "key": "package_name",
+                    "value": "apt"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "4.6"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "apt",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Released (2.1.13)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Released (2.0.2ubuntu0.2)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Released (1.6.12ubuntu0.2)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Released (1.2.32ubuntu0.2)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Released (1.0.1ubuntu2.24+esm3)"
+                            ]
+                        ]
+                    },
+                    "notes": []
+                }
+            ]
+        }
+    ],
+    "avahi": [
+        {
+            "name": "CVE-2021-3468",
+            "description": "Local DoS by event-busy-loop from writing long lines to /run/avahi-daemon/socket",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2021-3468",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "0.6.32~rc+dfsg-1ubuntu2.3"
+                },
+                {
+                    "key": "package_name",
+                    "value": "avahi"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "avahi",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Released (0.8-5ubuntu3)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Released (0.8-5ubuntu3)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Released (0.7-4ubuntu7.1)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Released (0.7-3.1ubuntu1.3)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Released (0.6.32~rc+dfsg-1ubuntu2.3+esm1)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Released (0.6.31-4ubuntu1.3+esm1)"
+                            ],
+                            [
+                                "Patches:",
+                                "Other:"
+                            ]
+                        ]
+                    },
+                    "notes": [
+                        "as of 2021-07-06, the proposed patch has not been commited\nupstream"
+                    ]
+                }
+            ]
+        }
+    ],
+    "binutils": [
+        {
+            "name": "CVE-2019-14250",
+            "description": "An issue was discovered in GNU libiberty, as distributed in GNU Binutils 2.32. simple_object_elf_match in simple-object-elf.c does not check for a zero shstrndx value, leading to an integer overflow and resultant heap-based buffer overflow.",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2019-14250",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "2.26.1-1ubuntu1~16.04.8"
+                },
+                {
+                    "key": "package_name",
+                    "value": "binutils"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "4.3"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "binutils",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (2.33)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Not vulnerable (2.34-5ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Not vulnerable (2.34-5ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Not vulnerable (2.34-5ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Released (2.30-21ubuntu1~18.04.3)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Released (2.26.1-1ubuntu1~16.04.8+esm1)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Needs triage"
+                            ],
+                            [
+                                "Patches:",
+                                "Other: Vendor:"
+                            ]
+                        ]
+                    },
+                    "notes": []
+                }
+            ]
+        },
+        {
+            "name": "CVE-2019-14444",
+            "description": "apply_relocations in readelf.c in GNU Binutils 2.32 contains an integer overflow that allows attackers to trigger a write access violation (in byte_put_little_endian function in elfcomm.c) via an ELF file, as demonstrated by readelf.",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2019-14444",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "2.26.1-1ubuntu1~16.04.8"
+                },
+                {
+                    "key": "package_name",
+                    "value": "binutils"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "4.3"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "binutils",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (2.32.51.20190813-1)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Not vulnerable (2.34-5ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Not vulnerable (2.34-5ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Not vulnerable (2.34-5ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Released (2.30-21ubuntu1~18.04.3)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Released (2.26.1-1ubuntu1~16.04.8+esm1)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Needed"
+                            ],
+                            [
+                                "Patches:",
+                                "Upstream:"
+                            ]
+                        ]
+                    },
+                    "notes": []
+                }
+            ]
+        },
+        {
+            "name": "CVE-2019-17451",
+            "description": "An issue was discovered in the Binary File Descriptor (BFD) library (aka libbfd), as distributed in GNU Binutils 2.32. It is an integer overflow leading to a SEGV in _bfd_dwarf2_find_nearest_line in dwarf2.c, as demonstrated by nm.",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2019-17451",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "2.26.1-1ubuntu1~16.04.8"
+                },
+                {
+                    "key": "package_name",
+                    "value": "binutils"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "4.3"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "binutils",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Not vulnerable (2.34-5ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Not vulnerable (2.34-5ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Not vulnerable (2.34-5ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Released (2.30-21ubuntu1~18.04.3)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Released (2.26.1-1ubuntu1~16.04.8+esm1)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Needs triage"
+                            ],
+                            [
+                                "Patches:",
+                                "Upstream:"
+                            ]
+                        ]
+                    },
+                    "notes": []
+                }
+            ]
+        }
+    ],
+    "game-music-emu": [
+        {
+            "name": "CVE-2017-17446",
+            "description": "The Mem_File_Reader::read_avail function in Data_Reader.cpp in the Game_Music_Emu library (aka game-music-emu) 0.6.1 does not ensure a non-negative size, which allows remote attackers to cause a denial of service (application crash) via a crafted file.",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2017-17446",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "0.6.0-3ubuntu0.16.04.1"
+                },
+                {
+                    "key": "package_name",
+                    "value": "game-music-emu"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "4.3"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "game-music-emu",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (0.6.2-1)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Not vulnerable (0.6.2-1)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Not vulnerable (0.6.2-1)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Not vulnerable (0.6.2-1)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Not vulnerable (0.6.2-1)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Ignored (end of standard support, was needed)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Released (0.5.5-2ubuntu0.14.04.1+esm1)"
+                            ]
+                        ]
+                    },
+                    "notes": []
+                }
+            ]
+        }
+    ],
+    "gcc-5": [
+        {
+            "name": "CVE-2020-13844",
+            "description": "Arm Armv8-A core implementations utilizing speculative execution past unconditional changes in control flow may allow unauthorized disclosure of information to an attacker with local user access via a side-channel analysis, aka \"straight-line speculation.\"",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-13844",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "5.4.0-6ubuntu1~16.04.12"
+                },
+                {
+                    "key": "package_name",
+                    "value": "gcc-5"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "2.1"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "gcc-5",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Does not exist"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Does not exist"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Does not exist"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Deferred"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Deferred"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Does not exist"
+                            ]
+                        ]
+                    },
+                    "notes": [
+                        "gcc-3.3 only provides libstdc++5"
+                    ]
+                }
+            ]
+        }
+    ],
+    "gcc-defaults": [
+        {
+            "name": "CVE-2020-13844",
+            "description": "Arm Armv8-A core implementations utilizing speculative execution past unconditional changes in control flow may allow unauthorized disclosure of information to an attacker with local user access via a side-channel analysis, aka \"straight-line speculation.\"",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-13844",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "1.150ubuntu1"
+                },
+                {
+                    "key": "package_name",
+                    "value": "gcc-defaults"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "2.1"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "gcc-defaults",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Deferred"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Deferred"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Deferred"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Deferred"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Deferred"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Deferred"
+                            ]
+                        ]
+                    },
+                    "notes": [
+                        "gcc-3.3 only provides libstdc++5"
+                    ]
+                }
+            ]
+        }
+    ],
+    "gccgo-6": [
+        {
+            "name": "CVE-2020-13844",
+            "description": "Arm Armv8-A core implementations utilizing speculative execution past unconditional changes in control flow may allow unauthorized disclosure of information to an attacker with local user access via a side-channel analysis, aka \"straight-line speculation.\"",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-13844",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "6.0.1-0ubuntu1"
+                },
+                {
+                    "key": "package_name",
+                    "value": "gccgo-6"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:L/AC:L/Au:N/C:P/I:N/A:N"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "2.1"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "gccgo-6",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Does not exist"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Does not exist"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Does not exist"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Does not exist"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Deferred"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Does not exist"
+                            ]
+                        ]
+                    },
+                    "notes": [
+                        "gcc-3.3 only provides libstdc++5"
+                    ]
+                }
+            ]
+        }
+    ],
+    "glibc": [
+        {
+            "name": "CVE-2021-35942",
+            "description": "The wordexp function in the GNU C Library (aka glibc) through 2.33 may crash or read arbitrary memory in parse_param (in posix/wordexp.c) when called with an untrusted, crafted pattern, potentially resulting in a denial of service or disclosure of information. This occurs because atoi was used but strtoul should have been used to ensure correct calculations.",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2021-35942",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "2.23-0ubuntu11.2"
+                },
+                {
+                    "key": "package_name",
+                    "value": "glibc"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:L/Au:N/C:P/I:N/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "6.4"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "glibc",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (2.34)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Not vulnerable (2.34-0ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Does not exist"
+                            ],
+                            [
+                                "Patches:",
+                                "Upstream:"
+                            ]
+                        ]
+                    },
+                    "notes": []
+                }
+            ]
+        },
+        {
+            "name": "CVE-2021-35942",
+            "description": "The wordexp function in the GNU C Library (aka glibc) through 2.33 may crash or read arbitrary memory in parse_param (in posix/wordexp.c) when called with an untrusted, crafted pattern, potentially resulting in a denial of service or disclosure of information. This occurs because atoi was used but strtoul should have been used to ensure correct calculations.",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2021-35942",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "2.23-0ubuntu11.3"
+                },
+                {
+                    "key": "package_name",
+                    "value": "glibc"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:L/Au:N/C:P/I:N/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "6.4"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "glibc",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (2.34)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Not vulnerable (2.34-0ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Does not exist"
+                            ],
+                            [
+                                "Patches:",
+                                "Upstream:"
+                            ]
+                        ]
+                    },
+                    "notes": []
+                }
+            ]
+        },
+        {
+            "name": "CVE-2021-38604",
+            "description": "In librt in the GNU C Library (aka glibc) through 2.34, sysdeps/unix/sysv/linux/mq_notify.c mishandles certain NOTIFY_REMOVED data, leading to a NULL pointer dereference. NOTE: this vulnerability was introduced as a side effect of the CVE-2021-33574 fix.",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2021-38604",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "2.23-0ubuntu11.2"
+                },
+                {
+                    "key": "package_name",
+                    "value": "glibc"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "5"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "glibc",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Pending (2.35)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Does not exist"
+                            ],
+                            [
+                                "Patches:",
+                                "Upstream: Upstream:"
+                            ]
+                        ]
+                    },
+                    "notes": [
+                        "21.04 and earlier are not affected due to the fix for\nCVE-2021-33574 having not been introduced yet."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "CVE-2021-38604",
+            "description": "In librt in the GNU C Library (aka glibc) through 2.34, sysdeps/unix/sysv/linux/mq_notify.c mishandles certain NOTIFY_REMOVED data, leading to a NULL pointer dereference. NOTE: this vulnerability was introduced as a side effect of the CVE-2021-33574 fix.",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2021-38604",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "2.23-0ubuntu11.3"
+                },
+                {
+                    "key": "package_name",
+                    "value": "glibc"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "5"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "glibc",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Pending (2.35)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Does not exist"
+                            ],
+                            [
+                                "Patches:",
+                                "Upstream: Upstream:"
+                            ]
+                        ]
+                    },
+                    "notes": [
+                        "21.04 and earlier are not affected due to the fix for\nCVE-2021-33574 having not been introduced yet."
+                    ]
+                }
+            ]
+        }
+    ],
+    "imagemagick": [
+        {
+            "name": "CVE-2020-25664",
+            "description": "In WriteOnePNGImage() of the PNG coder at coders/png.c, an improper call to AcquireVirtualMemory() and memset() allows for an out-of-bounds write later when PopShortPixel() from MagickCore/quantum-private.h is called. The patch fixes the calls by adding 256 to rowbytes. An attacker who is able to supply a specially crafted image could affect availability with a low impact to data integrity. This flaw affects ImageMagick versions prior to 6.9.10-68 and 7.0.8-68.",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-25664",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "8:6.8.9.9-7ubuntu5.16"
+                },
+                {
+                    "key": "package_name",
+                    "value": "imagemagick"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:M/Au:N/C:N/I:P/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "5.8"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "imagemagick",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (8:6.9.11.24+dfsg-1)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Deferred"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Deferred"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Deferred"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Deferred"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Deferred"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Does not exist"
+                            ],
+                            [
+                                "Patches:",
+                                "Upstream: Upstream:"
+                            ]
+                        ]
+                    },
+                    "notes": [
+                        "fix attempt was reverted\nunclear what the fix for this issue is as of 2021-06-10"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "CVE-2020-27752",
+            "description": "A flaw was found in ImageMagick in MagickCore/quantum-private.h. An attacker who submits a crafted file that is processed by ImageMagick could trigger a heap buffer overflow. This would most likely lead to an impact to application availability, but could potentially lead to an impact to data integrity as well. This flaw affects ImageMagick versions prior to 7.0.9-0.",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-27752",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "8:6.8.9.9-7ubuntu5.16"
+                },
+                {
+                    "key": "package_name",
+                    "value": "imagemagick"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:M/Au:N/C:N/I:P/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "5.8"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "imagemagick",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (8:6.9.11.24+dfsg-1)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Not vulnerable (8:6.9.11.60+dfsg-1ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Not vulnerable (8:6.9.11.60+dfsg-1ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Deferred"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Deferred"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Deferred"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Does not exist"
+                            ]
+                        ]
+                    },
+                    "notes": [
+                        "need to clarify exact patch, see Debian comment on upstream bug"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "CVE-2021-20312",
+            "description": "[Integer overflow in WriteTHUMBNAILImage of coders/thumbnail.c]",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2021-20312",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "8:6.8.9.9-7ubuntu5.16"
+                },
+                {
+                    "key": "package_name",
+                    "value": "imagemagick"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "imagemagick",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Released (8:6.9.7.4+dfsg-16ubuntu6.12)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Released (8:6.8.9.9-7ubuntu5.16+esm1)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Released (8:6.7.7.10-6ubuntu3.13+esm1)"
+                            ],
+                            [
+                                "Patches:",
+                                "Upstream:"
+                            ]
+                        ]
+                    },
+                    "notes": [
+                        "imagemagick is in universe from focal onwards"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "CVE-2021-20313",
+            "description": "[Cipher leak when the calculating signatures in TransformSignatureof MagickCore/signature.c]",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2021-20313",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "8:6.8.9.9-7ubuntu5.16"
+                },
+                {
+                    "key": "package_name",
+                    "value": "imagemagick"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "imagemagick",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Released (8:6.9.7.4+dfsg-16ubuntu6.12)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Released (8:6.8.9.9-7ubuntu5.16+esm1)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Released (8:6.7.7.10-6ubuntu3.13+esm1)"
+                            ],
+                            [
+                                "Patches:",
+                                "Upstream:"
+                            ]
+                        ]
+                    },
+                    "notes": [
+                        "same fix as CVE-2021-20312"
+                    ]
+                }
+            ]
+        }
+    ],
+    "krb5": [
+        {
+            "name": "CVE-2018-20217",
+            "description": "A Reachable Assertion issue was discovered in the KDC in MIT Kerberos 5 (aka krb5) before 1.17. If an attacker can obtain a krbtgt ticket using an older encryption type (single-DES, triple-DES, or RC4), the attacker can crash the KDC by making an S4U2Self request.",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2018-20217",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "1.13.2+dfsg-5ubuntu2.2"
+                },
+                {
+                    "key": "package_name",
+                    "value": "krb5"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:M/Au:S/C:N/I:N/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "3.5"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "krb5",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (1.17)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Not vulnerable (1.17-10)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Not vulnerable (1.17-10)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Not vulnerable (1.17-6ubuntu4)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Needed"
+                            ],
+                            [
+                                "Patches:",
+                                "Upstream:"
+                            ],
+                            [
+                                "Binaries built from this source package are in",
+                                "and so are supported by the community."
+                            ]
+                        ]
+                    },
+                    "notes": []
+                }
+            ]
+        }
+    ],
+    "libxml2": [
+        {
+            "name": "CVE-2020-27920",
+            "description": "A use after free issue was addressed with improved memory management. This issue is fixed in macOS Big Sur 11.1, Security Update 2020-001 Catalina, Security Update 2020-007 Mojave, macOS Big Sur 11.0.1, iOS 14.2 and iPadOS 14.2, watchOS 7.1, tvOS 14.2. Processing maliciously crafted web content may lead to code execution.",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-27920",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "2.9.3+dfsg1-1ubuntu0.7"
+                },
+                {
+                    "key": "package_name",
+                    "value": "libxml2"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "6.8"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "libxml2",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Not vulnerable"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Not vulnerable"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Not vulnerable"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Not vulnerable"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Not vulnerable"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Not vulnerable"
+                            ]
+                        ]
+                    },
+                    "notes": [
+                        "no details on this affecting anything other then macOS"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "CVE-2020-9926",
+            "description": "A use after free issue was addressed with improved memory management. This issue is fixed in iOS 13.6 and iPadOS 13.6, tvOS 13.4.8, watchOS 6.2.8, iCloud for Windows 7.20, macOS Catalina 10.15.6, Security Update 2020-004 Mojave, Security Update 2020-004 High Sierra. Processing maliciously crafted XML may lead to an unexpected application termination or arbitrary code execution.",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-9926",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "2.9.3+dfsg1-1ubuntu0.7"
+                },
+                {
+                    "key": "package_name",
+                    "value": "libxml2"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "6.8"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "libxml2",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Not vulnerable"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Not vulnerable"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Not vulnerable"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Not vulnerable"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Not vulnerable"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Not vulnerable"
+                            ]
+                        ]
+                    },
+                    "notes": [
+                        "no details on this affecting anything other then macOS"
+                    ]
+                }
+            ]
+        }
+    ],
+    "nettle": [
+        {
+            "name": "CVE-2021-20305",
+            "description": "A flaw was found in Nettle in versions before 3.7.2, where several Nettle signature verification functions (GOST DSA, EDDSA & ECDSA) result in the Elliptic Curve Cryptography point (ECC) multiply function being called with out-of-range scalers, possibly resulting in incorrect results. This flaw allows an attacker to force an invalid signature, causing an assertion failure or possible validation. The highest threat to this vulnerability is to confidentiality, integrity, as well as system availability.",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2021-20305",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "3.2-1ubuntu0.16.04.1"
+                },
+                {
+                    "key": "package_name",
+                    "value": "nettle"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "6.8"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "nettle",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (3.7.2-1)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Released (3.7-2.1ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Released (3.7-2.1ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Released (3.5.1+really3.5.1-2ubuntu0.1)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Released (3.4-1ubuntu0.1)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Released (3.2-1ubuntu0.16.04.2)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Needs triage"
+                            ],
+                            [
+                                "Patches:",
+                                "Upstream: Upstream: Upstream: Upstream: Upstream: Upstream: Upstream:"
+                            ]
+                        ]
+                    },
+                    "notes": []
+                }
+            ]
+        }
+    ],
+    "opencv": [
+        {
+            "name": "CVE-2019-14491",
+            "description": "An issue was discovered in OpenCV before 3.4.7 and 4.x before 4.1.1. There is an out of bounds read in the function cv::predictOrdered<cv::HaarEvaluator> in modules/objdetect/src/cascadedetect.hpp, which leads to denial of service.",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2019-14491",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "2.4.9.1+dfsg-1.5ubuntu1.1"
+                },
+                {
+                    "key": "package_name",
+                    "value": "opencv"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:L/Au:N/C:P/I:N/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "6.4"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "opencv",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Not vulnerable (4.1.2+dfsg-4ubuntu3)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Not vulnerable (4.1.2+dfsg-4ubuntu3)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Not vulnerable (4.1.2+dfsg-4ubuntu3)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Ignored (end of standard support, was needed)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Needed"
+                            ],
+                            [
+                                "Patches:",
+                                "Upstream:"
+                            ]
+                        ]
+                    },
+                    "notes": []
+                }
+            ]
+        },
+        {
+            "name": "CVE-2019-14492",
+            "description": "An issue was discovered in OpenCV before 3.4.7 and 4.x before 4.1.1. There is an out of bounds read/write in the function HaarEvaluator::OptFeature::calc in modules/objdetect/src/cascadedetect.hpp, which leads to denial of service.",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2019-14492",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "2.4.9.1+dfsg-1.5ubuntu1.1"
+                },
+                {
+                    "key": "package_name",
+                    "value": "opencv"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "5"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "opencv",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Not vulnerable (4.1.2+dfsg-4ubuntu3)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Not vulnerable (4.1.2+dfsg-4ubuntu3)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Not vulnerable (4.1.2+dfsg-4ubuntu3)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Ignored (end of standard support, was needed)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Needed"
+                            ],
+                            [
+                                "Patches:",
+                                "Upstream:"
+                            ]
+                        ]
+                    },
+                    "notes": []
+                }
+            ]
+        },
+        {
+            "name": "CVE-2019-9423",
+            "description": "In opencv calls that use libpng, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges required. User interaction is not required for exploitation. Product: AndroidVersions: Android-10Android ID: A-110986616",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2019-9423",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "2.4.9.1+dfsg-1.5ubuntu1.1"
+                },
+                {
+                    "key": "package_name",
+                    "value": "opencv"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "4.6"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "opencv",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Deferred (2020-03-09)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Deferred (2020-03-09)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Deferred (2020-03-09)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Deferred (2020-03-09)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Ignored (end of standard support, was deferred [2020-03-09])"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Deferred (2020-03-09)"
+                            ]
+                        ]
+                    },
+                    "notes": [
+                        "no details as of 2020-03-09"
+                    ]
+                }
+            ]
+        }
+    ],
+    "openjpeg": [
+        {
+            "name": "CVE-2015-1273",
+            "description": "Heap-based buffer overflow in j2k.c in OpenJPEG before r3002, as used in PDFium in Google Chrome before 44.0.2403.89, allows remote attackers to cause a denial of service or possibly have unspecified other impact via invalid JPEG2000 data in a PDF document.",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2015-1273",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "1:1.5.2-3.1"
+                },
+                {
+                    "key": "package_name",
+                    "value": "openjpeg"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "6.8"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "openjpeg",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Does not exist"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Does not exist"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Does not exist"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Does not exist"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Ignored (end of standard support, was deferred [2015-07-24])"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Deferred (2015-07-24)"
+                            ],
+                            [
+                                "Patches:",
+                                "Upstream:"
+                            ]
+                        ]
+                    },
+                    "notes": [
+                        "There are large changes between openjpeg trunk and the 1.5 and 1.3\nbranches that we shipped in Vivid and older. However, it looks like those\ncode bases are also affected because I don't see similar sanity checks. As of\n2015-07-24, I don't see a fix in the 1.5 branch."
+                    ]
+                }
+            ]
+        }
+    ],
+    "openldap": [
+        {
+            "name": "CVE-2020-36221",
+            "description": "An integer underflow was discovered in OpenLDAP before 2.4.57 leading to slapd crashes in the Certificate Exact Assertion processing, resulting in denial of service (schema_init.c serialNumberAndIssuerCheck).",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-36221",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "2.4.42+dfsg-2ubuntu3.11"
+                },
+                {
+                    "key": "package_name",
+                    "value": "openldap"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "5"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "openldap",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (2.4.57+dfsg-1)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Released (2.4.57+dfsg-2ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Released (2.4.57+dfsg-2ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Released (2.4.49+dfsg-2ubuntu1.6)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Released (2.4.45+dfsg-1ubuntu1.9)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Released (2.4.42+dfsg-2ubuntu3.12)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Needed"
+                            ],
+                            [
+                                "Patches:",
+                                "Upstream: Upstream:"
+                            ]
+                        ]
+                    },
+                    "notes": []
+                }
+            ]
+        },
+        {
+            "name": "CVE-2020-36222",
+            "description": "A flaw was discovered in OpenLDAP before 2.4.57 leading to an assertion failure in slapd in the saslAuthzTo validation, resulting in denial of service.",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-36222",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "2.4.42+dfsg-2ubuntu3.11"
+                },
+                {
+                    "key": "package_name",
+                    "value": "openldap"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "5"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "openldap",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (2.4.57+dfsg-1)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Released (2.4.57+dfsg-2ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Released (2.4.57+dfsg-2ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Released (2.4.49+dfsg-2ubuntu1.6)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Released (2.4.45+dfsg-1ubuntu1.9)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Released (2.4.42+dfsg-2ubuntu3.12)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Needed"
+                            ],
+                            [
+                                "Patches:",
+                                "Upstream: Upstream:"
+                            ]
+                        ]
+                    },
+                    "notes": []
+                }
+            ]
+        },
+        {
+            "name": "CVE-2020-36223",
+            "description": "A flaw was discovered in OpenLDAP before 2.4.57 leading to a slapd crash in the Values Return Filter control handling, resulting in denial of service (double free and out-of-bounds read).",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-36223",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "2.4.42+dfsg-2ubuntu3.11"
+                },
+                {
+                    "key": "package_name",
+                    "value": "openldap"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "5"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "openldap",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (2.4.57+dfsg-1)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Released (2.4.57+dfsg-2ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Released (2.4.57+dfsg-2ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Released (2.4.49+dfsg-2ubuntu1.6)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Released (2.4.45+dfsg-1ubuntu1.9)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Released (2.4.42+dfsg-2ubuntu3.12)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Needed"
+                            ],
+                            [
+                                "Patches:",
+                                "Upstream:"
+                            ]
+                        ]
+                    },
+                    "notes": []
+                }
+            ]
+        },
+        {
+            "name": "CVE-2020-36224",
+            "description": "A flaw was discovered in OpenLDAP before 2.4.57 leading to an invalid pointer free and slapd crash in the saslAuthzTo processing, resulting in denial of service.",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-36224",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "2.4.42+dfsg-2ubuntu3.11"
+                },
+                {
+                    "key": "package_name",
+                    "value": "openldap"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "5"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "openldap",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (2.4.57+dfsg-1)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Released (2.4.57+dfsg-2ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Released (2.4.57+dfsg-2ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Released (2.4.49+dfsg-2ubuntu1.6)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Released (2.4.45+dfsg-1ubuntu1.9)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Released (2.4.42+dfsg-2ubuntu3.12)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Needed"
+                            ],
+                            [
+                                "Patches:",
+                                "Upstream: Upstream:"
+                            ]
+                        ]
+                    },
+                    "notes": []
+                }
+            ]
+        },
+        {
+            "name": "CVE-2020-36225",
+            "description": "A flaw was discovered in OpenLDAP before 2.4.57 leading to a double free and slapd crash in the saslAuthzTo processing, resulting in denial of service.",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-36225",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "2.4.42+dfsg-2ubuntu3.11"
+                },
+                {
+                    "key": "package_name",
+                    "value": "openldap"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "5"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "openldap",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (2.4.57+dfsg-1)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Released (2.4.57+dfsg-2ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Released (2.4.57+dfsg-2ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Released (2.4.49+dfsg-2ubuntu1.6)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Released (2.4.45+dfsg-1ubuntu1.9)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Released (2.4.42+dfsg-2ubuntu3.12)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Needed"
+                            ],
+                            [
+                                "Patches:",
+                                "Upstream:"
+                            ]
+                        ]
+                    },
+                    "notes": []
+                }
+            ]
+        },
+        {
+            "name": "CVE-2020-36226",
+            "description": "A flaw was discovered in OpenLDAP before 2.4.57 leading to a memch->bv_len miscalculation and slapd crash in the saslAuthzTo processing, resulting in denial of service.",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-36226",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "2.4.42+dfsg-2ubuntu3.11"
+                },
+                {
+                    "key": "package_name",
+                    "value": "openldap"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "5"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "openldap",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (2.4.57+dfsg-1)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Released (2.4.57+dfsg-2ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Released (2.4.57+dfsg-2ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Released (2.4.49+dfsg-2ubuntu1.6)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Released (2.4.45+dfsg-1ubuntu1.9)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Released (2.4.42+dfsg-2ubuntu3.12)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Needed"
+                            ],
+                            [
+                                "Patches:",
+                                "Upstream:"
+                            ]
+                        ]
+                    },
+                    "notes": []
+                }
+            ]
+        },
+        {
+            "name": "CVE-2020-36227",
+            "description": "A flaw was discovered in OpenLDAP before 2.4.57 leading to an infinite loop in slapd with the cancel_extop Cancel operation, resulting in denial of service.",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-36227",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "2.4.42+dfsg-2ubuntu3.11"
+                },
+                {
+                    "key": "package_name",
+                    "value": "openldap"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "5"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "openldap",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (2.4.57+dfsg-1)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Released (2.4.57+dfsg-2ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Released (2.4.57+dfsg-2ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Released (2.4.49+dfsg-2ubuntu1.6)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Released (2.4.45+dfsg-1ubuntu1.9)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Released (2.4.42+dfsg-2ubuntu3.12)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Needed"
+                            ],
+                            [
+                                "Patches:",
+                                "Upstream:"
+                            ]
+                        ]
+                    },
+                    "notes": []
+                }
+            ]
+        },
+        {
+            "name": "CVE-2020-36228",
+            "description": "An integer underflow was discovered in OpenLDAP before 2.4.57 leading to a slapd crash in the Certificate List Exact Assertion processing, resulting in denial of service.",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-36228",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "2.4.42+dfsg-2ubuntu3.11"
+                },
+                {
+                    "key": "package_name",
+                    "value": "openldap"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "5"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "openldap",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (2.4.57+dfsg-1)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Released (2.4.57+dfsg-2ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Released (2.4.57+dfsg-2ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Released (2.4.49+dfsg-2ubuntu1.6)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Released (2.4.45+dfsg-1ubuntu1.9)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Released (2.4.42+dfsg-2ubuntu3.12)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Needed"
+                            ],
+                            [
+                                "Patches:",
+                                "Upstream:"
+                            ]
+                        ]
+                    },
+                    "notes": []
+                }
+            ]
+        },
+        {
+            "name": "CVE-2020-36229",
+            "description": "A flaw was discovered in ldap_X509dn2bv in OpenLDAP before 2.4.57 leading to a slapd crash in the X.509 DN parsing in ad_keystring, resulting in denial of service.",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-36229",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "2.4.42+dfsg-2ubuntu3.11"
+                },
+                {
+                    "key": "package_name",
+                    "value": "openldap"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "5"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "openldap",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (2.4.57+dfsg-1)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Released (2.4.57+dfsg-2ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Released (2.4.57+dfsg-2ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Released (2.4.49+dfsg-2ubuntu1.6)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Released (2.4.45+dfsg-1ubuntu1.9)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Released (2.4.42+dfsg-2ubuntu3.12)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Needed"
+                            ],
+                            [
+                                "Patches:",
+                                "Upstream:"
+                            ]
+                        ]
+                    },
+                    "notes": []
+                }
+            ]
+        },
+        {
+            "name": "CVE-2020-36230",
+            "description": "A flaw was discovered in OpenLDAP before 2.4.57 leading in an assertion failure in slapd in the X.509 DN parsing in decode.c ber_next_element, resulting in denial of service.",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-36230",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "2.4.42+dfsg-2ubuntu3.11"
+                },
+                {
+                    "key": "package_name",
+                    "value": "openldap"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "5"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "openldap",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (2.4.57+dfsg-1)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Released (2.4.57+dfsg-2ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Released (2.4.57+dfsg-2ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Released (2.4.49+dfsg-2ubuntu1.6)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Released (2.4.45+dfsg-1ubuntu1.9)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Released (2.4.42+dfsg-2ubuntu3.12)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Needed"
+                            ],
+                            [
+                                "Patches:",
+                                "Upstream:"
+                            ]
+                        ]
+                    },
+                    "notes": []
+                }
+            ]
+        },
+        {
+            "name": "CVE-2021-27212",
+            "description": "In OpenLDAP through 2.4.57 and 2.5.x through 2.5.1alpha, an assertion failure in slapd can occur in the issuerAndThisUpdateCheck function via a crafted packet, resulting in a denial of service (daemon exit) via a short timestamp. This is related to schema_init.c and checkTime.",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2021-27212",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "2.4.42+dfsg-2ubuntu3.11"
+                },
+                {
+                    "key": "package_name",
+                    "value": "openldap"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "5"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "openldap",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (2.4.57+dfsg-2)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Released (2.4.57+dfsg-2ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Released (2.4.57+dfsg-2ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Released (2.4.49+dfsg-2ubuntu1.7)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Released (2.4.45+dfsg-1ubuntu1.10)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Released (2.4.42+dfsg-2ubuntu3.13)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Needed"
+                            ],
+                            [
+                                "Patches:",
+                                "Upstream: Upstream:"
+                            ]
+                        ]
+                    },
+                    "notes": []
+                }
+            ]
+        }
+    ],
+    "openssl": [
+        {
+            "name": "CVE-2021-23841",
+            "description": "The OpenSSL public API function X509_issuer_and_serial_hash() attempts to create a unique hash value based on the issuer and serial number data contained within an X509 certificate. However it fails to correctly handle any errors that may occur while parsing the issuer field (which might occur if the issuer field is maliciously constructed). This may subsequently result in a NULL pointer deref and a crash leading to a potential denial of service attack. The function X509_issuer_and_serial_hash() is never directly called by OpenSSL itself so applications are only vulnerable if they use this function directly and they use it on certificates that may have been obtained from untrusted sources. OpenSSL versions 1.1.1i and below are affected by this issue. Users of these versions should upgrade to OpenSSL 1.1.1j. OpenSSL versions 1.0.2x and below are affected by this issue. However OpenSSL 1.0.2 is out of support and no longer receiving public updates. Premium support customers of OpenSSL 1.0.2 should upgrade to 1.0.2y. Other users should upgrade to 1.1.1j. Fixed in OpenSSL 1.1.1j (Affected 1.1.1-1.1.1i). Fixed in OpenSSL 1.0.2y (Affected 1.0.2-1.0.2x).",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2021-23841",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "1.0.2g-1ubuntu4.18"
+                },
+                {
+                    "key": "package_name",
+                    "value": "openssl"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "4.3"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "openssl",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (1.1.1j)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Released (1.1.1f-1ubuntu2.2)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Released (1.1.1-1ubuntu2.1~18.04.8)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Released (1.0.2g-1ubuntu4.19)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Released (1.0.1f-1ubuntu2.27+esm2)"
+                            ],
+                            [
+                                "Patches:",
+                                "Upstream:"
+                            ]
+                        ]
+                    },
+                    "notes": [
+                        "edk2 doesn't use the affected function"
+                    ]
+                }
+            ]
+        }
+    ],
+    "p11-kit": [
+        {
+            "name": "CVE-2020-29361",
+            "description": "An issue was discovered in p11-kit 0.21.1 through 0.23.21. Multiple integer overflows have been discovered in the array allocations in the p11-kit library and the p11-kit list command, where overflow checks are missing before calling realloc or calloc.",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-29361",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "0.23.2-5~ubuntu16.04.1"
+                },
+                {
+                    "key": "package_name",
+                    "value": "p11-kit"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "5"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "p11-kit",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (0.23.22-1)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Released (0.23.22-1)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Released (0.23.20-1ubuntu0.1)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Released (0.23.9-2ubuntu0.1)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Released (0.23.2-5~ubuntu16.04.2)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Released (0.20.2-2ubuntu2+esm1)"
+                            ],
+                            [
+                                "Patches:",
+                                "Upstream: Upstream:"
+                            ]
+                        ]
+                    },
+                    "notes": []
+                }
+            ]
+        },
+        {
+            "name": "CVE-2020-29362",
+            "description": "An issue was discovered in p11-kit 0.21.1 through 0.23.21. A heap-based buffer over-read has been discovered in the RPC protocol used by thep11-kit server/remote commands and the client library. When the remote entity supplies a byte array through a serialized PKCS#11 function call, the receiving entity may allow the reading of up to 4 bytes of memory past the heap allocation.",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-29362",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "0.23.2-5~ubuntu16.04.1"
+                },
+                {
+                    "key": "package_name",
+                    "value": "p11-kit"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "5"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "p11-kit",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (0.23.22-1)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Released (0.23.22-1)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Released (0.23.22-1)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Released (0.23.20-1ubuntu0.1)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Released (0.23.9-2ubuntu0.1)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Released (0.23.2-5~ubuntu16.04.2)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Not vulnerable (code not present)"
+                            ],
+                            [
+                                "Patches:",
+                                "Upstream:"
+                            ]
+                        ]
+                    },
+                    "notes": []
+                }
+            ]
+        }
+    ],
+    "sqlite3": [
+        {
+            "name": "CVE-2020-9794",
+            "description": "An out-of-bounds read was addressed with improved bounds checking. This issue is fixed in iOS 13.5 and iPadOS 13.5, macOS Catalina 10.15.5, tvOS 13.4.5, watchOS 6.2.5, iTunes 12.10.7 for Windows, iCloud for Windows 11.2, iCloud for Windows 7.19. A malicious application may cause a denial of service or potentially disclose memory contents.",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-9794",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "3.11.0-1ubuntu1.5"
+                },
+                {
+                    "key": "package_name",
+                    "value": "sqlite3"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:M/Au:N/C:P/I:N/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "5.8"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "sqlite3",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Needs triage"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Deferred"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Deferred"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Deferred"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Deferred"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Deferred"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Deferred"
+                            ]
+                        ]
+                    },
+                    "notes": [
+                        "This may be an Apple-specific CVE, as of 2021-02-08, no details\nare available as to what the upstream fix is."
+                    ]
+                }
+            ]
+        }
+    ],
+    "systemd": [
+        {
+            "name": "CVE-2018-20839",
+            "description": "systemd 242 changes the VT1 mode upon a logout, which allows attackers to read cleartext passwords in certain circumstances, such as watching a shutdown, or using Ctrl-Alt-F1 and Ctrl-Alt-F2. This occurs because the KDGKBMODE (aka current keyboard mode) check is mishandled.",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2018-20839",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "229-4ubuntu21.29"
+                },
+                {
+                    "key": "package_name",
+                    "value": "systemd"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "5"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "systemd",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Not vulnerable"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Not vulnerable"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Not vulnerable"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Not vulnerable"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Not vulnerable"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Not vulnerable"
+                            ],
+                            [
+                                "Patches:",
+                                "Upstream: Upstream: Upstream:"
+                            ]
+                        ]
+                    },
+                    "notes": [
+                        "Possible regression when running startx manually"
+                    ]
+                }
+            ]
+        }
+    ],
+    "x265": [
+        {
+            "name": "CVE-2017-13135",
+            "description": "A NULL Pointer Dereference exists in VideoLAN x265, as used in libbpg 0.9.7 and other products, because the CUData::initialize function in common/cudata.cpp mishandles memory-allocation failure.",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2017-13135",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "1.9-3"
+                },
+                {
+                    "key": "package_name",
+                    "value": "x265"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "6.8"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "x265",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Released (2.6-3)"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Not vulnerable (2.6-3)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Not vulnerable (2.6-3)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Not vulnerable (2.6-3)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Not vulnerable (2.6-3)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Ignored (end of standard support, was needed)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Does not exist"
+                            ]
+                        ]
+                    },
+                    "notes": []
+                }
+            ]
+        },
+        {
+            "name": "CVE-2017-8906",
+            "description": "An integer underflow vulnerability exists in pixel-a.asm, the x86 assembly code for planeClipAndMax() in MulticoreWare x265 through 2.4, as used by the x265_encoder_encode dependency in libbpg and other products. A small picture can cause an integer underflow, which leads to a Denial of Service in the process of encoding.",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2017-8906",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "1.9-3"
+                },
+                {
+                    "key": "package_name",
+                    "value": "x265"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "4.3"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "x265",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Not vulnerable (affected code is not enabled)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Not vulnerable (affected code is not enabled)"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Not vulnerable (affected code is not enabled)"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Not vulnerable (affected code is not enabled)"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Ignored (end of standard support, was deferred)"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Does not exist"
+                            ]
+                        ]
+                    },
+                    "notes": [
+                        "Affected code is *NOT* disabled in xenial. Xenial is affected.\nUpstream has not released a patch, rather, they have \"disabled 'planeClipAndMax' assembly primitives\""
+                    ]
+                }
+            ]
+        }
+    ]
+}
