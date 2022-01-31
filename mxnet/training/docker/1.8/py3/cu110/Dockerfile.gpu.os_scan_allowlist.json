@@ -1372,10 +1372,6 @@
                                 "Not vulnerable (1.17-10)"
                             ],
                             [
-                                "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Not vulnerable (1.17-10)"
-                            ],
-                            [
                                 "Ubuntu 20.04 LTS (Focal Fossa)",
                                 "Not vulnerable (1.17-6ubuntu4)"
                             ],
@@ -2781,10 +2777,6 @@
                                 "Needs triage"
                             ],
                             [
-                                "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Ignored (reached end-of-life)"
-                            ],
-                            [
                                 "Ubuntu 20.04 LTS (Focal Fossa)",
                                 "Needs triage"
                             ],
@@ -3189,10 +3181,6 @@
                                 "Released (2.4.57+dfsg-2ubuntu1)"
                             ],
                             [
-                                "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Released (2.4.57+dfsg-2ubuntu1)"
-                            ],
-                            [
                                 "Ubuntu 20.04 LTS (Focal Fossa)",
                                 "Released (2.4.49+dfsg-2ubuntu1.6)"
                             ],
@@ -3260,6 +3248,10 @@
                                 "Released (2.4.57+dfsg-2ubuntu1)"
                             ],
                             [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Released (2.4.57+dfsg-2ubuntu1)"
+                            ],
+                            [
                                 "Ubuntu 20.04 LTS (Focal Fossa)",
                                 "Released (2.4.49+dfsg-2ubuntu1.6)"
                             ],
@@ -3324,6 +3316,10 @@
                             ],
                             [
                                 "Ubuntu 21.10 (Impish Indri)",
+                                "Released (2.4.57+dfsg-2ubuntu1)"
+                            ],
+                            [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
                                 "Released (2.4.57+dfsg-2ubuntu1)"
                             ],
                             [
@@ -4070,6 +4066,61 @@
                     "notes": [
                         "impish/devel is not affected, code supposed affected was patched already."
                     ]
+                }
+            ]
+        },
+        {
+            "name": "CVE-2021-4189",
+            "description": "[ftplib should not use the host from the PASV response]",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2021-4189",
+            "severity": "MEDIUM",
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "3.5.2-2ubuntu0~16.04.13"
+                },
+                {
+                    "key": "package_name",
+                    "value": "python3.5"
+                }
+            ],
+            "scraped_data": [
+                {
+                    "status_table": {
+                        "packages": [
+                            "python3.5",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "Upstream",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 21.10 (Impish Indri)",
+                                "Does not exist"
+                            ],
+                            [
+                                "Ubuntu 20.04 LTS (Focal Fossa)",
+                                "Does not exist"
+                            ],
+                            [
+                                "Ubuntu 18.04 LTS (Bionic Beaver)",
+                                "Does not exist"
+                            ],
+                            [
+                                "Ubuntu 16.04 ESM (Xenial Xerus)",
+                                "Needed"
+                            ],
+                            [
+                                "Ubuntu 14.04 ESM (Trusty Tahr)",
+                                "Needed"
+                            ]
+                        ]
+                    },
+                    "notes": []
                 }
             ]
         }
