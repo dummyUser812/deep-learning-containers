@@ -1,0 +1,6 @@
+aom
+glibc
+imagemagick
+linux
+mariadb-10.5
+python3.9
