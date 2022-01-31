@@ -105,10 +105,6 @@
                                 "Needs triage"
                             ],
                             [
-                                "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Released (2.1.13)"
-                            ],
-                            [
                                 "Ubuntu 20.04 LTS (Focal Fossa)",
                                 "Released (2.0.2ubuntu0.2)"
                             ],
@@ -376,10 +372,6 @@
                             ],
                             [
                                 "Ubuntu 21.10 (Impish Indri)",
-                                "Not vulnerable (2.34-5ubuntu1)"
-                            ],
-                            [
-                                "Ubuntu 21.04 (Hirsute Hippo)",
                                 "Not vulnerable (2.34-5ubuntu1)"
                             ],
                             [
@@ -1313,10 +1305,6 @@
                                 "Not vulnerable (8:6.9.11.60+dfsg-1ubuntu1)"
                             ],
                             [
-                                "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Not vulnerable (8:6.9.11.60+dfsg-1ubuntu1)"
-                            ],
-                            [
                                 "Ubuntu 20.04 LTS (Focal Fossa)",
                                 "Deferred"
                             ],
@@ -1381,10 +1369,6 @@
                             ],
                             [
                                 "Ubuntu 21.10 (Impish Indri)",
-                                "Not vulnerable (1.17-10)"
-                            ],
-                            [
-                                "Ubuntu 21.04 (Hirsute Hippo)",
                                 "Not vulnerable (1.17-10)"
                             ],
                             [
@@ -1597,10 +1581,6 @@
                             [
                                 "Ubuntu 21.10 (Impish Indri)",
                                 "Released (0.6.1-2ubuntu1)"
-                            ],
-                            [
-                                "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Released (0.6.1-2ubuntu0.21.04.1)"
                             ],
                             [
                                 "Ubuntu 20.04 LTS (Focal Fossa)",
@@ -2669,10 +2649,6 @@
                                 "Released (3.7-2.1ubuntu1)"
                             ],
                             [
-                                "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Released (3.7-2.1ubuntu1)"
-                            ],
-                            [
                                 "Ubuntu 20.04 LTS (Focal Fossa)",
                                 "Released (3.5.1+really3.5.1-2ubuntu0.1)"
                             ],
@@ -2867,10 +2843,6 @@
                             ],
                             [
                                 "Ubuntu 21.10 (Impish Indri)",
-                                "Released (2.4.57+dfsg-2ubuntu1)"
-                            ],
-                            [
-                                "Ubuntu 21.04 (Hirsute Hippo)",
                                 "Released (2.4.57+dfsg-2ubuntu1)"
                             ],
                             [
@@ -3814,10 +3786,6 @@
                                 "Released (0.23.22-1)"
                             ],
                             [
-                                "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Released (0.23.22-1)"
-                            ],
-                            [
                                 "Ubuntu 20.04 LTS (Focal Fossa)",
                                 "Released (0.23.20-1ubuntu0.1)"
                             ],
@@ -3882,10 +3850,6 @@
                             ],
                             [
                                 "Ubuntu 21.10 (Impish Indri)",
-                                "Released (0.23.22-1)"
-                            ],
-                            [
-                                "Ubuntu 21.04 (Hirsute Hippo)",
                                 "Released (0.23.22-1)"
                             ],
                             [
@@ -4017,10 +3981,6 @@
                                 "Does not exist"
                             ],
                             [
-                                "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Does not exist"
-                            ],
-                            [
                                 "Ubuntu 20.04 LTS (Focal Fossa)",
                                 "Does not exist"
                             ],
@@ -4075,10 +4035,6 @@
                             ],
                             [
                                 "Ubuntu 21.10 (Impish Indri)",
-                                "Does not exist"
-                            ],
-                            [
-                                "Ubuntu 21.04 (Hirsute Hippo)",
                                 "Does not exist"
                             ],
                             [
@@ -4214,10 +4170,6 @@
                             [
                                 "Ubuntu 21.10 (Impish Indri)",
                                 "Released (248.3-1ubuntu3)"
-                            ],
-                            [
-                                "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Released (247.3-3ubuntu3.4)"
                             ],
                             [
                                 "Ubuntu 20.04 LTS (Focal Fossa)",
@@ -4547,10 +4499,6 @@
                             [
                                 "Ubuntu 21.10 (Impish Indri)",
                                 "Released (2:8.2.2434-3ubuntu3.2)"
-                            ],
-                            [
-                                "Ubuntu 21.04 (Hirsute Hippo)",
-                                "Ignored (reached end-of-life)"
                             ],
                             [
                                 "Ubuntu 20.04 LTS (Focal Fossa)",
