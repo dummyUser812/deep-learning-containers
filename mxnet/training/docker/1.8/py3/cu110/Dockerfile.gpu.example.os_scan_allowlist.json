@@ -3894,6 +3894,10 @@
                                 "Needs triage"
                             ],
                             [
+                                "Ubuntu 21.04 (Hirsute Hippo)",
+                                "Ignored (reached end-of-life)"
+                            ],
+                            [
                                 "Ubuntu 20.04 LTS (Focal Fossa)",
                                 "Needs triage"
                             ],
