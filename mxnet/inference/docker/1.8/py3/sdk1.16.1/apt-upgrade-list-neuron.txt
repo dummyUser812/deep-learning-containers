@@ -1,0 +1,6 @@
+cyrus-sasl2
+expat
+glibc
+libxml2
+openssl
+vim
