@@ -4519,8 +4519,8 @@
                     "value": "6.8"
                 }
             ],
-            "description": "In the Linux kernel 5.0.21, mounting a crafted f2fs filesystem image can lead to slab-out-of-bounds read access in f2fs_build_segment_manager in fs/f2fs/segment.c, related to init_min_max_mtime in fs/f2fs/segment.c (because the second argument to get_seg_entry is not validated).",
-            "name": "CVE-2019-19449",
+            "description": "In the Linux kernel 5.0.21, mounting a crafted btrfs filesystem image can lead to slab-out-of-bounds write access in index_rbio_pages in fs/btrfs/raid56.c.",
+            "name": "CVE-2019-19378",
             "scraped_data": [
                 {
                     "notes": [
@@ -4535,6 +4535,22 @@
                         ],
                         "release_states": [
                             [
+                                "impish",
+                                "Needed"
+                            ],
+                            [
+                                "hirsute",
+                                "Ignored (reached end-of-life)"
+                            ],
+                            [
+                                "xenial",
+                                "Ignored (was needed now end-of-life)"
+                            ],
+                            [
+                                "upstream",
+                                "Needed"
+                            ],
+                            [
                                 "precise",
                                 "Ignored (was needs-triage ESM criteria)"
                             ],
@@ -4543,8 +4559,8 @@
                                 "Ignored (was needed ESM criteria)"
                             ],
                             [
-                                "xenial",
-                                "Released (4.4.0-222.255)"
+                                "bionic",
+                                "Needed"
                             ],
                             [
                                 "disco",
@@ -4555,35 +4571,19 @@
                                 "Ignored (reached end-of-life)"
                             ],
                             [
+                                "focal",
+                                "Needed"
+                            ],
+                            [
                                 "groovy",
                                 "Ignored (reached end-of-life)"
-                            ],
-                            [
-                                "impish",
-                                "Not vulnerable (5.11.0-16.17)"
-                            ],
-                            [
-                                "focal",
-                                "Released (5.4.0-90.101)"
-                            ],
-                            [
-                                "hirsute",
-                                "Not vulnerable (5.10.0-14.15)"
-                            ],
-                            [
-                                "upstream",
-                                "Released (5.10~rc1)"
-                            ],
-                            [
-                                "bionic",
-                                "Released (4.15.0-162.170)"
                             ]
                         ]
                     }
                 }
             ],
             "severity": "MEDIUM",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2019-19449"
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2019-19378"
         },
         {
             "attributes": [
@@ -4682,81 +4682,6 @@
                 },
                 {
                     "key": "CVSS2_VECTOR",
-                    "value": "AV:N/AC:M/Au:N/C:N/I:P/A:N"
-                },
-                {
-                    "key": "CVSS2_SCORE",
-                    "value": "4.3"
-                }
-            ],
-            "description": "Devices supporting Bluetooth before 5.1 may allow man-in-the-middle attacks, aka BLURtooth. Cross Transport Key Derivation in Bluetooth Core Specification v4.2 and v5.0 may permit an unauthenticated user to establish a bonding with one transport, either LE or BR/EDR, and replace a bonding already established on the opposing transport, BR/EDR or LE, potentially overwriting an authenticated key with an unauthenticated key, or a key with greater entropy with one with less.",
-            "name": "CVE-2020-15802",
-            "scraped_data": [
-                {
-                    "notes": [],
-                    "status_table": {
-                        "packages": [
-                            "linux",
-                            "Launchpad",
-                            "Ubuntu",
-                            "Debian"
-                        ],
-                        "release_states": [
-                            [
-                                "groovy",
-                                "Ignored (reached end-of-life)"
-                            ],
-                            [
-                                "impish",
-                                "Needs triage"
-                            ],
-                            [
-                                "hirsute",
-                                "Ignored (reached end-of-life)"
-                            ],
-                            [
-                                "upstream",
-                                "Needs triage"
-                            ],
-                            [
-                                "xenial",
-                                "Ignored (was needs-triage now end-of-life)"
-                            ],
-                            [
-                                "bionic",
-                                "Needs triage"
-                            ],
-                            [
-                                "focal",
-                                "Needs triage"
-                            ],
-                            [
-                                "precise",
-                                "Ignored (was needs-triage ESM criteria)"
-                            ],
-                            [
-                                "trusty",
-                                "Ignored (was needs-triage ESM criteria)"
-                            ]
-                        ]
-                    }
-                }
-            ],
-            "severity": "MEDIUM",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2020-15802"
-        },
-        {
-            "attributes": [
-                {
-                    "key": "package_version",
-                    "value": "5.10.46-4"
-                },
-                {
-                    "key": "package_name",
-                    "value": "linux"
-                },
-                {
-                    "key": "CVSS2_VECTOR",
                     "value": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
                 },
                 {
@@ -4824,15 +4749,15 @@
                 },
                 {
                     "key": "CVSS2_VECTOR",
-                    "value": "AV:N/AC:M/Au:N/C:P/I:P/A:N"
+                    "value": "AV:L/AC:M/Au:N/C:N/I:N/A:C"
                 },
                 {
                     "key": "CVSS2_SCORE",
-                    "value": "5.8"
+                    "value": "4.7"
                 }
             ],
-            "description": "A flaw in the processing of received ICMP errors (ICMP fragment needed and ICMP redirect) in the Linux kernel functionality was found to allow the ability to quickly scan open UDP ports. This flaw allows an off-path remote user to effectively bypass the source port UDP randomization. The highest threat from this vulnerability is to confidentiality and possibly integrity, because software that relies on UDP source port randomization are indirectly affected as well.",
-            "name": "CVE-2021-20322",
+            "description": "A race condition accessing file object in the Linux kernel OverlayFS subsystem was found in the way users do rename in specific way with OverlayFS. A local user could use this flaw to crash the system.",
+            "name": "CVE-2021-20321",
             "scraped_data": [
                 {
                     "notes": [],
@@ -4845,8 +4770,12 @@
                         ],
                         "release_states": [
                             [
+                                "trusty",
+                                "Ignored (was needed ESM criteria)"
+                            ],
+                            [
                                 "bionic",
-                                "Released (4.15.0-167.175)"
+                                "Released (4.15.0-166.174)"
                             ],
                             [
                                 "focal",
@@ -4854,19 +4783,15 @@
                             ],
                             [
                                 "hirsute",
-                                "Ignored (reached end-of-life)"
+                                "Released (5.11.0-44.48)"
                             ],
                             [
                                 "impish",
-                                "Released (5.13.0-21.21)"
-                            ],
-                            [
-                                "trusty",
-                                "Ignored (was needed ESM criteria)"
+                                "Released (5.13.0-23.23)"
                             ],
                             [
                                 "upstream",
-                                "Released (5.15~rc1)"
+                                "Released (5.15~rc5)"
                             ],
                             [
                                 "xenial",
@@ -4877,7 +4802,7 @@
                 }
             ],
             "severity": "MEDIUM",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-20322"
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-20321"
         },
         {
             "attributes": [
@@ -5087,6 +5012,73 @@
             ],
             "severity": "HIGH",
             "uri": "https://security-tracker.debian.org/tracker/CVE-2021-37576"
+        },
+        {
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "5.10.46-4"
+                },
+                {
+                    "key": "package_name",
+                    "value": "linux"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:M/Au:N/C:N/I:P/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "5.8"
+                }
+            ],
+            "description": "A flaw was found in the Linux SCTP stack. A blind attacker may be able to kill an existing SCTP association through invalid chunks if the attacker knows the IP-addresses and port numbers being used and the attacker can send packets with spoofed IP addresses.",
+            "name": "CVE-2021-3772",
+            "scraped_data": [
+                {
+                    "notes": [],
+                    "status_table": {
+                        "packages": [
+                            "linux",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "impish",
+                                "Released (5.13.0-28.31)"
+                            ],
+                            [
+                                "hirsute",
+                                "Ignored (was pending [5.11.0-50.56] now end-of-life)"
+                            ],
+                            [
+                                "bionic",
+                                "Needed"
+                            ],
+                            [
+                                "focal",
+                                "Needed"
+                            ],
+                            [
+                                "upstream",
+                                "Released (5.15)"
+                            ],
+                            [
+                                "trusty",
+                                "Ignored (was needed ESM criteria)"
+                            ],
+                            [
+                                "xenial",
+                                "Ignored (was needed ESM criteria)"
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "severity": "MEDIUM",
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-3772"
         },
         {
             "attributes": [
@@ -5500,6 +5492,73 @@
                 },
                 {
                     "key": "CVSS2_VECTOR",
+                    "value": "AV:L/AC:M/Au:N/C:P/I:P/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "4.4"
+                }
+            ],
+            "description": "A race condition was discovered in ext4_write_inline_data_end in fs/ext4/inline.c in the ext4 subsystem in the Linux kernel through 5.13.13.",
+            "name": "CVE-2021-40490",
+            "scraped_data": [
+                {
+                    "notes": [],
+                    "status_table": {
+                        "packages": [
+                            "linux",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "trusty",
+                                "Ignored (was needed ESM criteria)"
+                            ],
+                            [
+                                "xenial",
+                                "Released (4.4.0-222.255)"
+                            ],
+                            [
+                                "impish",
+                                "Not vulnerable (5.13.0-19.19)"
+                            ],
+                            [
+                                "focal",
+                                "Released (5.4.0-89.100)"
+                            ],
+                            [
+                                "upstream",
+                                "Released (5.15~rc1)"
+                            ],
+                            [
+                                "bionic",
+                                "Released (4.15.0-161.169)"
+                            ],
+                            [
+                                "hirsute",
+                                "Released (5.11.0-38.42)"
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "severity": "MEDIUM",
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-40490"
+        },
+        {
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "5.10.46-4"
+                },
+                {
+                    "key": "package_name",
+                    "value": "linux"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
                     "value": "AV:L/AC:M/Au:N/C:C/I:C/A:C"
                 },
                 {
@@ -5554,6 +5613,73 @@
             ],
             "severity": "HIGH",
             "uri": "https://security-tracker.debian.org/tracker/CVE-2021-4083"
+        },
+        {
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "5.10.46-4"
+                },
+                {
+                    "key": "package_name",
+                    "value": "linux"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "4.6"
+                }
+            ],
+            "description": "prealloc_elems_and_freelist in kernel/bpf/stackmap.c in the Linux kernel before 5.14.12 allows unprivileged users to trigger an eBPF multiplication integer overflow with a resultant out-of-bounds write.",
+            "name": "CVE-2021-41864",
+            "scraped_data": [
+                {
+                    "notes": [],
+                    "status_table": {
+                        "packages": [
+                            "linux",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "bionic",
+                                "Released (4.15.0-166.174)"
+                            ],
+                            [
+                                "focal",
+                                "Released (5.4.0-92.103)"
+                            ],
+                            [
+                                "hirsute",
+                                "Released (5.11.0-44.48)"
+                            ],
+                            [
+                                "impish",
+                                "Released (5.13.0-23.23)"
+                            ],
+                            [
+                                "trusty",
+                                "Not vulnerable (3.11.0-12.19)"
+                            ],
+                            [
+                                "upstream",
+                                "Released (5.15~rc5)"
+                            ],
+                            [
+                                "xenial",
+                                "Not vulnerable (4.4.0-2.16)"
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "severity": "MEDIUM",
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-41864"
         },
         {
             "attributes": [
@@ -5701,73 +5827,6 @@
                 },
                 {
                     "key": "CVSS2_VECTOR",
-                    "value": "AV:N/AC:M/Au:S/C:P/I:N/A:P"
-                },
-                {
-                    "key": "CVSS2_SCORE",
-                    "value": "4.9"
-                }
-            ],
-            "description": "A use-after-free read flaw was found in sock_getsockopt() in net/core/sock.c due to SO_PEERCRED and SO_PEERGROUPS race with listen() (and connect()) in the Linux kernel. In this flaw, an attacker with a user privileges may crash the system or leak internal kernel information.",
-            "name": "CVE-2021-4203",
-            "scraped_data": [
-                {
-                    "notes": [],
-                    "status_table": {
-                        "packages": [
-                            "linux",
-                            "Launchpad",
-                            "Ubuntu",
-                            "Debian"
-                        ],
-                        "release_states": [
-                            [
-                                "bionic",
-                                "Released (4.15.0-163.171)"
-                            ],
-                            [
-                                "focal",
-                                "Released (5.4.0-91.102)"
-                            ],
-                            [
-                                "hirsute",
-                                "Ignored (reached end-of-life)"
-                            ],
-                            [
-                                "impish",
-                                "Released (5.13.0-23.23)"
-                            ],
-                            [
-                                "trusty",
-                                "Ignored (was needed ESM criteria)"
-                            ],
-                            [
-                                "upstream",
-                                "Released (5.15~rc4)"
-                            ],
-                            [
-                                "xenial",
-                                "Ignored (was needed ESM criteria)"
-                            ]
-                        ]
-                    }
-                }
-            ],
-            "severity": "MEDIUM",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-4203"
-        },
-        {
-            "attributes": [
-                {
-                    "key": "package_version",
-                    "value": "5.10.46-4"
-                },
-                {
-                    "key": "package_name",
-                    "value": "linux"
-                },
-                {
-                    "key": "CVSS2_VECTOR",
                     "value": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
                 },
                 {
@@ -5775,8 +5834,8 @@
                     "value": "4.6"
                 }
             ],
-            "description": "In the Linux kernel through 5.15.2, hw_atl_utils_fw_rpc_wait in drivers/net/ethernet/aquantia/atlantic/hw_atl/hw_atl_utils.c allows an attacker (who can introduce a crafted device) to trigger an out-of-bounds write via a crafted length value.",
-            "name": "CVE-2021-43975",
+            "description": "In __f2fs_setxattr in fs/f2fs/xattr.c in the Linux kernel through 5.15.11, there is an out-of-bounds memory access when an inode has an invalid last xattr entry.",
+            "name": "CVE-2021-45469",
             "scraped_data": [
                 {
                     "notes": [],
@@ -5790,11 +5849,11 @@
                         "release_states": [
                             [
                                 "bionic",
-                                "Pending (4.15.0-176.185)"
+                                "Pending (4.15.0-169.177)"
                             ],
                             [
                                 "focal",
-                                "Released (5.4.0-100.113)"
+                                "Pending (5.4.0-105.119)"
                             ],
                             [
                                 "hirsute",
@@ -5802,76 +5861,7 @@
                             ],
                             [
                                 "impish",
-                                "Released (5.13.0-37.42)"
-                            ],
-                            [
-                                "trusty",
-                                "Not vulnerable (3.11.0-12.19)"
-                            ],
-                            [
-                                "upstream",
-                                "Released (5.16~rc2)"
-                            ],
-                            [
-                                "xenial",
-                                "Not vulnerable (4.4.0-2.16)"
-                            ]
-                        ]
-                    }
-                }
-            ],
-            "severity": "MEDIUM",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-43975"
-        },
-        {
-            "attributes": [
-                {
-                    "key": "package_version",
-                    "value": "5.10.46-4"
-                },
-                {
-                    "key": "package_name",
-                    "value": "linux"
-                },
-                {
-                    "key": "CVSS2_VECTOR",
-                    "value": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
-                },
-                {
-                    "key": "CVSS2_SCORE",
-                    "value": "5"
-                }
-            ],
-            "description": "In the IPv6 implementation in the Linux kernel before 5.13.3, net/ipv6/output_core.c has an information leak because of certain use of a hash table which, although big, doesn't properly consider that IPv6-based attackers can typically choose among many IPv6 source addresses.",
-            "name": "CVE-2021-45485",
-            "scraped_data": [
-                {
-                    "notes": [
-                        "complementary to CVE-2021-45486"
-                    ],
-                    "status_table": {
-                        "packages": [
-                            "linux",
-                            "Launchpad",
-                            "Ubuntu",
-                            "Debian"
-                        ],
-                        "release_states": [
-                            [
-                                "bionic",
-                                "Released (4.15.0-156.163)"
-                            ],
-                            [
-                                "focal",
-                                "Released (5.4.0-84.94)"
-                            ],
-                            [
-                                "hirsute",
-                                "Ignored (reached end-of-life)"
-                            ],
-                            [
-                                "impish",
-                                "Not vulnerable (5.13.0-16.16)"
+                                "Pending (5.13.0-37.42)"
                             ],
                             [
                                 "trusty",
@@ -5879,81 +5869,18 @@
                             ],
                             [
                                 "upstream",
-                                "Released (5.14~rc1)"
+                                "Released (5.17~rc1)"
                             ],
                             [
                                 "xenial",
-                                "Released (4.4.0-219.252)"
+                                "Released (4.4.0-222.255)"
                             ]
                         ]
                     }
                 }
             ],
             "severity": "MEDIUM",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-45485"
-        },
-        {
-            "attributes": [
-                {
-                    "key": "package_version",
-                    "value": "5.10.46-4"
-                },
-                {
-                    "key": "package_name",
-                    "value": "linux"
-                },
-                {
-                    "key": "CVSS2_VECTOR",
-                    "value": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
-                },
-                {
-                    "key": "CVSS2_SCORE",
-                    "value": "4.6"
-                }
-            ],
-            "description": "A random memory access flaw was found in the Linux kernel's GPU i915 kernel driver functionality in the way a user may run malicious code on the GPU. This flaw allows a local user to crash the system or escalate their privileges on the system.",
-            "name": "CVE-2022-0330",
-            "scraped_data": [
-                {
-                    "notes": [],
-                    "status_table": {
-                        "packages": [
-                            "linux",
-                            "Launchpad",
-                            "Ubuntu",
-                            "Debian"
-                        ],
-                        "release_states": [
-                            [
-                                "bionic",
-                                "Released (4.15.0-169.177)"
-                            ],
-                            [
-                                "focal",
-                                "Released (5.4.0-100.113)"
-                            ],
-                            [
-                                "impish",
-                                "Released (5.13.0-30.33)"
-                            ],
-                            [
-                                "trusty",
-                                "Ignored (was needed ESM criteria)"
-                            ],
-                            [
-                                "upstream",
-                                "Released (5.17~rc2)"
-                            ],
-                            [
-                                "xenial",
-                                "Ignored (was needed ESM criteria)"
-                            ]
-                        ]
-                    }
-                }
-            ],
-            "severity": "MEDIUM",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2022-0330"
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2021-45469"
         },
         {
             "attributes": [
@@ -6032,15 +5959,15 @@
                 },
                 {
                     "key": "CVSS2_VECTOR",
-                    "value": "AV:L/AC:L/Au:N/C:C/I:N/A:N"
+                    "value": "AV:L/AC:M/Au:N/C:P/I:P/A:P"
                 },
                 {
                     "key": "CVSS2_SCORE",
-                    "value": "4.9"
+                    "value": "4.4"
                 }
             ],
-            "description": "A kernel information leak flaw was identified in the scsi_ioctl function in drivers/scsi/scsi_ioctl.c in the Linux kernel. This flaw allows a local attacker with a special user privilege (CAP_SYS_ADMIN or CAP_SYS_RAWIO) to create issues with confidentiality.",
-            "name": "CVE-2022-0494",
+            "description": "A vulnerability was found in the Linux kernel\u2019s cgroup_release_agent_write in the kernel/cgroup/cgroup-v1.c function. This flaw, under certain circumstances, allows the use of the cgroups v1 release_agent feature to escalate privileges and bypass the namespace isolation unexpectedly.",
+            "name": "CVE-2022-0492",
             "scraped_data": [
                 {
                     "notes": [],
@@ -6054,34 +5981,34 @@
                         "release_states": [
                             [
                                 "bionic",
-                                "Needed"
+                                "Released (4.15.0-173.182)"
                             ],
                             [
                                 "focal",
-                                "Needed"
+                                "Released (5.4.0-105.119)"
                             ],
                             [
                                 "impish",
-                                "Needed"
+                                "Released (5.13.0-37.42)"
                             ],
                             [
                                 "trusty",
-                                "Ignored (was needed ESM criteria)"
-                            ],
-                            [
-                                "upstream",
-                                "Released (5.17~rc5)"
+                                "Needed"
                             ],
                             [
                                 "xenial",
-                                "Ignored (was needed ESM criteria)"
+                                "Released (4.4.0-222.255)"
+                            ],
+                            [
+                                "upstream",
+                                "Released (5.17~rc3)"
                             ]
                         ]
                     }
                 }
             ],
             "severity": "MEDIUM",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2022-0494"
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2022-0492"
         },
         {
             "attributes": [
@@ -6095,15 +6022,15 @@
                 },
                 {
                     "key": "CVSS2_VECTOR",
-                    "value": "AV:L/AC:L/Au:N/C:N/I:N/A:C"
+                    "value": "AV:L/AC:M/Au:N/C:P/I:P/A:P"
                 },
                 {
                     "key": "CVSS2_SCORE",
-                    "value": "4.9"
+                    "value": "4.4"
                 }
             ],
-            "description": "A flaw null pointer dereference in the Linux kernel UDF file system functionality was found in the way user triggers udf_file_write_iter function for the malicious UDF image. A local user could use this flaw to crash the system. Actual from Linux kernel 4.2-rc1 till 5.17-rc2.",
-            "name": "CVE-2022-0617",
+            "description": "Linux PV device frontends vulnerable to attacks by backends T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Several Linux PV device frontends are using the grant table interfaces for removing access rights of the backends in ways being subject to race conditions, resulting in potential data leaks, data corruption by malicious backends, and denial of service triggered by malicious backends: blkfront, netfront, scsifront and the gntalloc driver are testing whether a grant reference is still in use. If this is not the case, they assume that a following removal of the granted access will always succeed, which is not true in case the backend has mapped the granted page between those two operations. As a result the backend can keep access to the memory page of the guest no matter how the page will be used after the frontend I/O has finished. The xenbus driver has a similar problem, as it doesn't check the success of removing the granted access of a shared ring buffer. blkfront: CVE-2022-23036 netfront: CVE-2022-23037 scsifront: CVE-2022-23038 gntalloc: CVE-2022-23039 xenbus: CVE-2022-23040 blkfront, netfront, scsifront, usbfront, dmabuf, xenbus, 9p, kbdfront, and pvcalls are using a functionality to delay freeing a grant reference until it is no longer in use, but the freeing of the related data page is not synchronized with dropping the granted access. As a result the backend can keep access to the memory page even after it has been freed and then re-used for a different purpose. CVE-2022-23041 netfront will fail a BUG_ON() assertion if it fails to revoke access in the rx path. This will result in a Denial of Service (DoS) situation of the guest which can be triggered by the backend. CVE-2022-23042",
+            "name": "CVE-2022-23036",
             "scraped_data": [
                 {
                     "notes": [],
@@ -6117,15 +6044,15 @@
                         "release_states": [
                             [
                                 "bionic",
-                                "Pending (4.15.0-176.185)"
+                                "Needed"
                             ],
                             [
                                 "focal",
-                                "Pending (5.4.0-109.123)"
+                                "Needed"
                             ],
                             [
                                 "impish",
-                                "Pending (5.13.0-40.45)"
+                                "Needed"
                             ],
                             [
                                 "trusty",
@@ -6133,7 +6060,7 @@
                             ],
                             [
                                 "upstream",
-                                "Released (5.17~rc2)"
+                                "Released (5.17~rc8)"
                             ],
                             [
                                 "xenial",
@@ -6144,7 +6071,7 @@
                 }
             ],
             "severity": "MEDIUM",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2022-0617"
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2022-23036"
         },
         {
             "attributes": [
@@ -6292,6 +6219,69 @@
                 }
             ],
             "description": "Linux PV device frontends vulnerable to attacks by backends T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Several Linux PV device frontends are using the grant table interfaces for removing access rights of the backends in ways being subject to race conditions, resulting in potential data leaks, data corruption by malicious backends, and denial of service triggered by malicious backends: blkfront, netfront, scsifront and the gntalloc driver are testing whether a grant reference is still in use. If this is not the case, they assume that a following removal of the granted access will always succeed, which is not true in case the backend has mapped the granted page between those two operations. As a result the backend can keep access to the memory page of the guest no matter how the page will be used after the frontend I/O has finished. The xenbus driver has a similar problem, as it doesn't check the success of removing the granted access of a shared ring buffer. blkfront: CVE-2022-23036 netfront: CVE-2022-23037 scsifront: CVE-2022-23038 gntalloc: CVE-2022-23039 xenbus: CVE-2022-23040 blkfront, netfront, scsifront, usbfront, dmabuf, xenbus, 9p, kbdfront, and pvcalls are using a functionality to delay freeing a grant reference until it is no longer in use, but the freeing of the related data page is not synchronized with dropping the granted access. As a result the backend can keep access to the memory page even after it has been freed and then re-used for a different purpose. CVE-2022-23041 netfront will fail a BUG_ON() assertion if it fails to revoke access in the rx path. This will result in a Denial of Service (DoS) situation of the guest which can be triggered by the backend. CVE-2022-23042",
+            "name": "CVE-2022-23039",
+            "scraped_data": [
+                {
+                    "notes": [],
+                    "status_table": {
+                        "packages": [
+                            "linux",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "bionic",
+                                "Needed"
+                            ],
+                            [
+                                "focal",
+                                "Needed"
+                            ],
+                            [
+                                "impish",
+                                "Needed"
+                            ],
+                            [
+                                "trusty",
+                                "Ignored (was needed ESM criteria)"
+                            ],
+                            [
+                                "upstream",
+                                "Released (5.17~rc8)"
+                            ],
+                            [
+                                "xenial",
+                                "Ignored (was needed ESM criteria)"
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "severity": "MEDIUM",
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2022-23039"
+        },
+        {
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "5.10.46-4"
+                },
+                {
+                    "key": "package_name",
+                    "value": "linux"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:L/AC:M/Au:N/C:P/I:P/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "4.4"
+                }
+            ],
+            "description": "Linux PV device frontends vulnerable to attacks by backends T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Several Linux PV device frontends are using the grant table interfaces for removing access rights of the backends in ways being subject to race conditions, resulting in potential data leaks, data corruption by malicious backends, and denial of service triggered by malicious backends: blkfront, netfront, scsifront and the gntalloc driver are testing whether a grant reference is still in use. If this is not the case, they assume that a following removal of the granted access will always succeed, which is not true in case the backend has mapped the granted page between those two operations. As a result the backend can keep access to the memory page of the guest no matter how the page will be used after the frontend I/O has finished. The xenbus driver has a similar problem, as it doesn't check the success of removing the granted access of a shared ring buffer. blkfront: CVE-2022-23036 netfront: CVE-2022-23037 scsifront: CVE-2022-23038 gntalloc: CVE-2022-23039 xenbus: CVE-2022-23040 blkfront, netfront, scsifront, usbfront, dmabuf, xenbus, 9p, kbdfront, and pvcalls are using a functionality to delay freeing a grant reference until it is no longer in use, but the freeing of the related data page is not synchronized with dropping the granted access. As a result the backend can keep access to the memory page even after it has been freed and then re-used for a different purpose. CVE-2022-23041 netfront will fail a BUG_ON() assertion if it fails to revoke access in the rx path. This will result in a Denial of Service (DoS) situation of the guest which can be triggered by the backend. CVE-2022-23042",
             "name": "CVE-2022-23040",
             "scraped_data": [
                 {
@@ -6347,69 +6337,6 @@
                 },
                 {
                     "key": "CVSS2_VECTOR",
-                    "value": "AV:L/AC:M/Au:N/C:P/I:P/A:P"
-                },
-                {
-                    "key": "CVSS2_SCORE",
-                    "value": "4.4"
-                }
-            ],
-            "description": "Linux PV device frontends vulnerable to attacks by backends T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Several Linux PV device frontends are using the grant table interfaces for removing access rights of the backends in ways being subject to race conditions, resulting in potential data leaks, data corruption by malicious backends, and denial of service triggered by malicious backends: blkfront, netfront, scsifront and the gntalloc driver are testing whether a grant reference is still in use. If this is not the case, they assume that a following removal of the granted access will always succeed, which is not true in case the backend has mapped the granted page between those two operations. As a result the backend can keep access to the memory page of the guest no matter how the page will be used after the frontend I/O has finished. The xenbus driver has a similar problem, as it doesn't check the success of removing the granted access of a shared ring buffer. blkfront: CVE-2022-23036 netfront: CVE-2022-23037 scsifront: CVE-2022-23038 gntalloc: CVE-2022-23039 xenbus: CVE-2022-23040 blkfront, netfront, scsifront, usbfront, dmabuf, xenbus, 9p, kbdfront, and pvcalls are using a functionality to delay freeing a grant reference until it is no longer in use, but the freeing of the related data page is not synchronized with dropping the granted access. As a result the backend can keep access to the memory page even after it has been freed and then re-used for a different purpose. CVE-2022-23041 netfront will fail a BUG_ON() assertion if it fails to revoke access in the rx path. This will result in a Denial of Service (DoS) situation of the guest which can be triggered by the backend. CVE-2022-23042",
-            "name": "CVE-2022-23042",
-            "scraped_data": [
-                {
-                    "notes": [],
-                    "status_table": {
-                        "packages": [
-                            "linux",
-                            "Launchpad",
-                            "Ubuntu",
-                            "Debian"
-                        ],
-                        "release_states": [
-                            [
-                                "bionic",
-                                "Needed"
-                            ],
-                            [
-                                "focal",
-                                "Needed"
-                            ],
-                            [
-                                "impish",
-                                "Needed"
-                            ],
-                            [
-                                "trusty",
-                                "Ignored (was needed ESM criteria)"
-                            ],
-                            [
-                                "upstream",
-                                "Released (5.17~rc8)"
-                            ],
-                            [
-                                "xenial",
-                                "Ignored (was needed ESM criteria)"
-                            ]
-                        ]
-                    }
-                }
-            ],
-            "severity": "MEDIUM",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2022-23042"
-        },
-        {
-            "attributes": [
-                {
-                    "key": "package_version",
-                    "value": "5.10.46-4"
-                },
-                {
-                    "key": "package_name",
-                    "value": "linux"
-                },
-                {
-                    "key": "CVSS2_VECTOR",
                     "value": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
                 },
                 {
@@ -6417,8 +6344,8 @@
                     "value": "4.6"
                 }
             ],
-            "description": "st21nfca_connectivity_event_received in drivers/nfc/st21nfca/se.c in the Linux kernel through 5.16.12 has EVT_TRANSACTION buffer overflows because of untrusted length parameters.",
-            "name": "CVE-2022-26490",
+            "description": "drivers/usb/gadget/legacy/inode.c in the Linux kernel through 5.16.8 mishandles dev->buf release.",
+            "name": "CVE-2022-24958",
             "scraped_data": [
                 {
                     "notes": [],
@@ -6432,19 +6359,19 @@
                         "release_states": [
                             [
                                 "bionic",
-                                "Pending"
+                                "Needed"
                             ],
                             [
                                 "focal",
-                                "Pending"
+                                "Needed"
                             ],
                             [
                                 "impish",
-                                "Pending"
+                                "Needed"
                             ],
                             [
                                 "trusty",
-                                "Not vulnerable (3.11.0-12.19)"
+                                "Ignored (was needed ESM criteria)"
                             ],
                             [
                                 "upstream",
@@ -6459,7 +6386,70 @@
                 }
             ],
             "severity": "MEDIUM",
-            "uri": "https://security-tracker.debian.org/tracker/CVE-2022-26490"
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2022-24958"
+        },
+        {
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "5.10.46-4"
+                },
+                {
+                    "key": "package_name",
+                    "value": "linux"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:L/AC:L/Au:N/C:N/I:N/A:C"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "4.9"
+                }
+            ],
+            "description": "An issue was discovered in drivers/usb/gadget/composite.c in the Linux kernel before 5.16.10. The USB Gadget subsystem lacks certain validation of interface OS descriptor requests (ones with a large array index and ones associated with NULL function pointer retrieval). Memory corruption might occur.",
+            "name": "CVE-2022-25258",
+            "scraped_data": [
+                {
+                    "notes": [],
+                    "status_table": {
+                        "packages": [
+                            "linux",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "bionic",
+                                "Pending"
+                            ],
+                            [
+                                "focal",
+                                "Pending"
+                            ],
+                            [
+                                "impish",
+                                "Pending"
+                            ],
+                            [
+                                "trusty",
+                                "Ignored (was needed ESM criteria)"
+                            ],
+                            [
+                                "upstream",
+                                "Released (5.17~rc4)"
+                            ],
+                            [
+                                "xenial",
+                                "Ignored (was needed ESM criteria)"
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "severity": "MEDIUM",
+            "uri": "https://security-tracker.debian.org/tracker/CVE-2022-25258"
         },
         {
             "attributes": [
