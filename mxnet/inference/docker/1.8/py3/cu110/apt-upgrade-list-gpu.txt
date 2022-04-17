@@ -1,0 +1,4 @@
+glibc
+sqlite3
+vim
+wget
