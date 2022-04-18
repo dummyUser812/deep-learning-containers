@@ -1,0 +1,4 @@
+libc6
+wget
+sqlite3
+vim
