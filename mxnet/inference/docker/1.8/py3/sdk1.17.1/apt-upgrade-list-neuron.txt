@@ -1,9 +1,5 @@
-openjpeg2
-mysql-5.7
-opencv
-nghttp2
-tiff
-netcdf
-libopenmpt
-sqlite3
-perl
+expat
+libxml2
+libc6
+libsasl2-2
+openssl
