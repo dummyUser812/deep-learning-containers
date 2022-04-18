@@ -1,0 +1,9 @@
+openjpeg2
+mysql-5.7
+opencv
+nghttp2
+tiff
+netcdf
+libopenmpt
+sqlite3
+perl
