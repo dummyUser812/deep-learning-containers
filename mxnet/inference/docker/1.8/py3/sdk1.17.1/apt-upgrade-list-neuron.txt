@@ -1,1 +1,6 @@
-libopenmpt
+libsasl2-2
+openssl
+libc6
+fribidi
+expat
+git
