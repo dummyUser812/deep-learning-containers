@@ -7049,97 +7049,6 @@
                 },
                 {
                     "key": "CVSS2_VECTOR",
-                    "value": "AV:N/AC:M/Au:N/C:P/I:P/A:P"
-                },
-                {
-                    "key": "CVSS2_SCORE",
-                    "value": "6.8"
-                }
-            ],
-            "description": "soundlib/pattern.h in libopenmpt before 0.3.9 allows remote attackers to cause a denial of service (application crash) or possibly have unspecified other impact via a crafted AMS file because of an invalid write near address 0 in an out-of-memory situation.",
-            "name": "CVE-2018-11710",
-            "scraped_data": [
-                {
-                    "notes": [],
-                    "status_table": {
-                        "packages": [
-                            "libopenmpt",
-                            "Launchpad",
-                            "Ubuntu",
-                            "Debian"
-                        ],
-                        "release_states": [
-                            [
-                                "artful",
-                                "Ignored (reached end-of-life)"
-                            ],
-                            [
-                                "bionic",
-                                "Needed"
-                            ],
-                            [
-                                "cosmic",
-                                "Not vulnerable (0.3.9-1)"
-                            ],
-                            [
-                                "disco",
-                                "Not vulnerable (0.3.9-1)"
-                            ],
-                            [
-                                "eoan",
-                                "Not vulnerable (0.3.9-1)"
-                            ],
-                            [
-                                "focal",
-                                "Not vulnerable (0.3.9-1)"
-                            ],
-                            [
-                                "groovy",
-                                "Not vulnerable (0.3.9-1)"
-                            ],
-                            [
-                                "hirsute",
-                                "Not vulnerable (0.3.9-1)"
-                            ],
-                            [
-                                "impish",
-                                "Not vulnerable (0.3.9-1)"
-                            ],
-                            [
-                                "precise",
-                                "Does not exist"
-                            ],
-                            [
-                                "trusty",
-                                "Does not exist"
-                            ],
-                            [
-                                "upstream",
-                                "Released (0.3.9-1)"
-                            ],
-                            [
-                                "xenial",
-                                "Does not exist"
-                            ]
-                        ]
-                    }
-                }
-            ],
-            "severity": "MEDIUM",
-            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2018-11710"
-        },
-        {
-            "attributes": [
-                {
-                    "key": "package_version",
-                    "value": "0.3.6-1"
-                },
-                {
-                    "key": "package_name",
-                    "value": "libopenmpt"
-                },
-                {
-                    "key": "CVSS2_VECTOR",
                     "value": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
                 },
                 {
@@ -7210,6 +7119,89 @@
             ],
             "severity": "MEDIUM",
             "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2018-20861"
+        },
+        {
+            "attributes": [
+                {
+                    "key": "package_version",
+                    "value": "0.3.6-1"
+                },
+                {
+                    "key": "package_name",
+                    "value": "libopenmpt"
+                },
+                {
+                    "key": "CVSS2_VECTOR",
+                    "value": "AV:N/AC:M/Au:N/C:N/I:N/A:P"
+                },
+                {
+                    "key": "CVSS2_SCORE",
+                    "value": "4.3"
+                }
+            ],
+            "description": "J2B in libopenmpt before 0.4.2 allows an assertion failure during file parsing with debug STLs.",
+            "name": "CVE-2019-14383",
+            "scraped_data": [
+                {
+                    "notes": [],
+                    "status_table": {
+                        "packages": [
+                            "libopenmpt",
+                            "Launchpad",
+                            "Ubuntu",
+                            "Debian"
+                        ],
+                        "release_states": [
+                            [
+                                "bionic",
+                                "Needed"
+                            ],
+                            [
+                                "disco",
+                                "Not vulnerable"
+                            ],
+                            [
+                                "eoan",
+                                "Not vulnerable"
+                            ],
+                            [
+                                "focal",
+                                "Not vulnerable"
+                            ],
+                            [
+                                "groovy",
+                                "Not vulnerable"
+                            ],
+                            [
+                                "hirsute",
+                                "Not vulnerable"
+                            ],
+                            [
+                                "impish",
+                                "Not vulnerable"
+                            ],
+                            [
+                                "precise",
+                                "Does not exist"
+                            ],
+                            [
+                                "trusty",
+                                "Does not exist"
+                            ],
+                            [
+                                "upstream",
+                                "Needs triage"
+                            ],
+                            [
+                                "xenial",
+                                "Does not exist"
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "severity": "MEDIUM",
+            "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2019-14383"
         }
     ],
     "openssl": [
