@@ -1,0 +1,3 @@
+vim
+libc6
+wget
