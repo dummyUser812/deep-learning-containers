@@ -734,7 +734,9 @@
             "name": "CVE-2022-1304",
             "scraped_data": [
                 {
-                    "notes": [],
+                    "notes": [
+                        "as of 2022-04-22, doesn't appear to be an upstream fix"
+                    ],
                     "status_table": {
                         "packages": [
                             "e2fsprogs",
@@ -745,19 +747,19 @@
                         "release_states": [
                             [
                                 "bionic",
-                                "Needs triage"
+                                "Deferred (2022-04-22)"
                             ],
                             [
                                 "focal",
-                                "Needs triage"
+                                "Deferred (2022-04-22)"
                             ],
                             [
                                 "impish",
-                                "Needs triage"
+                                "Deferred (2022-04-22)"
                             ],
                             [
                                 "trusty",
-                                "Needs triage"
+                                "Deferred (2022-04-22)"
                             ],
                             [
                                 "upstream",
@@ -765,7 +767,7 @@
                             ],
                             [
                                 "xenial",
-                                "Needs triage"
+                                "Deferred (2022-04-22)"
                             ]
                         ]
                     }
