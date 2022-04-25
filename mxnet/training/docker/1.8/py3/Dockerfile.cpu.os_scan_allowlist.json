@@ -1307,6 +1307,10 @@
                                 "Released (2.4.1-2ubuntu0.1)"
                             ],
                             [
+                                "jammy",
+                                "Released (2.4.3-1)"
+                            ],
+                            [
                                 "trusty",
                                 "Released (2.1.0-4ubuntu1.4+esm4)"
                             ],
@@ -5525,10 +5529,6 @@
                             [
                                 "impish",
                                 "Released (2:8.2.2434-3ubuntu3.2)"
-                            ],
-                            [
-                                "jammy",
-                                "Needed"
                             ],
                             [
                                 "trusty",
