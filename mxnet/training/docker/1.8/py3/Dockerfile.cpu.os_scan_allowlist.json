@@ -162,6 +162,10 @@
                                 "Released (0.8-5ubuntu3)"
                             ],
                             [
+                                "jammy",
+                                "Released (0.8-5ubuntu3)"
+                            ],
+                            [
                                 "precise",
                                 "Ignored (end of ESM support, was deferred [2021-07-06])"
                             ],
@@ -504,6 +508,10 @@
                                 "Released (7.74.0-1.2ubuntu4)"
                             ],
                             [
+                                "jammy",
+                                "Released (7.74.0-1.2ubuntu4)"
+                            ],
+                            [
                                 "trusty",
                                 "Needed"
                             ],
@@ -573,6 +581,10 @@
                                 "Released (7.74.0-1.3ubuntu2)"
                             ],
                             [
+                                "jammy",
+                                "Released (7.74.0-1.3ubuntu2)"
+                            ],
+                            [
                                 "trusty",
                                 "Released (7.35.0-1ubuntu2.20+esm8)"
                             ],
@@ -639,6 +651,10 @@
                             ],
                             [
                                 "impish",
+                                "Released (7.74.0-1.3ubuntu2)"
+                            ],
+                            [
+                                "jammy",
                                 "Released (7.74.0-1.3ubuntu2)"
                             ],
                             [
@@ -843,6 +859,10 @@
                             [
                                 "impish",
                                 "Released (2.4.1-2ubuntu0.1)"
+                            ],
+                            [
+                                "jammy",
+                                "Released (2.4.3-1)"
                             ],
                             [
                                 "trusty",
@@ -1454,6 +1474,10 @@
                                 "Released (2.4.1-2ubuntu0.1)"
                             ],
                             [
+                                "jammy",
+                                "Released (2.4.5-2)"
+                            ],
+                            [
                                 "trusty",
                                 "Released (2.1.0-4ubuntu1.4+esm4)"
                             ],
@@ -1517,6 +1541,10 @@
                             [
                                 "impish",
                                 "Released (2.4.1-2ubuntu0.1)"
+                            ],
+                            [
+                                "jammy",
+                                "Released (2.4.5-2)"
                             ],
                             [
                                 "trusty",
@@ -1742,6 +1770,10 @@
                             [
                                 "xenial",
                                 "Deferred"
+                            ],
+                            [
+                                "jammy",
+                                "Does not exist"
                             ]
                         ]
                     }
@@ -1824,6 +1856,10 @@
                             ],
                             [
                                 "xenial",
+                                "Deferred"
+                            ],
+                            [
+                                "jammy",
                                 "Deferred"
                             ]
                         ]
@@ -1908,6 +1944,10 @@
                             [
                                 "xenial",
                                 "Deferred"
+                            ],
+                            [
+                                "jammy",
+                                "Does not exist"
                             ]
                         ]
                     }
@@ -1966,6 +2006,10 @@
                             ],
                             [
                                 "impish",
+                                "Deferred (2022-04-19)"
+                            ],
+                            [
+                                "jammy",
                                 "Deferred (2022-04-19)"
                             ],
                             [
@@ -2369,10 +2413,6 @@
                                 "Not vulnerable (8:6.9.11.60+dfsg-1ubuntu1)"
                             ],
                             [
-                                "jammy",
-                                "Not vulnerable (8:6.9.11.60+dfsg-1ubuntu1)"
-                            ],
-                            [
                                 "precise",
                                 "Does not exist"
                             ],
@@ -2541,6 +2581,10 @@
                                 "Released (1.8.7-5ubuntu2)"
                             ],
                             [
+                                "jammy",
+                                "Released (1.8.7-5ubuntu2)"
+                            ],
+                            [
                                 "trusty",
                                 "Does not exist"
                             ],
@@ -2609,6 +2653,10 @@
                             ],
                             [
                                 "impish",
+                                "Released (2.3.0-2ubuntu1)"
+                            ],
+                            [
+                                "jammy",
                                 "Released (2.3.0-2ubuntu1)"
                             ],
                             [
@@ -2761,6 +2809,10 @@
                             ],
                             [
                                 "impish",
+                                "Released (0.6.1-2ubuntu1)"
+                            ],
+                            [
+                                "jammy",
                                 "Released (0.6.1-2ubuntu1)"
                             ],
                             [
@@ -3157,6 +3209,10 @@
                                 "Released (0.6.1-2ubuntu1)"
                             ],
                             [
+                                "jammy",
+                                "Released (0.6.1-2ubuntu1)"
+                            ],
+                            [
                                 "precise",
                                 "Does not exist"
                             ],
@@ -3229,6 +3285,10 @@
                             ],
                             [
                                 "impish",
+                                "Released (0.6.1-2ubuntu1)"
+                            ],
+                            [
+                                "jammy",
                                 "Released (0.6.1-2ubuntu1)"
                             ],
                             [
@@ -3307,6 +3367,10 @@
                                 "Released (0.6.1-2ubuntu1)"
                             ],
                             [
+                                "jammy",
+                                "Released (0.6.1-2ubuntu1)"
+                            ],
+                            [
                                 "precise",
                                 "Does not exist"
                             ],
@@ -3379,6 +3443,10 @@
                             ],
                             [
                                 "impish",
+                                "Released (0.6.1-2ubuntu1)"
+                            ],
+                            [
+                                "jammy",
                                 "Released (0.6.1-2ubuntu1)"
                             ],
                             [
@@ -3536,6 +3604,10 @@
                                 "Not vulnerable (2.9.10+dfsg-6.7)"
                             ],
                             [
+                                "jammy",
+                                "Not vulnerable (2.9.10+dfsg-6.7)"
+                            ],
+                            [
                                 "precise",
                                 "Ignored (end of ESM support, was needs-triage)"
                             ],
@@ -3611,6 +3683,10 @@
                                 "Not vulnerable (2.9.10+dfsg-6.7)"
                             ],
                             [
+                                "jammy",
+                                "Not vulnerable (2.9.10+dfsg-6.7)"
+                            ],
+                            [
                                 "precise",
                                 "Ignored (end of ESM support, was needs-triage)"
                             ],
@@ -3683,6 +3759,10 @@
                             ],
                             [
                                 "impish",
+                                "Not vulnerable (2.9.10+dfsg-6.7)"
+                            ],
+                            [
+                                "jammy",
                                 "Not vulnerable (2.9.10+dfsg-6.7)"
                             ],
                             [
@@ -3927,6 +4007,10 @@
                                 "Not vulnerable (1.9.3-2)"
                             ],
                             [
+                                "jammy",
+                                "Not vulnerable (1.9.3-2)"
+                            ],
+                            [
                                 "precise",
                                 "Does not exist"
                             ],
@@ -4002,6 +4086,10 @@
                             [
                                 "impish",
                                 "Needed"
+                            ],
+                            [
+                                "jammy",
+                                "Not vulnerable (2.5.7-1)"
                             ],
                             [
                                 "trusty",
@@ -4142,6 +4230,10 @@
                                 "Released (1.1.1l-1ubuntu1)"
                             ],
                             [
+                                "jammy",
+                                "Released (1.1.1l-1ubuntu1)"
+                            ],
+                            [
                                 "trusty",
                                 "Released (1.0.1f-1ubuntu2.27+esm4)"
                             ],
@@ -4203,6 +4295,10 @@
                             [
                                 "impish",
                                 "Released (1.1.1l-1ubuntu1.2)"
+                            ],
+                            [
+                                "jammy",
+                                "Released (3.0.2-0ubuntu1)"
                             ],
                             [
                                 "trusty",
@@ -4273,6 +4369,10 @@
                             ],
                             [
                                 "impish",
+                                "Needed"
+                            ],
+                            [
+                                "jammy",
                                 "Needed"
                             ],
                             [
@@ -4402,6 +4502,10 @@
                                 "Needs triage"
                             ],
                             [
+                                "jammy",
+                                "Needs triage"
+                            ],
+                            [
                                 "trusty",
                                 "Needs triage"
                             ],
@@ -4473,6 +4577,10 @@
                                 "Does not exist"
                             ],
                             [
+                                "jammy",
+                                "Does not exist"
+                            ],
+                            [
                                 "trusty",
                                 "Needed"
                             ],
@@ -4539,6 +4647,10 @@
                             ],
                             [
                                 "impish",
+                                "Does not exist"
+                            ],
+                            [
+                                "jammy",
                                 "Does not exist"
                             ],
                             [
@@ -4666,6 +4778,10 @@
                                 "Does not exist"
                             ],
                             [
+                                "jammy",
+                                "Does not exist"
+                            ],
+                            [
                                 "trusty",
                                 "Needs triage"
                             ],
@@ -4733,6 +4849,10 @@
                             [
                                 "impish",
                                 "Released (1.2~rc1.2-1.1ubuntu1.21.10.1)"
+                            ],
+                            [
+                                "jammy",
+                                "Released (1.2~rc1.2-1.1ubuntu3)"
                             ],
                             [
                                 "trusty",
@@ -4814,6 +4934,10 @@
                                 "Deferred"
                             ],
                             [
+                                "jammy",
+                                "Deferred"
+                            ],
+                            [
                                 "precise",
                                 "Ignored (end of ESM support, was needs-triage)"
                             ],
@@ -4891,6 +5015,10 @@
                                 "Released (248.3-1ubuntu3)"
                             ],
                             [
+                                "jammy",
+                                "Released (248.3-1ubuntu3)"
+                            ],
+                            [
                                 "trusty",
                                 "Not vulnerable"
                             ],
@@ -4957,6 +5085,10 @@
                             ],
                             [
                                 "impish",
+                                "Released (2:8.2.2434-3ubuntu2)"
+                            ],
+                            [
+                                "jammy",
                                 "Released (2:8.2.2434-3ubuntu2)"
                             ],
                             [
@@ -5027,6 +5159,10 @@
                                 "Released (2:8.2.2434-3ubuntu2)"
                             ],
                             [
+                                "jammy",
+                                "Released (2:8.2.2434-3ubuntu2)"
+                            ],
+                            [
                                 "trusty",
                                 "Released (2:7.4.052-1ubuntu3.1+esm3)"
                             ],
@@ -5094,6 +5230,10 @@
                                 "Released (2:8.2.2434-3ubuntu3.1)"
                             ],
                             [
+                                "jammy",
+                                "Released (2:8.2.3565-1ubuntu2)"
+                            ],
+                            [
                                 "trusty",
                                 "Released (2:7.4.052-1ubuntu3.1+esm4)"
                             ],
@@ -5159,6 +5299,10 @@
                             [
                                 "impish",
                                 "Released (2:8.2.2434-3ubuntu3.1)"
+                            ],
+                            [
+                                "jammy",
+                                "Released (2:8.2.3565-1ubuntu2)"
                             ],
                             [
                                 "trusty",
@@ -5299,6 +5443,10 @@
                                 "Released (2:8.2.2434-3ubuntu3.2)"
                             ],
                             [
+                                "jammy",
+                                "Needed"
+                            ],
+                            [
                                 "trusty",
                                 "Needed"
                             ],
@@ -5366,6 +5514,10 @@
                                 "Released (2:8.2.2434-3ubuntu3.2)"
                             ],
                             [
+                                "jammy",
+                                "Needed"
+                            ],
+                            [
                                 "trusty",
                                 "Needed"
                             ],
@@ -5427,6 +5579,10 @@
                             [
                                 "impish",
                                 "Needed"
+                            ],
+                            [
+                                "jammy",
+                                "Needs triage"
                             ],
                             [
                                 "trusty",
@@ -5492,6 +5648,10 @@
                                 "Needed"
                             ],
                             [
+                                "jammy",
+                                "Needs triage"
+                            ],
+                            [
                                 "trusty",
                                 "Needed"
                             ],
@@ -5553,6 +5713,10 @@
                             [
                                 "impish",
                                 "Needed"
+                            ],
+                            [
+                                "jammy",
+                                "Needs triage"
                             ],
                             [
                                 "trusty",
@@ -5627,6 +5791,10 @@
                             ],
                             [
                                 "impish",
+                                "Deferred"
+                            ],
+                            [
+                                "jammy",
                                 "Deferred"
                             ],
                             [
