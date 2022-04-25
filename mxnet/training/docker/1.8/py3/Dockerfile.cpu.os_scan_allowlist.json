@@ -71,6 +71,10 @@
                                 "Deferred"
                             ],
                             [
+                                "jammy",
+                                "Deferred"
+                            ],
+                            [
                                 "precise",
                                 "Ignored (end of ESM support, was deferred)"
                             ],
@@ -243,6 +247,10 @@
                                 "Not vulnerable (2.34-5ubuntu1)"
                             ],
                             [
+                                "jammy",
+                                "Not vulnerable (2.34-5ubuntu1)"
+                            ],
+                            [
                                 "precise",
                                 "Ignored (end of ESM support, was needs-triage)"
                             ],
@@ -326,6 +334,10 @@
                                 "Not vulnerable (2.34-5ubuntu1)"
                             ],
                             [
+                                "jammy",
+                                "Not vulnerable (2.34-5ubuntu1)"
+                            ],
+                            [
                                 "precise",
                                 "Ignored (end of ESM support, was needs-triage)"
                             ],
@@ -406,6 +418,10 @@
                             ],
                             [
                                 "impish",
+                                "Not vulnerable (2.34-5ubuntu1)"
+                            ],
+                            [
+                                "jammy",
                                 "Not vulnerable (2.34-5ubuntu1)"
                             ],
                             [
@@ -2438,6 +2454,10 @@
                                 "Not vulnerable (1.17-10)"
                             ],
                             [
+                                "jammy",
+                                "Not vulnerable (1.17-10)"
+                            ],
+                            [
                                 "precise",
                                 "Ignored (end of ESM support, was needs-triage)"
                             ],
@@ -2657,6 +2677,10 @@
                                 "Released (0.6.1-2ubuntu1)"
                             ],
                             [
+                                "jammy",
+                                "Released (0.6.1-2ubuntu1)"
+                            ],
+                            [
                                 "precise",
                                 "Does not exist"
                             ],
@@ -2804,6 +2828,10 @@
                             ],
                             [
                                 "impish",
+                                "Released (0.6.1-2ubuntu1)"
+                            ],
+                            [
+                                "jammy",
                                 "Released (0.6.1-2ubuntu1)"
                             ],
                             [
@@ -2959,6 +2987,10 @@
                                 "Released (0.6.1-2ubuntu1)"
                             ],
                             [
+                                "jammy",
+                                "Released (0.6.1-2ubuntu1)"
+                            ],
+                            [
                                 "precise",
                                 "Does not exist"
                             ],
@@ -3031,6 +3063,10 @@
                             ],
                             [
                                 "impish",
+                                "Released (0.6.1-2ubuntu1)"
+                            ],
+                            [
+                                "jammy",
                                 "Released (0.6.1-2ubuntu1)"
                             ],
                             [
@@ -5704,6 +5740,10 @@
                             [
                                 "impish",
                                 "Released (1:1.2.11.dfsg-2ubuntu7.1)"
+                            ],
+                            [
+                                "jammy",
+                                "Released (1:1.2.11.dfsg-2ubuntu9)"
                             ],
                             [
                                 "trusty",
