@@ -5531,6 +5531,10 @@
                                 "Released (2:8.2.2434-3ubuntu3.2)"
                             ],
                             [
+                                "jammy",
+                                "Needed"
+                            ],
+                            [
                                 "trusty",
                                 "Needed"
                             ],
